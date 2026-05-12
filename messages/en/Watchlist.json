@@ -1,0 +1,86 @@
+{
+  "title": "Watchlist",
+  "subtitle": "Stocks to watch — not a real position, just on your radar",
+  "community": "Community",
+  "refresh": "Refresh",
+  "addStock": "Add stock",
+  "tickerOrName": "Ticker or company name...",
+  "adding": "Adding...",
+  "empty": "No stocks on your watchlist yet. Add some above.",
+  "removeConfirm": "Remove from watchlist?",
+  "remove": "Remove",
+  "removeAria": "Remove {ticker} from watchlist",
+  "errors": {
+    "apiNoArray": "Watchlist API did not return an array",
+    "load": "Load failed"
+  },
+  "columns": {
+    "ticker": "Ticker",
+    "price": "Price",
+    "today": "Today",
+    "trend3M": "Trend (3M)",
+    "distHigh": "Distance 52W high",
+    "distLow": "Distance 52W low",
+    "conviction": "Conviction",
+    "note": "Note"
+  },
+  "community_page": {
+    "back": "Back to watchlist",
+    "title": "Watchlist community",
+    "publishNew": "Publish new list",
+    "intro": "Publish curated watchlists (e.g. \"Dividend kings\", \"AI plays\", \"EU small caps\") and discover lists from other users. Import into your own watchlist with one click.",
+    "newList": "New list",
+    "titlePlaceholder": "Title (e.g. Dividend aristocrats)",
+    "descriptionPlaceholder": "Description (optional, max 500 characters)",
+    "tickersPlaceholder": "Tickers comma-separated (e.g. JNJ, PG, KO, PEP, MMM)",
+    "publicOption": "Public — visible to all users",
+    "cancel": "Cancel",
+    "publish": "Publish",
+    "tabCommunity": "Community ({count})",
+    "tabMine": "Mine ({count})",
+    "loading": "Loading...",
+    "emptyCommunity": "No community lists available yet.",
+    "emptyMine": "You haven't created any lists yet.",
+    "moreCount": "+{count} more",
+    "importCount": "{count}× imported",
+    "details": "Details",
+    "import": "Import",
+    "importTitle": "Import into your own watchlist",
+    "listCreated": "List created.",
+    "importedMessage": "{added} new tickers added, {skipped} were already in your watchlist.",
+    "errors": {
+      "minOneTicker": "At least one ticker required.",
+      "generic": "Error",
+      "load": "Load failed"
+    }
+  },
+  "shared": {
+    "back": "Back to community",
+    "loading": "Loading...",
+    "public": "Public",
+    "private": "Private",
+    "importToWatchlist": "Add to watchlist",
+    "edit": "Edit",
+    "makePrivate": "Make private",
+    "publish": "Publish",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "descriptionPlaceholder": "Description",
+    "tickersPlaceholder": "Tickers comma-separated",
+    "tickerCount": "{count} tickers",
+    "importedCount": "{count}× imported by others",
+    "createdOn": "Created: {date}",
+    "columns": {
+      "ticker": "Ticker",
+      "name": "Name",
+      "note": "Note"
+    },
+    "deleteConfirm": "Delete list permanently?",
+    "saved": "Saved.",
+    "importedMessage": "{added} new tickers added to your watchlist, {skipped} were already there.",
+    "errors": {
+      "generic": "Error"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "attention": {
+    "title": "Aufmerksamkeits-Radar",
+    "reloadTitle": "Neu laden",
+    "refresh": "Aktualisieren",
+    "intro": "Wikipedia-Pageviews und Google-Suchinteresse für deine Watchlist + dein Portfolio. Tickers, bei denen sich gerade etwas bewegt, stehen oben.",
+    "loading": "Sammle Aufmerksamkeits-Signale für deine Tickers — kann beim ersten Aufruf bis zu einer Minute dauern.",
+    "empty": "Noch keine Tickers in Watchlist/Portfolio — füge welche hinzu, dann werden hier Spike-Signale angezeigt.",
+    "error": "Fehler",
+    "thead": {
+      "ticker": "Ticker",
+      "wiki": "Wiki",
+      "google": "Google",
+      "rising": "Steigende Suchen"
+    },
+    "inPortfolio": "Im Portfolio",
+    "explanation": "Spike-Faktor = letzte 7 Tage Ø / 30-Tage-Baseline. Kombiniertes Maximum aus Wikipedia und Google Trends bestimmt die Sortierung."
+  },
+  "newsFeed": {
+    "title": "Top-Nachrichten (Watchlist + Portfolio)",
+    "reloadTitle": "Neu laden",
+    "refresh": "Aktualisieren",
+    "intro": "Die 20 aktuellsten Yahoo-News über alle deine Tickers — entdupliziert und nach Aktualität sortiert.",
+    "loading": "Lade News…",
+    "empty": "Keine News gefunden — füge Tickers zu Watchlist oder Portfolio hinzu.",
+    "error": "Fehler",
+    "agePrefix": "vor",
+    "ageSeconds": "{n}s",
+    "ageMinutes": "{n} Min",
+    "ageHours": "{n} Std",
+    "ageDays": "{n}T"
+  }
+}

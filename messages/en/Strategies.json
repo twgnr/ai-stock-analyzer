@@ -1,0 +1,79 @@
+{
+  "metaTitle": "Investment strategies — AI Stock Analyzer",
+  "metaDescription": "Curated investment strategies as templates for the screener: Value, Growth, Dividend Growth, Quality, Momentum and Contrarian.",
+  "back": "Back",
+  "title": "Investment strategies",
+  "intro": "Curated templates for the screener. Each card explains a strategy, lists typical criteria and links directly into the pre-configured screener. Not investment advice.",
+  "openInScreener": "Open in screener",
+  "criteriaHeading": "Typical criteria",
+  "historyHeading": "History",
+  "risksHeading": "Risks",
+  "strategies": {
+    "value": {
+      "label": "Value",
+      "tagline": "Benjamin Graham / Warren Buffett",
+      "description": "Quality companies trading at a discount with a solid balance sheet. Goal: buy stocks below intrinsic value and wait for the market to re-rate them to fair value.",
+      "bullet1": "P/E < 15",
+      "bullet2": "Price-to-book < 2.5",
+      "bullet3": "Minimum market cap of 1 bn",
+      "bullet4": "Stress-test depth in the DCF calculator (implied growth)",
+      "historical": "Historically a modest premium across equity cycles, but with long stretches of underperformance (e.g. 2010–2020).",
+      "risks": "Value traps: cheap because the business model is dying. Always check quality and moat."
+    },
+    "dividend-growth": {
+      "label": "Dividend Growth",
+      "tagline": "Dividend Aristocrats, DGI",
+      "description": "Companies with a long track record of growing dividends, a robust payout ratio and rising free cash flow. Focus on income plus capital appreciation.",
+      "bullet1": "Dividend yield ≥ 3%",
+      "bullet2": "At least 5–10 years of uninterrupted dividend increases",
+      "bullet3": "Payout ratio < 60%",
+      "bullet4": "Minimum market cap of 2 bn",
+      "historical": "Smaller drawdowns than the broad market and more stable returns. Reinvested dividends compound the effect.",
+      "risks": "Rate-sensitive (high-yield stocks fall when rates rise). Dividend cuts during recessions."
+    },
+    "growth": {
+      "label": "Quality Growth",
+      "tagline": "GARP / Fisher",
+      "description": "Companies with above-average revenue and earnings growth, high margins and a defensive balance sheet — but not at extreme valuations (GARP = Growth at a Reasonable Price).",
+      "bullet1": "Revenue growth > 10% YoY",
+      "bullet2": "Operating margin > 20%",
+      "bullet3": "Near 52-week high (positive market reaction)",
+      "bullet4": "Market cap > 5 bn",
+      "historical": "Strong outperformance during low-rate regimes, deeper drawdowns during market corrections.",
+      "risks": "High valuation → limited cushion if growth disappoints. Momentum can flip quickly."
+    },
+    "momentum": {
+      "label": "Momentum",
+      "tagline": "Trend Following",
+      "description": "Stocks that have risen sharply over recent months tend to keep rising — until the trend breaks. Combined with volume confirmation and trend quality.",
+      "bullet1": "Daily move > 2% with strong volume",
+      "bullet2": "Near 52-week high",
+      "bullet3": "Use the breakout screener",
+      "bullet4": "Stop-loss discipline (−7% to −10%)",
+      "historical": "A well-documented factor (Jegadeesh & Titman, 1993). Pronounced out- and underperformance cycles.",
+      "risks": "Short reversals can hurt. Adds significant volatility to the portfolio."
+    },
+    "contrarian": {
+      "label": "Contrarian / Oversold",
+      "tagline": "Deep Value + Mean Reversion",
+      "description": "Quality companies trading near their 52-week low — often after an exaggerated reaction to quarterly results or sector news. Requires patience and research.",
+      "bullet1": "Near 52-week low (< 20% off the low)",
+      "bullet2": "Market cap > 1 bn (no micro-cap risk)",
+      "bullet3": "Due diligence: balance sheet, cash flow, management commentary",
+      "bullet4": "Use the thesis tracker — mandatory",
+      "historical": "Origin of modern value strategies (DeBondt/Thaler). Strong rebounds are possible but real zombies exist too.",
+      "risks": "Value traps are most dangerous here. Always run at least a bull/bear analysis plus conviction score."
+    },
+    "defensive": {
+      "label": "Defensive Blue Chips",
+      "tagline": "Risk minimising",
+      "description": "Large-cap companies with non-cyclical business models (consumer staples, healthcare, utilities), a low beta and a robust dividend. The calm core of a portfolio.",
+      "bullet1": "Market cap > 20 bn",
+      "bullet2": "Beta < 0.9",
+      "bullet3": "Sector: Consumer Staples, Healthcare, Utilities",
+      "bullet4": "Dividend paid and stable",
+      "historical": "Low volatility and steady performance. Underperforms in bull markets, provides protection in bear markets.",
+      "risks": "Rate-sensitive (utilities). Limited growth story — total return comes mostly from dividends."
+    }
+  }
+}

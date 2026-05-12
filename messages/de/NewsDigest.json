@@ -1,0 +1,40 @@
+{
+  "common": {
+    "error": "Fehler",
+    "loading": "Lade..."
+  },
+  "list": {
+    "title": "KI-News-Digest",
+    "intro": "Die KI liest alle News deiner Positionen (und optional Watchlist) aus dem gewählten Zeitraum, aggregiert sie und erklärt, was passiert ist — gruppiert nach Relevanz, mit Kursbezug. On-demand oder per E-Mail.",
+    "createTitle": "Neuen Digest erstellen",
+    "period": "Zeitraum",
+    "period3d": "3 Tage",
+    "period7d": "7 Tage (Woche)",
+    "period14d": "14 Tage",
+    "period30d": "30 Tage",
+    "includeWatchlist": "Watchlist einbeziehen",
+    "sendEmail": "Per E-Mail zusenden",
+    "create": "Digest erstellen",
+    "creating": "Erstelle Digest...",
+    "createdSuccess": "Digest erstellt.",
+    "creatingHint": "Das kann 30-60 Sekunden dauern — je nach Anzahl Positionen und Provider.",
+    "emptyList": "Noch keine Digests erstellt. Starte oben den ersten.",
+    "history": "Verlauf",
+    "tickerHighlights": "{count} Ticker-Highlights"
+  },
+  "detail": {
+    "back": "Zurück zur Liste",
+    "confirmDelete": "Digest endgültig löschen?",
+    "delete": "Löschen",
+    "period": "Zeitraum: {days} Tage",
+    "tickersAnalyzed": "{count} Ticker analysiert",
+    "created": "Erstellt: {date}",
+    "model": "Modell: {model}",
+    "delivered": "Zugestellt",
+    "marketOverview": "Markt-Überblick",
+    "watchNext": "Diese Woche im Blick",
+    "upcomingEvents": "Kommende Events",
+    "relevantMoves": "Relevante Bewegungen",
+    "inPeriod": "im Zeitraum"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Favorites",
+  "empty": "Star a page from the top-right of any section to pin it here for quick access.",
+  "remove": "Remove from favorites",
+  "removeAria": "Remove \"{label}\" from favorites",
+  "addAria": "Add \"{label}\" to favorites",
+  "isFavorite": "Favorite",
+  "addToFavorites": "Add favorite"
+}

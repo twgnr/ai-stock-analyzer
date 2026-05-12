@@ -1,0 +1,323 @@
+{
+  "default": {
+    "title": "Hilfe-Modus aktiv",
+    "description": "Bewege die Maus über ein Element (Menü-Eintrag, Button, Tabellen-Spalte, Indikator …), um eine Erklärung zu sehen. Klick auf das Fragezeichen oben rechts deaktiviert den Modus wieder."
+  },
+  "nav:dashboard": {
+    "title": "Dashboard",
+    "description": "Übersichts-Cockpit: Portfolio-Wert, G/V, Tagesveränderung, Performance-Chart, Health-Score, KI-Analyse-Karte. Layout per „Anpassen“ konfigurierbar."
+  },
+  "nav:portfolio": {
+    "title": "Portfolio",
+    "description": "Positionen verwalten: anlegen, bearbeiten, löschen. Auch CSV-Import von Brokern (Trade Republic, comdirect, IBKR …) und PDF-Report."
+  },
+  "nav:watchlist": {
+    "title": "Watchlist",
+    "description": "Beobachtungsliste — Aktien, die dich interessieren ohne dass du sie schon hältst. Mit Trend-Sparkline, Conviction-Score und 52W-Position."
+  },
+  "nav:alerts": {
+    "title": "Alerts",
+    "description": "Preis- und Indikator-Alerts: löst eine Mail (und Web-Push, wenn aktiviert) aus, sobald die Schwelle erreicht ist. Check alle 15 Min."
+  },
+  "nav:insights": {
+    "title": "Insights",
+    "description": "Sammlung kuratierter KI-Auswertungen — Hit-Rate des KI-Track-Records, Stärken/Schwächen-Diagnose, Catalyst-Hinweise."
+  },
+  "nav:chat": {
+    "title": "Chat",
+    "description": "„Ask the Portfolio“: natürlichsprachiger Chat mit deinem eigenen Portfolio-Kontext. Streaming-Antworten, kostet KI-Tokens."
+  },
+  "nav:transactions": {
+    "title": "Transaktionen",
+    "description": "Vollständige Transaktions-Historie inkl. Einzelkäufe und Verkäufe, gruppiert pro Ticker."
+  },
+  "nav:rebalance": {
+    "title": "Rebalance",
+    "description": "Soll-Allokation pro Bucket definieren, Tool berechnet konkrete Käufe/Verkäufe um wieder ins Lot zu kommen."
+  },
+  "nav:risk": {
+    "title": "Risiko-Analyse",
+    "description": "Value-at-Risk, Monte-Carlo-Simulation, historische Stress-Tests (COVID, 2008, Zinsschock) und Faktor-Exposure."
+  },
+  "nav:health": {
+    "title": "Portfolio-Health",
+    "description": "Note A–F für dein Gesamtportfolio: Diversifikation, Kostenstruktur, Sektoren-Cluster, Cash-Quote, Volatilitäts-Profil."
+  },
+  "nav:tax-report": {
+    "title": "Steuerbericht",
+    "description": "Realisierte Gewinne/Verluste nach Abgeltungsteuer-Logik (FIFO), Dividenden-Übersicht, Quellensteuer-Aufstellung."
+  },
+  "nav:dividends": {
+    "title": "Dividenden",
+    "description": "Dividenden-Historie deiner Positionen, prognostizierte Ausschüttungen, Dividenden-Rendite, Ex-Dates."
+  },
+  "nav:dividends-calendar": {
+    "title": "Dividenden-Kalender",
+    "description": "Kalender-Ansicht aller anstehenden Ex-Dividend- und Auszahlungs-Termine deiner Positionen + Watchlist."
+  },
+  "nav:calendar": {
+    "title": "Earnings-Kalender",
+    "description": "Anstehende Quartalszahlen-Termine deiner Positionen und Watchlist-Tickers."
+  },
+  "nav:market": {
+    "title": "Markt-Radar",
+    "description": "Was bewegt sich gerade? Wikipedia/Google-Aufmerksamkeits-Spikes + Top-20-News + KI-Ideen-Generator für nicht-gehaltene Aktien."
+  },
+  "nav:macro": {
+    "title": "Makro & Sentiment",
+    "description": "Übergeordnete Marktindikatoren — Reddit-Sentiment, Fear-&-Greed-Index, Marktbreite."
+  },
+  "nav:macro-scenario": {
+    "title": "Macro-Szenarien",
+    "description": "Wie reagiert dein Portfolio auf konkrete Makro-Szenarien (EZB +100bp, Brent $120, KI-Bubble platzt)? KI bewertet jede Position einzeln, FRED-Daten als Anker."
+  },
+  "nav:screener": {
+    "title": "Screener",
+    "description": "Mehrkriterien-Filter über Aktien-Universum: P/E, Dividendenrendite, Marktkapitalisierung, Sektor, Region."
+  },
+  "nav:breakout": {
+    "title": "Breakout",
+    "description": "Tickers, die gerade aus 52W-Hochs/-Tiefs ausbrechen oder Bollinger-Bänder verletzen."
+  },
+  "nav:discoveries": {
+    "title": "Entdeckungen",
+    "description": "KI-getriebene Vorschläge, basierend auf deinem Portfolio: ähnliche Werte, fehlende Sektoren, ETF-Lücken."
+  },
+  "nav:peer-compare": {
+    "title": "Peer-Vergleich",
+    "description": "Zwei Aktien Seite an Seite: Fundamentals, KI-Analyse beider, Konsens-Empfehlung."
+  },
+  "nav:news-digest": {
+    "title": "KI-News-Digest",
+    "description": "Tägliche/wöchentliche KI-Zusammenfassung der News deiner Tickers — komprimiert auf 5–10 Sätze."
+  },
+  "nav:track-record": {
+    "title": "KI-Track-Record",
+    "description": "Wie gut waren die KI-Empfehlungen? Hit-Rate (BUY → Return positiv, SELL → negativ) und Ø-Return pro Modell."
+  },
+  "nav:backtest": {
+    "title": "Backtest",
+    "description": "Technische Strategien (RSI/MACD/SMA-Cross) gegen historische Daten testen, Sharpe und Max-Drawdown ablesen."
+  },
+  "nav:magazine": {
+    "title": "Zeitschriften",
+    "description": "PDF-Upload (z. B. Börse Online) → KI extrahiert Empfehlungen + Bewertungen."
+  },
+  "nav:thesen": {
+    "title": "Investment-Thesen",
+    "description": "Eigene Thesen zu Aktien dokumentieren — KI prüft regelmäßig, ob die Annahmen noch tragen."
+  },
+  "nav:briefing": {
+    "title": "Wochen-Briefing",
+    "description": "Täglicher/wöchentlicher KI-Bericht: Was hat sich verändert, welche Risiken sind neu, welche Chancen?"
+  },
+  "nav:strategien": {
+    "title": "Strategien",
+    "description": "Vorgefertigte Anlage-Strategien (Dividenden-Aristokraten, Magic-Formula, Quality-Income …) mit Begründung."
+  },
+  "nav:glossar": {
+    "title": "Glossar",
+    "description": "Kurze, lesbare Erklärungen aller Finanzbegriffe, die in der App vorkommen."
+  },
+  "nav:hilfe": {
+    "title": "Hilfe & FAQ",
+    "description": "Ausführliche Dokumentation aller Features, API-Key-Anleitungen, Datenschutz-Hinweise."
+  },
+  "nav:settings": {
+    "title": "Einstellungen",
+    "description": "Profil, Sicherheit (Passwort, 2FA), KI-Provider-Keys, Benachrichtigungen, Theme/3D, Push."
+  },
+  "nav:help-toggle": {
+    "title": "Hilfe-Modus",
+    "description": "Wenn aktiv, erscheint oben unter dem Liveticker eine Info-Leiste, die beim Hovern über Features deren Bedeutung erklärt."
+  },
+  "btn:refresh": {
+    "title": "Aktualisieren",
+    "description": "Holt frische Kurse, Fundamentals und FX-Raten. Nur sinnvoll wenn der Markt offen ist — sonst dieselben Daten."
+  },
+  "btn:customize": {
+    "title": "Anpassen",
+    "description": "Aktiviert den Konfigurations-Modus für die Reihenfolge und Sichtbarkeit der Dashboard-Widgets. Wird im Browser gespeichert."
+  },
+  "btn:add-position": {
+    "title": "Position hinzufügen",
+    "description": "Neue Position manuell anlegen. Tipp: gleicher Ticker + gleiche Kaufwährung wird automatisch als Misch-Kauf zusammengeführt."
+  },
+  "btn:csv-import": {
+    "title": "CSV-Import",
+    "description": "Broker-Export einlesen — Trade Republic, comdirect, ING, IBKR und weitere Formate werden automatisch erkannt."
+  },
+  "btn:pdf-report": {
+    "title": "PDF-Report",
+    "description": "Druckfertige Zusammenfassung deines Portfolios — gut für Steuerberater oder eigenes Archiv."
+  },
+  "btn:ai-analyze": {
+    "title": "KI-Analyse starten",
+    "description": "Schickt Fundamentals, News, Reddit-Buzz, Wikipedia-Spike, Google-Trends, Finnhub-Analytics und SEC-Filings an das KI-Modell. Kostet ~$0.01–$0.05."
+  },
+  "btn:consensus": {
+    "title": "Konsens starten",
+    "description": "Lässt mehrere KI-Provider parallel analysieren und zeigt Übereinstimmung/Widerspruch. Kostet x-fach so viel wie eine Einzel-Analyse."
+  },
+  "btn:run-tour": {
+    "title": "Tour neu starten",
+    "description": "Spielt die Einführungs-Tour erneut ab — gut wenn du was übersehen hast oder Updates kamen."
+  },
+  "btn:notifications": {
+    "title": "Benachrichtigungen",
+    "description": "Glocke öffnet die letzten 14 Tage an ausgelösten Alerts und neuen KI-Analysen. Roter Counter = ungelesen."
+  },
+  "btn:command-palette": {
+    "title": "Cmd+K-Suche",
+    "description": "Tastatur-Schnellzugriff (Cmd+K oder Ctrl+K): Seite aufrufen, Aktion starten oder Ticker aufrufen."
+  },
+  "col:portfolio:ticker": {
+    "title": "Ticker",
+    "description": "Symbol + Firmenname. Klick öffnet die Detail-Analyse-Seite mit Chart, Fundamentals und KI-Empfehlung."
+  },
+  "col:portfolio:shares": {
+    "title": "Anzahl",
+    "description": "Wieviele Stücke du hältst. Bei Sparplänen können Bruchstücke vorkommen."
+  },
+  "col:portfolio:avg-price": {
+    "title": "Ø Kaufpreis",
+    "description": "Mischkurs aller Käufe (gewichteter Durchschnitt). Die Anzeige in Basis-Währung steht oben, in Kaufwährung darunter."
+  },
+  "col:portfolio:current": {
+    "title": "Aktuell",
+    "description": "Aktueller Kurs in Basis-Währung. Falls die Aktie in einer anderen Währung handelt, steht der Original-Kurs zusätzlich darunter."
+  },
+  "col:portfolio:trend": {
+    "title": "Trend (3M)",
+    "description": "Sparkline der letzten ~3 Monate. Grün = aktueller Wert über Start-Wert, rot = darunter."
+  },
+  "col:portfolio:today": {
+    "title": "Heute",
+    "description": "Tagesveränderung in Prozent. Grün = positiv, rot = negativ."
+  },
+  "col:portfolio:value": {
+    "title": "Wert",
+    "description": "Marktwert dieser Position in Basis-Währung — Anzahl × aktueller Kurs."
+  },
+  "col:portfolio:pnl": {
+    "title": "G/V",
+    "description": "Unrealisierter Gewinn/Verlust in Basis-Währung und Prozent. Realisierte Gewinne stehen im Steuerbericht."
+  },
+  "col:portfolio:weight": {
+    "title": "Gewicht",
+    "description": "Anteil dieser Position am Gesamt-Portfolio in Prozent. Warnsignal ab ~10–15 % Klumpenrisiko."
+  },
+  "col:portfolio:actions": {
+    "title": "Aktionen",
+    "description": "Bearbeiten (Stift) öffnet Details zum Ändern, Löschen (Mülleimer) entfernt die Position nach Bestätigung."
+  },
+  "col:watchlist:price": {
+    "title": "Kurs",
+    "description": "Aktueller Kurs in Basis-Währung, darunter ggf. Kurs in Original-Trading-Währung."
+  },
+  "col:watchlist:high": {
+    "title": "Abstand 52W-Hoch",
+    "description": "Wie weit ist der aktuelle Kurs unter dem 52-Wochen-Hoch in Prozent. 0 % = neues Hoch."
+  },
+  "col:watchlist:low": {
+    "title": "Abstand 52W-Tief",
+    "description": "Wie weit ist der aktuelle Kurs über dem 52-Wochen-Tief in Prozent."
+  },
+  "col:watchlist:conviction": {
+    "title": "Conviction-Score",
+    "description": "KI-Confidence aus deiner letzten gespeicherten Stock-Analyse. Höher = klarere Empfehlungssituation."
+  },
+  "indicator:sma": {
+    "title": "SMA (Simple Moving Average)",
+    "description": "Gleitender Durchschnitt der letzten N Schlusskurse. Glättet Preise. SMA50 vs SMA200 = klassisches Trend-Signal (Golden/Death-Cross)."
+  },
+  "indicator:ema": {
+    "title": "EMA (Exponential Moving Average)",
+    "description": "Exponentiell gewichteter gleitender Durchschnitt — gewichtet jüngere Kurse stärker, reagiert schneller als SMA."
+  },
+  "indicator:rsi": {
+    "title": "RSI (Relative Strength Index)",
+    "description": "Oszillator 0–100. Über 70 = überkauft (potentielles Sell-Signal), unter 30 = überverkauft (potentielles Buy-Signal). Default-Periode 14."
+  },
+  "indicator:macd": {
+    "title": "MACD (Moving Average Convergence Divergence)",
+    "description": "Differenz zweier EMAs (12 und 26). MACD-Linie kreuzt Signal-Linie (EMA9) → Trend-Wechsel-Indikator. Bullish-Cross = Kaufsignal."
+  },
+  "indicator:bollinger": {
+    "title": "Bollinger-Bänder",
+    "description": "SMA20 ± 2 Standardabweichungen. Kurs verlässt das obere Band = Volatilitäts-Spike, oft Mean-Reversion-Setup."
+  },
+  "indicator:atr": {
+    "title": "ATR (Average True Range)",
+    "description": "Durchschnittliche True Range über N Tage — Maß für Volatilität in absoluten Preis-Einheiten. Gut für Stop-Loss-Sizing."
+  },
+  "indicator:obv": {
+    "title": "OBV (On-Balance Volume)",
+    "description": "Kumulatives Volumen, addiert/subtrahiert je nachdem ob der Tag positiv oder negativ schloss. Divergenz zu Kurs deutet auf Trend-Bruch."
+  },
+  "indicator:vwap": {
+    "title": "VWAP (Volume Weighted Average Price)",
+    "description": "Volumen-gewichteter Durchschnittspreis seit Tagesstart. Profis benutzen VWAP als „faires Kaufniveau“-Referenz."
+  },
+  "indicator:stochastic": {
+    "title": "Stochastic Oscillator",
+    "description": "Position des Schlusskurses relativ zu High/Low der letzten N Tage. Über 80 = überkauft, unter 20 = überverkauft."
+  },
+  "badge:buy": {
+    "title": "BUY",
+    "description": "Stark positive KI-Empfehlung — Kursziel über aktuellem Kurs, klare Argumente. Trotzdem eigene Due Diligence."
+  },
+  "badge:accumulate": {
+    "title": "ACCUMULATE",
+    "description": "Aufstocken: schwächere Form von BUY — eher graduell zukaufen als All-in."
+  },
+  "badge:hold": {
+    "title": "HOLD",
+    "description": "Halten: keine starken Argumente für Kauf oder Verkauf. Position bestehen lassen."
+  },
+  "badge:reduce": {
+    "title": "REDUCE",
+    "description": "Reduzieren: schwächere Form von SELL — Position verkleinern, nicht ganz schließen."
+  },
+  "badge:sell": {
+    "title": "SELL",
+    "description": "Verkaufen — KI sieht klare Gegenargumente. Realisierte Gewinne werden in den Steuerbericht übernommen."
+  },
+  "feature:liveticker": {
+    "title": "Liveticker",
+    "description": "Laufende Anzeige globaler Indizes (S&P 500, DAX, Nikkei …). Daten sind 15 Min verzögert (Yahoo)."
+  },
+  "feature:portfolio-health": {
+    "title": "Portfolio-Health-Score",
+    "description": "A–F-Note für dein Gesamtportfolio: Diversifikation, Kostenstruktur, Sektor-Cluster, Volatilität."
+  },
+  "feature:wiki-attention": {
+    "title": "Wikipedia-Aufmerksamkeit",
+    "description": "Tägliche Wikipedia-Pageviews als Aufmerksamkeits-Proxy. Spike-Ratio = Ø letzte 7 Tage geteilt durch 30-Tage-Baseline. >1.5x = aktuell deutlich mehr Interesse."
+  },
+  "feature:google-trends": {
+    "title": "Google-Suchinteresse",
+    "description": "Relatives Such-Volumen (0–100) und stark steigende verwandte Suchanfragen. Spikes deuten auf News, Catalysts oder Themenrotation."
+  },
+  "feature:attention-radar": {
+    "title": "Aufmerksamkeits-Radar",
+    "description": "Wikipedia + Google-Trends-Spikes über deine Watchlist + Portfolio. Tickers mit ungewöhnlich viel Aufmerksamkeit stehen oben."
+  },
+  "feature:news-feed": {
+    "title": "Top-Nachrichten",
+    "description": "Die 20 aktuellsten Yahoo-News über deine Tickers — entdupliziert und nach Aktualität sortiert."
+  },
+  "feature:sentiment-commodities": {
+    "title": "Sentiment & Rohstoffe",
+    "description": "Übersicht über Risk-Indikatoren (VIX, 10Y-Yield, USD-Index, EUR/USD) und Rohstoffe/Crypto (Gold, Silber, WTI, Brent, Erdgas, Bitcoin, Ethereum). 5-Min-Cache, alle Daten aus Yahoo."
+  },
+  "feature:sector-heatmap": {
+    "title": "US-Sektor-Heatmap",
+    "description": "11 SPDR Select Sector ETFs mit Tagesveränderung als Heatmap. Grün = Sektor läuft heute, rot = Sektor verliert. Klick öffnet die Detail-Analyse des ETFs."
+  },
+  "indicatorFallback": {
+    "category": "Kategorie",
+    "overlayYes": "Overlay direkt im Kurs-Chart.",
+    "overlayNo": "Eigenes Sub-Chart."
+  }
+}

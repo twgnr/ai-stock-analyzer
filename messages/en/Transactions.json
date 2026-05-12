@@ -1,0 +1,53 @@
+{
+  "title": "Transactions",
+  "subtitle": "Journal of all buys, sells, dividends. Updates positions automatically.",
+  "refresh": "Refresh",
+  "newTransaction": "New transaction",
+  "type": "Type",
+  "stock": "Stock",
+  "tickerPlaceholder": "Ticker...",
+  "shares": "Shares",
+  "pricePerShare": "Price / share",
+  "amount": "Amount",
+  "date": "Date",
+  "currency": "Currency",
+  "fees": "Fees",
+  "noteOptional": "Note (optional)",
+  "cancel": "Cancel",
+  "save": "Save",
+  "selectTicker": "Please select a ticker",
+  "errorGeneric": "Error",
+  "deleteConfirm": "Delete transaction? Position will be recalculated.",
+  "deleteAria": "Delete transaction {ticker} from {date}",
+  "types": {
+    "buy": "Buy",
+    "sell": "Sell",
+    "dividend": "Dividend",
+    "fee": "Fee"
+  },
+  "realizedYear": "Realized gains {year}",
+  "totalTransactions": "Total transactions",
+  "dividendsReceived": "Dividends received",
+  "salesCount": "Sales",
+  "allTransactions": "All transactions",
+  "noTransactions": "No transactions yet.",
+  "headers": {
+    "date": "Date",
+    "type": "Type",
+    "ticker": "Ticker",
+    "count": "Shares",
+    "priceAmount": "Price/Amount",
+    "fee": "Fee",
+    "total": "Total",
+    "note": "Note"
+  },
+  "realizedGains": "Realized gains",
+  "gainsHeaders": {
+    "date": "Date",
+    "ticker": "Ticker",
+    "count": "Shares",
+    "avgBuy": "Avg buy",
+    "sell": "Sell",
+    "pnl": "P/L (EUR)"
+  }
+}

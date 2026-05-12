@@ -1,0 +1,275 @@
+{
+  "title": "Einstellungen",
+  "loading": "Lade...",
+  "tablistLabel": "Einstellungs-Bereiche",
+  "tabs": {
+    "profile": "Profil",
+    "security": "Sicherheit",
+    "ai": "KI",
+    "notifications": "Benachrichtigungen",
+    "usage": "Nutzung"
+  },
+  "common": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "error": "Fehler"
+  },
+  "emailVerify": {
+    "title": "E-Mail nicht bestätigt",
+    "body": "Deine E-Mail-Adresse ist noch nicht bestätigt. Ohne Bestätigung kann dein Konto bei Passwort-Verlust nicht wiederhergestellt werden.",
+    "resend": "Bestätigungs-Mail erneut senden",
+    "sent": "Neuer Bestätigungslink gesendet (bzw. in Server-Console bei fehlender SMTP-Config)"
+  },
+  "profile": {
+    "title": "Profil",
+    "email": "E-Mail",
+    "name": "Name",
+    "baseCurrency": "Basis-Währung",
+    "save": "Profil speichern",
+    "saved": "Profil gespeichert"
+  },
+  "security": {
+    "twoFactor": {
+      "title": "Zwei-Faktor-Authentifizierung (2FA)",
+      "active": "aktiv",
+      "inactive": "inaktiv",
+      "description": "Zusätzliche Sicherheit via Authenticator-App (Google Authenticator, Authy, 1Password, Microsoft Authenticator). Beim Login wird zusätzlich zum Passwort ein 6-stelliger Code abgefragt.",
+      "enable": "2FA aktivieren",
+      "disable": "2FA deaktivieren",
+      "step1": "Schritt 1:",
+      "scanQr": "QR-Code mit deiner Authenticator-App scannen",
+      "qrAlt": "2FA QR Code",
+      "manualEntry": "Oder manuell eintragen:",
+      "details": "Typ: TOTP · Intervall: 30s · Digits: 6",
+      "step2": "Schritt 2:",
+      "enterCode": "6-stelligen Code aus der App eingeben",
+      "codePlaceholder": "123456",
+      "activate": "Aktivieren",
+      "cancel": "Abbrechen",
+      "enabled": "2FA aktiviert",
+      "disabled": "2FA deaktiviert",
+      "disablePrompt": "Zur Bestätigung: aktuelles Passwort und aktuellen 2FA-Code eingeben.",
+      "passwordPlaceholder": "Passwort",
+      "totpPlaceholder": "2FA-Code",
+      "confirmDisable": "Deaktivieren"
+    },
+    "password": {
+      "title": "Passwort ändern",
+      "current": "Aktuelles Passwort",
+      "new": "Neues Passwort (min. 10 Zeichen, mind. zwei Zeichenarten)",
+      "confirm": "Neues Passwort bestätigen",
+      "save": "Passwort ändern",
+      "saved": "Passwort geändert",
+      "mismatch": "Passwörter stimmen nicht überein",
+      "tooShort": "Passwort muss mindestens 10 Zeichen haben und mindestens zwei Zeichenarten kombinieren."
+    }
+  },
+  "ai": {
+    "kiUsageTitle": "KI-Nutzung",
+    "kiUsageBody": "Du kannst alle KI-Funktionen für dein Konto vorübergehend deaktivieren. Solange die Sperre aktiv ist, werden keine Anfragen mehr an die KI-Provider gestellt — weder über deinen eigenen Key noch über einen gemeinsamen Admin-Key. Deine gespeicherten Keys bleiben erhalten.",
+    "pausedActive": "KI-Nutzung ist pausiert — Häkchen entfernen, um sie wieder zu aktivieren.",
+    "pauseToggle": "KI-Nutzung pausieren (keine Anfragen, keine Kosten)",
+    "paused": "KI-Nutzung pausiert.",
+    "unpaused": "KI-Nutzung wieder freigegeben."
+  },
+  "notifications": {
+    "title": "Benachrichtigungen",
+    "emailLabel": "Benachrichtigungs-E-Mail (optional, sonst Account-Mail)",
+    "alertsLabel": "<b>Preis-Alerts aktiv</b> — wenn ein Alert getriggert wird, Mail-Versand. Check-Intervall alle 15 Min.",
+    "digestLabel": "<b>Täglicher Portfolio-Digest</b> — jeden Morgen 08:00 KI-Analyse per Mail (benötigt KI-API-Key).",
+    "save": "Speichern",
+    "saved": "Benachrichtigungs-Einstellungen gespeichert"
+  },
+  "usage": {
+    "title": "Meine KI-Nutzung",
+    "calls30d": "Calls (30T)",
+    "cost30d": "Kosten (30T)",
+    "callsTotal": "Calls gesamt",
+    "costTotal": "Kosten gesamt",
+    "byOperation": "Nach Operation (30 Tage)",
+    "callsSuffix": "Calls",
+    "billingNote": "Abrechnung läuft über deinen eigenen API-Key beim gewählten Anbieter. Die angegebenen Kosten sind Schätzungen basierend auf öffentlichen Preislisten.",
+    "noData": "Noch keine KI-Nutzungsdaten vorhanden."
+  },
+  "preferences": {
+    "title": "App & Einführung",
+    "appearance": "Erscheinungsbild",
+    "appearanceBody": "„System“ folgt deinen OS-Einstellungen, sonst manuell wählen.",
+    "accent": "Akzentfarbe",
+    "accentBody": "Bestimmt die Hauptfarbe von Buttons, Links und aktiven Symbolen (standardmäßig Blau). Wirkt sofort und in beiden Theme-Varianten. Die Wahl bleibt im Browser gespeichert.",
+    "threeDTitle": "3D-Effekt",
+    "threeDBody": "Karten neigen sich beim Hovern leicht in Richtung der Maus — rein dekorativ, kein Performance-Hit. Bei aktiviertem „Reduzierte Bewegung\" im OS deaktiviert sich der Effekt automatisch.",
+    "installTitle": "App installieren",
+    "installBody": "AI Stock Analyzer lässt sich als eigenständige App auf deinen Home-Screen legen — sie startet dann wie eine native App in einem eigenen Fenster ohne Browser-Oberfläche.",
+    "installed": "App läuft bereits im Standalone-Modus.",
+    "installNow": "Jetzt installieren",
+    "installStarted": "Installation gestartet.",
+    "installCancelled": "Installation abgebrochen.",
+    "noInstall": "Dein Browser bietet aktuell keine Installation an. Auf iOS nutze im Safari-Menü „Zum Home-Bildschirm\". Auf Desktop-Browsern erscheint in der Adressleiste ein Installations-Symbol, sobald die App den Kriterien entspricht.",
+    "tourTitle": "Einführungs-Tour",
+    "tourBody": "Möchtest du den Willkommens-Rundgang noch einmal sehen — mit den wichtigsten Funktionen und Hinweisen zum Einstieg?",
+    "tourRestart": "Tour neu starten",
+    "languageTitle": "Sprache",
+    "languageBody": "Steuert die Sprache der App-Oberfläche und der automatischen E-Mails (Verifikation, Reset, Alerts, Digests).",
+    "languageSaving": "Speichere …",
+    "languageSaved": "Sprache gespeichert.",
+    "languageError": "Sprache konnte nicht gespeichert werden."
+  },
+  "account": {
+    "title": "Datenrechte (DSGVO)",
+    "body": "Du kannst jederzeit alle über dich gespeicherten Daten exportieren oder deinen Account komplett löschen. Ersteres ist eine JSON-Datei gemäß Art. 15/20 DSGVO, zweites führt die unwiderrufliche Löschung nach Art. 17 DSGVO durch.",
+    "exportTitle": "Meine Daten exportieren",
+    "exportBody": "Lädt eine JSON-Datei mit Profil, Portfolio, Transaktionen, Watchlist, Alerts, Dividenden, Snapshots und KI-Nutzungs-Log herunter. Keine Passwort-Hashes, keine API-Keys.",
+    "exportDownload": "Export herunterladen",
+    "deleteTitle": "Account löschen",
+    "deleteBody": "Löscht unwiderruflich alle deine Portfolio-Daten, Watchlists, Alerts, Analysen und dein Profil. Von dir geteilte Inhalte (Watchlists, Magazin-Analysen) werden mitgelöscht. Zur Bestätigung musst du dein aktuelles Passwort eingeben.",
+    "deleteAction": "Account löschen",
+    "deleteWarning": "Letzte Warnung: Dieser Schritt kann <b>nicht</b> rückgängig gemacht werden.",
+    "deletePasswordPlaceholder": "Aktuelles Passwort zur Bestätigung",
+    "deleting": "Lösche...",
+    "deleteFinal": "Endgültig löschen",
+    "passwordRequired": "Passwort erforderlich",
+    "deleted": "Account gelöscht. Du wirst abgemeldet..."
+  },
+  "push": {
+    "title": "Push-Benachrichtigungen",
+    "body": "Sofortige Browser-Benachrichtigung bei ausgelösten Alerts — auch wenn die App geschlossen ist. Pro Gerät und Browser separat zu aktivieren.",
+    "loading": "Status wird geprüft…",
+    "unsupported": "Browser unterstützt Web-Push nicht (z. B. iOS außerhalb der installierten PWA).",
+    "serverDisabled": "Server hat keine VAPID-Schlüssel hinterlegt — der Admin muss die Funktion erst aktivieren.",
+    "denied": "Browser-Berechtigung wurde abgelehnt. Aktiviere sie in den Site-Einstellungen, dann reload diese Seite.",
+    "active": "Aktiv auf diesem Gerät.",
+    "disable": "Deaktivieren",
+    "enable": "Aktivieren",
+    "vapidUnavailable": "VAPID-Public-Key nicht abrufbar.",
+    "permissionDenied": "Erlaubnis für Benachrichtigungen wurde abgelehnt.",
+    "swUnregistered": "Service-Worker nicht registriert.",
+    "subscriptionIncomplete": "Subscription-Antwort unvollständig.",
+    "subscriptionRejected": "Subscription serverseitig abgelehnt.",
+    "subscribed": "Push-Benachrichtigungen aktiv auf diesem Gerät.",
+    "unsubscribed": "Push-Benachrichtigungen deaktiviert.",
+    "enableError": "Fehler beim Aktivieren.",
+    "disableError": "Fehler beim Deaktivieren."
+  },
+  "aiAccess": {
+    "ownKey": "Du nutzt deinen <b>eigenen</b> KI-API-Key. Keine Kostenlimits, keine geteilte Nutzung.",
+    "noAccessTitle": "Keine KI-Funktionen verfügbar",
+    "noAccessBody": "{reason} Um KI-Analysen zu nutzen, trage einen eigenen API-Key in den Einstellungen unten ein.",
+    "reasonNoSharedKey": "Dein Administrator hat keinen gemeinsamen KI-Key hinterlegt.",
+    "reasonSharedDisabled": "Die gemeinsame Nutzung des Admin-Keys ist deaktiviert.",
+    "reasonLimitExceeded": "Dein Kostenlimit für den gemeinsamen Key ist erschöpft.",
+    "sharedActive": "Du nutzt den <b>gemeinsamen KI-Key</b> des Admins.",
+    "sharedBody": "Eigenen Key hinterlegen, um unabhängig und ohne Kostenlimit zu sein.",
+    "today": "Heute",
+    "noLimit": "kein Limit",
+    "remaining": "noch {amount}"
+  },
+  "aiProvider": {
+    "title": "KI-Anbieter",
+    "activeProvider": "Aktiver Anbieter",
+    "switchTo": "Auf \"{label}\" wechseln",
+    "apiKey": "API-Key",
+    "endpoint": "Endpoint (Base-URL)",
+    "model": "Modell",
+    "modelNameManual": "Modell-Name manuell",
+    "save": "Speichern",
+    "saved": "Gespeichert",
+    "activeSaved": "Aktiver Provider: {label}",
+    "keyConfigured": "Key hinterlegt:",
+    "configured": "Konfiguriert:",
+    "defaultModel": "(kein Modell)",
+    "defaultEmpty": "(default)",
+    "geminiHint": "💡 Google AI Studio gibt dir einen kostenlosen Key ohne Kreditkarte. Rate-Limits sind großzügig für persönliche Nutzung.",
+    "groqHint": "💡 <b>Groq</b> bietet kostenlose API-Keys für Llama-Modelle mit sehr hoher Geschwindigkeit. Perfekt zum Einstieg.",
+    "ollamaWarningTitle": "Wichtig:",
+    "ollamaWarning": "Der Anwendungs-Server muss diese URL erreichen können — bei <code>localhost</code> heißt das, Ollama läuft auf derselben Maschine wie die App. Im Docker-Setup muss <code>host.docker.internal</code> verwendet oder Ollama im selben Netzwerk gestartet werden. PDF-Analyse, Tool-Use und JSON-Schema-Output funktionieren je nach Modell unterschiedlich gut — kleine Modelle (< 7B) eignen sich nur eingeschränkt für die strukturierten Analyse-Features.",
+    "ollamaOwnUrl": "— eigene URL eingeben —",
+    "ollamaModelExample": "z. B. qwen2.5:14b",
+    "ollamaTest": "Verbindung testen",
+    "ollamaTestTitle": "Verbindung zum Ollama-Server prüfen und installierte Modelle auflisten",
+    "ollamaSuccess": "Verbindung erfolgreich",
+    "ollamaInstalled": "installiert.",
+    "ollamaNoModels": "Keine Modelle installiert. Lade z. B. mit <code>ollama pull llama3.1:8b</code> ein Modell herunter.",
+    "ollamaFailed": "Verbindung fehlgeschlagen:",
+    "ollamaUnknownError": "Unbekannter Fehler",
+    "ollamaNetworkError": "Netzwerkfehler",
+    "ollamaTip": "💡 Ollama installieren, dann Modell herunterladen mit <code>ollama pull llama3.1:8b</code>. Standard-Port ist 11434. Für Datenschutz-Einsteiger: <code>llama3.2:3b</code> ist klein und schnell; für ernsthafte Analyse-Tasks <code>qwen2.5:14b</code>.",
+    "orderTitle": "Reihenfolge & Verfügbarkeit",
+    "orderBody": "Bei mehreren Keys wird der oberste zuerst probiert. Deaktivierte werden übersprungen, der Key bleibt gespeichert. Gilt für Aktien-Analyse, News-Digest, Briefing usw. Die <b>Magazin-Analyse</b> hat einen eigenen Schalter pro PDF.",
+    "moveUp": "{label} nach oben",
+    "moveDown": "{label} nach unten",
+    "paused": "Pausiert",
+    "primary": "Primär",
+    "enableAria": "Wieder aktivieren",
+    "disableAria": "Pausieren (Key bleibt gespeichert)",
+    "enable": "Aktivieren",
+    "disable": "Pausieren",
+    "savePriority": "Reihenfolge & Status speichern",
+    "savedPriority": "Reihenfolge & Status gespeichert",
+    "allPausedWarning": "Alle Keys sind pausiert. KI-Funktionen nutzen bis zur Reaktivierung keinen User-Key (Fallback nur über Admin-Shared-Key).",
+    "providers": {
+      "claude": {
+        "label": "Claude (Anthropic)",
+        "description": "Top-Qualität für Tool-Use und komplexe Analysen. Kostenpflichtig.",
+        "helpLabel": "API-Key holen"
+      },
+      "gemini": {
+        "label": "Gemini (Google)",
+        "description": "Google AI Studio bietet großzügige kostenlose Rate-Limits für Gemini 2.0 Flash. Ideal zum Einstieg ohne Kreditkarte.",
+        "helpLabel": "Kostenlosen Key holen",
+        "badge": "kostenlos"
+      },
+      "openai-compat": {
+        "label": "OpenAI-kompatibel",
+        "description": "Funktioniert für OpenAI, Groq (gratis mit Llama), OpenRouter, Together AI, Deepseek und alle anderen Anbieter mit OpenAI-kompatibler API. Base-URL einfach anpassen.",
+        "helpLabel": "Groq: kostenlos (Llama)",
+        "badge": "flexibel"
+      },
+      "ollama": {
+        "label": "Ollama (lokal)",
+        "description": "Lokal laufendes LLM auf eigenem Rechner. Volle Datenkontrolle, keine API-Kosten. Setzt Ollama auf einer vom Server erreichbaren URL voraus.",
+        "helpLabel": "Ollama installieren",
+        "badge": "lokal"
+      }
+    },
+    "modelPresets": {
+      "claude": {
+        "sonnet46": "Sonnet 4.6 (empfohlen)",
+        "opus47": "Opus 4.7 (teuer, beste Qualität)",
+        "haiku45": "Haiku 4.5 (günstig, schnell)"
+      },
+      "gemini": {
+        "flash20": "2.0 Flash (empfohlen, kostenlos)",
+        "flash20Exp": "2.0 Flash (experimentell)",
+        "pro15": "1.5 Pro",
+        "flash15": "1.5 Flash"
+      },
+      "openaiCompat": {
+        "gpt4oMini": "GPT-4o mini (OpenAI)",
+        "gpt4o": "GPT-4o (OpenAI)",
+        "llama70b": "Llama 3.3 70B (Groq)",
+        "llama8b": "Llama 3.1 8B (Groq, schnell)",
+        "deepseek": "DeepSeek Chat"
+      },
+      "ollama": {
+        "llama8b": "Llama 3.1 8B (gut für Tool-Use, ~4.7 GB)",
+        "qwen14b": "Qwen 2.5 14B (sehr gute Qualität, ~9 GB)",
+        "qwen7b": "Qwen 2.5 7B (~4.7 GB)",
+        "mistralNemo": "Mistral Nemo 12B (~7 GB)",
+        "llama3b": "Llama 3.2 3B (klein, schnell, ~2 GB)",
+        "llamaVision": "Llama 3.2 Vision 11B (mit Bildern)"
+      }
+    },
+    "ollamaPresets": {
+      "localhost": "localhost:11434 (Standard)",
+      "docker": "host.docker.internal (für Docker)"
+    },
+    "baseUrlPresets": {
+      "default": "OpenAI (default)",
+      "groq": "Groq (kostenlos, Llama)",
+      "openrouter": "OpenRouter",
+      "together": "Together AI",
+      "deepseek": "DeepSeek"
+    }
+  }
+}

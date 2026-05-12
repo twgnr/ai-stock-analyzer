@@ -1,0 +1,188 @@
+{
+  "metaTitle": "Finance glossary — AI Stock Analyzer",
+  "metaDescription": "Concise explanations of all the financial metrics and terms that appear in AI Stock Analyzer.",
+  "backToHelp": "Back to help",
+  "title": "Finance glossary",
+  "intro": "Concise explanations of all the financial terms that appear in AI Stock Analyzer. Linkable via anchor, e.g. <code>/glossary#sharpe-ratio</code>.",
+  "indexLabel": "Alphabetical index",
+  "seeAlso": "See also:",
+  "entries": {
+    "aktie": {
+      "term": "Share (stock)",
+      "description": "Ownership interest in a company. The holder is a part-owner with voting rights (for common shares) and a claim on profit distributions (dividends)."
+    },
+    "beta": {
+      "term": "Beta",
+      "description": "Measure of price movement relative to the overall market. Beta 1 means moves in lock-step with the market, 0.5 half as much, 2.0 twice as much. Estimated by regression on historical returns."
+    },
+    "book-value": {
+      "term": "Book value",
+      "description": "Shareholders' equity on the balance sheet divided by shares outstanding. The basis for the price-to-book ratio."
+    },
+    "cagr": {
+      "term": "CAGR",
+      "short": "Compound Annual Growth Rate",
+      "description": "Average annual growth rate computed from a start and end value over N years. Formula: (end / start)^(1/N) − 1."
+    },
+    "conviction-score": {
+      "term": "Conviction score",
+      "description": "Our own 0–100 score that combines analyst consensus, valuation, 52-week position, AI recommendation and momentum into a single conviction reading. 75+ = strong conviction."
+    },
+    "cvar": {
+      "term": "CVaR (Conditional VaR / Expected Shortfall)",
+      "description": "Expected loss on the days when VaR is exceeded — in other words the average loss in the worst tail. Stricter than VaR."
+    },
+    "dcf": {
+      "term": "DCF",
+      "short": "Discounted Cash Flow",
+      "description": "Valuation method that discounts future free cash flows back to today's value. Key inputs: growth rate, terminal growth, WACC. Small changes in WACC and terminal growth have large effects — always sensitivity-check."
+    },
+    "dividendenrendite": {
+      "term": "Dividend yield",
+      "description": "Dividend per share divided by price. A high yield can be attractive — or a warning sign because the price has fallen sharply and the payout may be at risk."
+    },
+    "drawdown": {
+      "term": "Drawdown",
+      "description": "Decline from the last high to the current price (or the trough before a recovery), expressed as a percentage. Max drawdown is the largest drop observed historically."
+    },
+    "ebit": {
+      "term": "EBIT",
+      "short": "Earnings Before Interest and Taxes",
+      "description": "Profit before interest and taxes. Reflects operating profitability independent of the capital structure."
+    },
+    "ebitda": {
+      "term": "EBITDA",
+      "short": "Earnings Before Interest, Taxes, Depreciation, Amortization",
+      "description": "EBIT plus depreciation and amortisation. An approximation of operating cash flow, but ignores CapEx and working-capital effects — treat with care."
+    },
+    "eps": {
+      "term": "EPS",
+      "short": "Earnings per Share",
+      "description": "Net income divided by shares outstanding. The denominator behind the P/E ratio."
+    },
+    "fcf": {
+      "term": "Free Cash Flow (FCF)",
+      "description": "Operating cash flow minus capital expenditures (CapEx). The cash actually available for dividends, buybacks or debt repayment."
+    },
+    "faktor-exposure": {
+      "term": "Factor exposure",
+      "description": "Decomposition of a portfolio into typical style factors: Value, Growth, Size (large/small cap), Quality, Momentum. Reveals which style currently dominates — even in seemingly diversified portfolios."
+    },
+    "forward-pe": {
+      "term": "Forward P/E",
+      "description": "Current price divided by expected earnings for the next 12 months. Reacts to estimate revisions faster than the trailing P/E."
+    },
+    "gordon-growth": {
+      "term": "Gordon Growth model",
+      "description": "Formula for the terminal value in a DCF: TV = FCF × (1 + g) / (WACC − g). Only makes sense when WACC > g."
+    },
+    "growth": {
+      "term": "Growth stocks",
+      "description": "Companies with above-average revenue or earnings growth, usually at a higher valuation. The opposite of value."
+    },
+    "kgv": {
+      "term": "P/E ratio (price-to-earnings)",
+      "short": "P/E",
+      "description": "Current price divided by annual earnings per share. P/E 15 means you're paying for 15 years of current earnings. A high number can mean expensive — or high growth expectations."
+    },
+    "kbv": {
+      "term": "P/B ratio (price-to-book)",
+      "short": "P/B",
+      "description": "Price divided by book value per share. More informative than P/E for capital-intensive, balance-sheet-heavy companies such as banks and insurers."
+    },
+    "monte-carlo": {
+      "term": "Monte Carlo simulation",
+      "description": "Stochastic method that simulates many future paths (e.g. 1,000 paths over 1 year). Result: a distribution of possible outcomes with percentiles. We use a historical bootstrap (randomly drawing observed daily returns) rather than a normal distribution — more robust to fat tails."
+    },
+    "momentum": {
+      "term": "Momentum",
+      "description": "A factor based on the idea that stocks which have risen over the past 6–12 months tend to keep rising. As a simplification the 52-week position shows how far a price is below or above its 52-week low / high."
+    },
+    "net-debt": {
+      "term": "Net debt",
+      "description": "Total debt minus cash and short-term securities. Important when converting enterprise value to equity value."
+    },
+    "payout-ratio": {
+      "term": "Payout ratio",
+      "description": "Share of net income paid out as a dividend. Below 60% is considered sustainable; above 100% means the dividend is funded out of substance — a warning sign."
+    },
+    "peer-compare": {
+      "term": "Peer comparison",
+      "description": "Side-by-side comparison of several companies in the same sector across fundamental and technical metrics. Helps surface outliers."
+    },
+    "portfolio-health": {
+      "term": "Portfolio health score",
+      "description": "Overall grade A–F derived from five weighted sub-scores: diversification, quality, valuation, momentum and risk. Transparent and decomposable — no black box."
+    },
+    "quality": {
+      "term": "Quality factor",
+      "description": "Style factor that rewards high margins, stable profitability and solid balance sheets. In AI Stock Analyzer it is derived from operating margin, profit margin and debt/equity."
+    },
+    "rebalance": {
+      "term": "Rebalance",
+      "description": "Restoring target weights in a portfolio by buying underweight and selling overweight positions. Imposes discipline against concentration."
+    },
+    "reverse-dcf": {
+      "term": "Reverse DCF",
+      "description": "Inverts the DCF: instead of computing a fair value, you ask which growth rate the market is currently pricing in. An excellent tool for making expectations tangible."
+    },
+    "roe": {
+      "term": "ROE",
+      "short": "Return on Equity",
+      "description": "Net income divided by shareholders' equity. 15%+ is generally considered solid, above 25% very high — but watch out for high leverage, which inflates ROE artificially."
+    },
+    "sharpe-ratio": {
+      "term": "Sharpe ratio",
+      "description": "Excess return over the risk-free rate divided by the standard deviation of returns. Measures risk-adjusted performance — higher is better, 1+ is considered good."
+    },
+    "short-interest": {
+      "term": "Short interest",
+      "description": "Number of shares sold short as a fraction of the free float. A high short interest can trigger a short squeeze on positive news."
+    },
+    "size": {
+      "term": "Size factor",
+      "description": "Style factor for company size. Large caps (> 10 bn) offer stability, small caps (< 2 bn) historically deliver higher returns at higher volatility."
+    },
+    "sortino-ratio": {
+      "term": "Sortino ratio",
+      "description": "Like the Sharpe ratio, but the denominator uses only downside volatility. Penalises only negative moves, not positive ones — arguably more economically meaningful."
+    },
+    "stress-test": {
+      "term": "Stress test",
+      "description": "Applies historical crisis periods (COVID 2020, financial crisis 2008, etc.) to today's portfolio. Shows how much it would have lost if the same crisis were to occur today."
+    },
+    "twr": {
+      "term": "Time-Weighted Return (TWR)",
+      "description": "Return calculation that neutralises the impact of deposits and withdrawals. Used for fair performance comparisons between portfolios with different cash flows."
+    },
+    "value": {
+      "term": "Value stocks",
+      "description": "Companies trading at low valuations (low P/E, P/B), usually with slower growth. Historically value has delivered a modest long-term premium."
+    },
+    "var": {
+      "term": "VaR (Value at Risk)",
+      "description": "A statistical loss that will not be exceeded with a given probability (typically 95% or 99%) over a horizon. Empirically from historical returns or parametrically under a normal assumption — both have limits."
+    },
+    "vix": {
+      "term": "VIX",
+      "description": "The “fear index” — implied 30-day volatility of the S&P 500, derived from option prices. Below 15 = calm, above 30 = panic. Historically contrarian: VIX spikes often mark local price bottoms."
+    },
+    "volatilitaet": {
+      "term": "Volatility",
+      "description": "Standard deviation of returns, usually annualised. High = strong swings. Widely used as a risk measure but incomplete because it treats upside and downside symmetrically."
+    },
+    "wacc": {
+      "term": "WACC",
+      "short": "Weighted Average Cost of Capital",
+      "description": "Weighted average of equity and debt costs. The discount rate in a DCF. Typically 6–12% depending on industry and leverage. Higher WACC → lower fair value."
+    },
+    "yield-curve": {
+      "term": "Yield curve",
+      "description": "Government bond yields plotted by maturity. Normally upward-sloping (longer maturities = higher yield). An inverted curve (short > long) has historically been a recession leading indicator with a 12–18 month lead."
+    },
+    "hhi": {
+      "term": "HHI (Herfindahl index)",
+      "description": "Sum of squared weights in a portfolio. 1.0 = everything in a single position, near 0 = broadly diversified. A good gauge of concentration risk."
+    }
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "default": {
+    "title": "Help mode active",
+    "description": "Hover over an element (menu entry, button, table column, indicator …) to see an explanation. Click the question mark in the top-right to turn the mode off again."
+  },
+  "nav:dashboard": {
+    "title": "Dashboard",
+    "description": "Overview cockpit: portfolio value, P/L, day change, performance chart, health score, AI analysis card. Layout configurable via \"Configure\"."
+  },
+  "nav:portfolio": {
+    "title": "Portfolio",
+    "description": "Manage positions: create, edit, delete. Also CSV import from brokers (Trade Republic, comdirect, IBKR …) and PDF report."
+  },
+  "nav:watchlist": {
+    "title": "Watchlist",
+    "description": "Watchlist — stocks you're interested in but don't yet hold. With trend sparkline, conviction score and 52W position."
+  },
+  "nav:alerts": {
+    "title": "Alerts",
+    "description": "Price and indicator alerts: triggers an email (and web push, if enabled) once the threshold is hit. Checked every 15 min."
+  },
+  "nav:insights": {
+    "title": "Insights",
+    "description": "Curated AI analyses — AI track-record hit rate, strengths/weaknesses diagnosis, catalyst notes."
+  },
+  "nav:chat": {
+    "title": "Chat",
+    "description": "\"Ask the Portfolio\": natural-language chat with your own portfolio context. Streaming responses, consumes AI tokens."
+  },
+  "nav:transactions": {
+    "title": "Transactions",
+    "description": "Full transaction history including individual buys and sells, grouped by ticker."
+  },
+  "nav:rebalance": {
+    "title": "Rebalance",
+    "description": "Define target allocation per bucket; tool computes concrete buys/sells to bring the portfolio back in line."
+  },
+  "nav:risk": {
+    "title": "Risk analysis",
+    "description": "Value-at-Risk, Monte Carlo simulation, historical stress tests (COVID, 2008, rate shock) and factor exposure."
+  },
+  "nav:health": {
+    "title": "Portfolio health",
+    "description": "Grade A–F for your overall portfolio: diversification, cost structure, sector clusters, cash ratio, volatility profile."
+  },
+  "nav:tax-report": {
+    "title": "Tax report",
+    "description": "Realized gains/losses per German capital-gains tax logic (FIFO), dividend overview, withholding-tax breakdown."
+  },
+  "nav:dividends": {
+    "title": "Dividends",
+    "description": "Dividend history of your positions, forecasted payouts, dividend yield, ex-dates."
+  },
+  "nav:dividends-calendar": {
+    "title": "Dividend calendar",
+    "description": "Calendar view of all upcoming ex-dividend and payment dates for your positions + watchlist."
+  },
+  "nav:calendar": {
+    "title": "Earnings calendar",
+    "description": "Upcoming quarterly earnings dates for your positions and watchlist tickers."
+  },
+  "nav:market": {
+    "title": "Market radar",
+    "description": "What's moving right now? Wikipedia/Google attention spikes + top-20 news + AI idea generator for stocks you don't hold."
+  },
+  "nav:macro": {
+    "title": "Macro & sentiment",
+    "description": "Top-level market indicators — Reddit sentiment, Fear & Greed index, market breadth."
+  },
+  "nav:macro-scenario": {
+    "title": "Macro scenarios",
+    "description": "How does your portfolio react to specific macro scenarios (ECB +100bp, Brent $120, AI bubble pops)? AI evaluates each position individually, with FRED data as an anchor."
+  },
+  "nav:screener": {
+    "title": "Screener",
+    "description": "Multi-criteria filter over the stock universe: P/E, dividend yield, market cap, sector, region."
+  },
+  "nav:breakout": {
+    "title": "Breakout",
+    "description": "Tickers currently breaking out of 52W highs/lows or violating Bollinger bands."
+  },
+  "nav:discoveries": {
+    "title": "Discoveries",
+    "description": "AI-driven suggestions based on your portfolio: similar stocks, missing sectors, ETF gaps."
+  },
+  "nav:peer-compare": {
+    "title": "Peer compare",
+    "description": "Two stocks side-by-side: fundamentals, AI analysis of both, consensus recommendation."
+  },
+  "nav:news-digest": {
+    "title": "AI news digest",
+    "description": "Daily/weekly AI summary of your tickers' news — compressed to 5–10 sentences."
+  },
+  "nav:track-record": {
+    "title": "AI track record",
+    "description": "How good were the AI recommendations? Hit rate (BUY → positive return, SELL → negative) and average return per model."
+  },
+  "nav:backtest": {
+    "title": "Backtest",
+    "description": "Test technical strategies (RSI/MACD/SMA cross) against historical data; read Sharpe and max drawdown."
+  },
+  "nav:magazine": {
+    "title": "Magazines",
+    "description": "PDF upload (e.g. Börse Online) → AI extracts recommendations + ratings."
+  },
+  "nav:thesen": {
+    "title": "Investment theses",
+    "description": "Document your own theses on stocks — AI periodically checks whether the assumptions still hold."
+  },
+  "nav:briefing": {
+    "title": "Weekly briefing",
+    "description": "Daily/weekly AI report: what changed, which risks are new, which opportunities?"
+  },
+  "nav:strategien": {
+    "title": "Strategies",
+    "description": "Pre-built investment strategies (dividend aristocrats, magic formula, quality income …) with rationale."
+  },
+  "nav:glossar": {
+    "title": "Glossary",
+    "description": "Short, readable explanations of all financial terms used in the app."
+  },
+  "nav:hilfe": {
+    "title": "Help & FAQ",
+    "description": "Detailed documentation of all features, API-key guides, privacy notes."
+  },
+  "nav:settings": {
+    "title": "Settings",
+    "description": "Profile, security (password, 2FA), AI provider keys, notifications, theme/3D, push."
+  },
+  "nav:help-toggle": {
+    "title": "Help mode",
+    "description": "When active, an info bar appears below the live ticker that explains features as you hover them."
+  },
+  "btn:refresh": {
+    "title": "Refresh",
+    "description": "Fetches fresh prices, fundamentals and FX rates. Only useful while the market is open — otherwise the same data."
+  },
+  "btn:customize": {
+    "title": "Configure",
+    "description": "Activates config mode for the order and visibility of dashboard widgets. Saved in the browser."
+  },
+  "btn:add-position": {
+    "title": "Add position",
+    "description": "Create a new position manually. Tip: same ticker + same purchase currency is automatically merged as a blended buy."
+  },
+  "btn:csv-import": {
+    "title": "CSV import",
+    "description": "Read a broker export — Trade Republic, comdirect, ING, IBKR and other formats are auto-detected."
+  },
+  "btn:pdf-report": {
+    "title": "PDF report",
+    "description": "Print-ready summary of your portfolio — useful for your tax advisor or your own archive."
+  },
+  "btn:ai-analyze": {
+    "title": "Run AI analysis",
+    "description": "Sends fundamentals, news, Reddit buzz, Wikipedia spike, Google trends, Finnhub analytics and SEC filings to the AI model. Costs ~$0.01–$0.05."
+  },
+  "btn:consensus": {
+    "title": "Run consensus",
+    "description": "Runs multiple AI providers in parallel and shows agreement/disagreement. Costs several times what a single analysis costs."
+  },
+  "btn:run-tour": {
+    "title": "Replay tour",
+    "description": "Plays the intro tour again — useful if you missed something or there have been updates."
+  },
+  "btn:notifications": {
+    "title": "Notifications",
+    "description": "The bell opens the last 14 days of triggered alerts and new AI analyses. Red counter = unread."
+  },
+  "btn:command-palette": {
+    "title": "Cmd+K search",
+    "description": "Keyboard quick access (Cmd+K or Ctrl+K): open a page, run an action or jump to a ticker."
+  },
+  "col:portfolio:ticker": {
+    "title": "Ticker",
+    "description": "Symbol + company name. Click opens the detail analysis page with chart, fundamentals and AI recommendation."
+  },
+  "col:portfolio:shares": {
+    "title": "Shares",
+    "description": "How many shares you hold. Savings plans can produce fractional shares."
+  },
+  "col:portfolio:avg-price": {
+    "title": "Avg. cost",
+    "description": "Blended cost across all buys (weighted average). The base-currency figure is shown on top, the purchase-currency figure below."
+  },
+  "col:portfolio:current": {
+    "title": "Current",
+    "description": "Current price in base currency. If the stock trades in a different currency, the original price is shown underneath."
+  },
+  "col:portfolio:trend": {
+    "title": "Trend (3M)",
+    "description": "Sparkline of the last ~3 months. Green = current value above start value, red = below."
+  },
+  "col:portfolio:today": {
+    "title": "Today",
+    "description": "Day change in percent. Green = positive, red = negative."
+  },
+  "col:portfolio:value": {
+    "title": "Value",
+    "description": "Market value of this position in base currency — shares × current price."
+  },
+  "col:portfolio:pnl": {
+    "title": "P/L",
+    "description": "Unrealized gain/loss in base currency and percent. Realized gains are in the tax report."
+  },
+  "col:portfolio:weight": {
+    "title": "Weight",
+    "description": "Share of this position in the total portfolio in percent. Warning sign at ~10–15 % concentration risk."
+  },
+  "col:portfolio:actions": {
+    "title": "Actions",
+    "description": "Edit (pencil) opens details for editing, Delete (trash) removes the position after confirmation."
+  },
+  "col:watchlist:price": {
+    "title": "Price",
+    "description": "Current price in base currency, with original trading-currency price underneath if applicable."
+  },
+  "col:watchlist:high": {
+    "title": "Distance to 52W high",
+    "description": "How far the current price is below the 52-week high in percent. 0 % = new high."
+  },
+  "col:watchlist:low": {
+    "title": "Distance to 52W low",
+    "description": "How far the current price is above the 52-week low in percent."
+  },
+  "col:watchlist:conviction": {
+    "title": "Conviction score",
+    "description": "AI confidence from your last saved stock analysis. Higher = clearer recommendation."
+  },
+  "indicator:sma": {
+    "title": "SMA (Simple Moving Average)",
+    "description": "Average of the last N closing prices. Smooths prices. SMA50 vs SMA200 = classic trend signal (Golden/Death Cross)."
+  },
+  "indicator:ema": {
+    "title": "EMA (Exponential Moving Average)",
+    "description": "Exponentially weighted moving average — weights recent prices more heavily, reacts faster than SMA."
+  },
+  "indicator:rsi": {
+    "title": "RSI (Relative Strength Index)",
+    "description": "Oscillator 0–100. Above 70 = overbought (potential sell signal), below 30 = oversold (potential buy signal). Default period 14."
+  },
+  "indicator:macd": {
+    "title": "MACD (Moving Average Convergence Divergence)",
+    "description": "Difference between two EMAs (12 and 26). MACD line crossing the signal line (EMA9) → trend-change indicator. Bullish cross = buy signal."
+  },
+  "indicator:bollinger": {
+    "title": "Bollinger Bands",
+    "description": "SMA20 ± 2 standard deviations. Price leaving the upper band = volatility spike, often a mean-reversion setup."
+  },
+  "indicator:atr": {
+    "title": "ATR (Average True Range)",
+    "description": "Average true range over N days — a measure of volatility in absolute price units. Useful for stop-loss sizing."
+  },
+  "indicator:obv": {
+    "title": "OBV (On-Balance Volume)",
+    "description": "Cumulative volume, added/subtracted depending on whether the day closed up or down. Divergence from price signals trend breaks."
+  },
+  "indicator:vwap": {
+    "title": "VWAP (Volume Weighted Average Price)",
+    "description": "Volume-weighted average price since the start of the day. Pros use VWAP as a \"fair entry\" reference."
+  },
+  "indicator:stochastic": {
+    "title": "Stochastic Oscillator",
+    "description": "Position of the close relative to high/low of the last N days. Above 80 = overbought, below 20 = oversold."
+  },
+  "badge:buy": {
+    "title": "BUY",
+    "description": "Strongly positive AI recommendation — price target above current price, clear arguments. Still do your own due diligence."
+  },
+  "badge:accumulate": {
+    "title": "ACCUMULATE",
+    "description": "Accumulate: weaker form of BUY — buy in gradually rather than all-in."
+  },
+  "badge:hold": {
+    "title": "HOLD",
+    "description": "Hold: no strong arguments for buying or selling. Leave the position as-is."
+  },
+  "badge:reduce": {
+    "title": "REDUCE",
+    "description": "Reduce: weaker form of SELL — trim the position rather than closing it."
+  },
+  "badge:sell": {
+    "title": "SELL",
+    "description": "Sell — the AI sees clear counter-arguments. Realized gains roll into the tax report."
+  },
+  "feature:liveticker": {
+    "title": "Live ticker",
+    "description": "Scrolling display of global indices (S&P 500, DAX, Nikkei …). Data is delayed 15 min (Yahoo)."
+  },
+  "feature:portfolio-health": {
+    "title": "Portfolio health score",
+    "description": "A–F grade for your overall portfolio: diversification, cost structure, sector cluster, volatility."
+  },
+  "feature:wiki-attention": {
+    "title": "Wikipedia attention",
+    "description": "Daily Wikipedia pageviews as an attention proxy. Spike ratio = avg. last 7 days divided by the 30-day baseline. >1.5x = significantly more interest right now."
+  },
+  "feature:google-trends": {
+    "title": "Google search interest",
+    "description": "Relative search volume (0–100) and rapidly rising related queries. Spikes indicate news, catalysts or topic rotations."
+  },
+  "feature:attention-radar": {
+    "title": "Attention radar",
+    "description": "Wikipedia + Google Trends spikes across your watchlist + portfolio. Tickers with unusual attention are listed at the top."
+  },
+  "feature:news-feed": {
+    "title": "Top news",
+    "description": "The 20 most recent Yahoo news for your tickers — deduplicated and sorted by recency."
+  },
+  "feature:sentiment-commodities": {
+    "title": "Sentiment & commodities",
+    "description": "Overview of risk indicators (VIX, 10Y yield, USD index, EUR/USD) and commodities/crypto (gold, silver, WTI, Brent, natural gas, Bitcoin, Ethereum). 5-min cache, all data from Yahoo."
+  },
+  "feature:sector-heatmap": {
+    "title": "US sector heatmap",
+    "description": "11 SPDR Select Sector ETFs with daily change as a heatmap. Green = sector up today, red = sector down. Click opens the ETF's detail analysis."
+  },
+  "indicatorFallback": {
+    "category": "Category",
+    "overlayYes": "Overlay directly on the price chart.",
+    "overlayNo": "Own sub-chart."
+  }
+}

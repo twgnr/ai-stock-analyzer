@@ -1,0 +1,19 @@
+{
+  "payoutFrequency": {
+    "labels": {
+      "monthly": "monatlich",
+      "quarterly": "quartalsweise",
+      "semiannual": "halbjährlich",
+      "annual": "jährlich",
+      "irregular": "unregelmäßig",
+      "none": "keine"
+    },
+    "perYear": "{count}×/J",
+    "title": "{count, plural, =0 {Keine Zahlungen} =1 {1 Zahlung} other {# Zahlungen}} in den letzten 12 Monaten",
+    "ariaLabel": "Dividendenzahlung {label}, {count, plural, =0 {keine Zahlungen} =1 {1 Zahlung} other {# Zahlungen}} in den letzten 12 Monaten"
+  },
+  "estimatedCost": {
+    "summary": "Geschätzt {cost} pro Lauf.",
+    "summaryMulti": "Geschätzt {cost} pro Lauf über {count} Provider."
+  }
+}

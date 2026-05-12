@@ -1,0 +1,475 @@
+{
+  "common": {
+    "loading": "Lädt…",
+    "error": "Fehler",
+    "noData": "Keine Daten",
+    "analyzing": "Analysiere…",
+    "refresh": "Aktualisieren"
+  },
+  "bullBear": {
+    "title": "Bull / Base / Bear + Advocatus Diaboli",
+    "intro": "Die KI durchdenkt drei Szenarien mit Wahrscheinlichkeiten und spielt anschließend „Advocatus Diaboli\" — sie argumentiert bewusst gegen die vorherrschende Meinung. Keine Anlageberatung.",
+    "generate": "Szenarien generieren",
+    "regenerate": "Neu generieren",
+    "analyzing": "Analysiere…",
+    "expectedReturn": "Erwarteter Return (probabilitätsgewichtet):",
+    "advocatusDiaboli": "Advocatus Diaboli",
+    "counterArguments": "Gegenargumente",
+    "warningSignals": "Warnsignale zum Beobachten",
+    "priceTarget": "Kursziel",
+    "return": "Return",
+    "probability": "P = {value}"
+  },
+  "dcf": {
+    "title": "DCF-Fair-Value",
+    "cardTitle": "DCF-Fair-Value-Rechner",
+    "cardSubtitle": "Diskontierter Cashflow mit Bull/Base/Bear-Szenarien + Reverse-DCF (welches Wachstum ist im Kurs eingepreist?)",
+    "start": "DCF starten",
+    "close": "Schließen",
+    "recompute": "Neu berechnen",
+    "errorFallback": "DCF-Fehler",
+    "fields": {
+      "initialFcf": "Start-FCF (jährlich)",
+      "growthPhase1": "Wachstum Phase 1",
+      "terminalGrowth": "Terminal Growth",
+      "wacc": "WACC",
+      "years": "Prognosejahre",
+      "autoPlaceholder": "auto"
+    },
+    "scenarioGrowth": "Wachstum {value}",
+    "vsPrice": "vs. Kurs",
+    "reverse": {
+      "title": "Reverse-DCF",
+      "subtitle": "— welches Wachstum rechtfertigt den aktuellen Kurs?",
+      "perYearFor": "{value} p.a. für {years} Jahre"
+    },
+    "stats": {
+      "startFcf": "Start-FCF:",
+      "shares": "Shares:",
+      "sharesUnit": "Mio",
+      "netDebt": "Net-Debt:"
+    },
+    "footer": "Zwei-Phasen-DCF mit Gordon-Growth Terminal Value. WACC als Diskontsatz. Alle Scenarien verwenden den gleichen Terminal-Growth und WACC — Bear/Bull unterscheiden sich nur im Phase-1-Wachstum (±4% vs. Base). Keine Anlageberatung."
+  },
+  "fundamentals": {
+    "title": "Fundamental-Tiefe",
+    "reload": "Neu laden",
+    "reloadAria": "Daten neu laden",
+    "tabs": {
+      "earnings": "Earnings-Surprise",
+      "ratings": "Analysten-Verlauf",
+      "owners": "Eigentümer",
+      "financials": "Mehrjahres-Financials"
+    },
+    "earnings": {
+      "nextReport": "Nächste Zahlen:",
+      "beatRate": "Beat-Rate (letzte {count} Quartale)",
+      "empty": "Keine Earnings-Surprise-Daten verfügbar.",
+      "columns": {
+        "quarter": "Quartal",
+        "estimate": "EPS Schätzung",
+        "actual": "EPS Ist",
+        "surprise": "Überraschung"
+      }
+    },
+    "ratings": {
+      "empty": "Keine Rating-Änderungen gefunden.",
+      "actions": {
+        "up": "Upgrade",
+        "main": "Bestätigt",
+        "down": "Downgrade",
+        "init": "Neu aufgenommen",
+        "reit": "Wiederholt"
+      },
+      "columns": {
+        "date": "Datum",
+        "analyst": "Analyst",
+        "action": "Aktion",
+        "rating": "Rating"
+      }
+    },
+    "owners": {
+      "institutional": "Institutionell",
+      "insider": "Insider",
+      "topInstitutional": "Top-Institutionelle",
+      "topFunds": "Top-Fonds",
+      "empty": "Keine Eigentümer-Daten verfügbar."
+    },
+    "financials": {
+      "empty": "Keine Mehrjahres-Financials verfügbar.",
+      "metric": "Metrik",
+      "revenue": "Umsatz",
+      "operatingIncome": "Operatives Ergebnis",
+      "netIncome": "Nettoergebnis",
+      "operatingCf": "Operativer CF",
+      "freeCf": "Free Cashflow",
+      "totalAssets": "Bilanzsumme",
+      "longTermDebt": "Langfristige Schulden",
+      "currencyNote": "Währung: {currency}. Yahoo Finance liefert bis zu 4 Jahre historische Jahresabschlüsse."
+    }
+  },
+  "indicators": {
+    "title": "KI-Bewertung der Indikatoren",
+    "activeCountOne": "{count} Indikator aktiv",
+    "activeCountOther": "{count} Indikatoren aktiv",
+    "evaluate": "Indikatoren bewerten",
+    "evaluating": "Analysiert…",
+    "needIndicators": "Aktiviere oben im Chart mindestens einen Indikator (RSI, MACD, Bollinger Bands etc.), dann kann die KI ihn bewerten.",
+    "tooltipNoIndicators": "Erst Indikatoren im Chart aktivieren",
+    "overallSignal": "Gesamt-Signal: {signal}",
+    "confidence": "Konfidenz {pct}%",
+    "indicatorsEvaluated": "· {count} Indikatoren bewertet",
+    "perIndicator": "Einzelbewertung",
+    "valuePrefix": "Wert: {value}",
+    "divergences": "Divergenzen",
+    "observations": "Beobachtungen",
+    "risks": "Risiken",
+    "nextSteps": "Nächste Schritte",
+    "disclaimer": "⚠️ Technische Analyse ist kein Kaufsignal. Kombiniere mit Fundamentals und eigener Einschätzung.",
+    "signals": {
+      "BULLISH": "Bullish",
+      "BEARISH": "Bearish",
+      "NEUTRAL": "Neutral"
+    },
+    "selector": {
+      "title": "Indikatoren",
+      "tooltip": "Indikatoren wählen",
+      "activeLabel": "{count} aktiv",
+      "clearAll": "Alle aus",
+      "categories": {
+        "Gleitender Durchschnitt": "Gleitender Durchschnitt",
+        "Trendfolge": "Trendfolge",
+        "Oscillator": "Oscillator"
+      }
+    },
+    "vision": {
+      "title": "Vision-basierte Mustererkennung",
+      "intro": "Die KI analysiert ein Chart-Bild visuell und erkennt klassische Muster (Cup-and-Handle, Flagge, Doppelboden etc.), markiert Support/Resistance und gibt ein konkretes Trade-Setup. Entweder vom aktuellen Chart oder hochgeladen (z.B. TradingView-Screenshot).",
+      "analyzeCurrent": "Chart oben analysieren",
+      "analyzingCurrent": "Analysiere Chart…",
+      "uploadImage": "Chart-Bild hochladen",
+      "analyzingUpload": "Analysiere Upload…",
+      "tooltipCurrent": "Screenshot vom Chart oben erzeugen und analysieren",
+      "errorNotReady": "Chart nicht bereit — bitte kurz warten und erneut versuchen.",
+      "errorFileType": "Bitte Bild-Datei auswählen (PNG, JPG, WebP)",
+      "showImage": "Analysiertes Bild anzeigen",
+      "imageAlt": "Analysiertes Chart",
+      "trendLabel": "· Trend: {trend}",
+      "trends": {
+        "uptrend": "Aufwärtstrend",
+        "downtrend": "Abwärtstrend",
+        "sideways": "Seitwärts"
+      },
+      "patterns": "Erkannte Muster",
+      "patternConfidence": "Konfidenz: {value}",
+      "support": "Support-Levels",
+      "resistance": "Resistance-Levels",
+      "indicatorObservations": "Indikator-Signale",
+      "observations": "Beobachtungen",
+      "risks": "Risiken",
+      "tradeSetup": "Trade-Setup",
+      "disclaimer": "⚠️ Visuelle Mustererkennung durch KI ist kein Kaufsignal. Muster können subjektiv interpretiert werden. Eigene Einschätzung und Risikomanagement bleiben wichtig."
+    }
+  },
+  "consensus": {
+    "title": "Multi-Modell-Konsens",
+    "intro": "Lässt dieselbe Aktie durch alle hinterlegten KI-Anbieter analysieren und zeigt wo sie übereinstimmen oder abweichen. Nur verfügbar wenn ≥ 2 Keys in den Einstellungen stehen.",
+    "start": "Konsens starten",
+    "starting": "Alle Modelle analysieren…",
+    "costHint": "Schätzung basiert auf typischer Prompt-Größe für diese Aktie.",
+    "labels": {
+      "Einstimmig": "Einstimmig",
+      "Mehrheit": "Mehrheit",
+      "Gespalten": "Gespalten"
+    },
+    "agreement": "Übereinstimmung: {pct}%",
+    "avgConfidence": "Ø-Konfidenz: {pct}%",
+    "successCount": "{ok}/{total} erfolgreich",
+    "distribution": "Verteilung:",
+    "confidence": "Konfidenz: {pct}%"
+  },
+  "earningsReaction": {
+    "title": "Earnings-Reaction-Analyse",
+    "intro": "Analysiert das jüngste Earnings-Event: Beat/Miss auf EPS und Umsatz, Guidance aus News, Marktreaktion (5-Tage- und 30-Tage-Kurs). KI bewertet ob die Bewegung über- oder unterreagiert ist und gibt eine Empfehlung für deine Position.",
+    "run": "Earnings-Reaction prüfen",
+    "running": "Analysiere…",
+    "beatMiss": {
+      "beat": "Beat",
+      "miss": "Miss",
+      "mixed": "Gemischt",
+      "inline": "Im Rahmen",
+      "unknown": "Unklar"
+    },
+    "confidence": "Konfidenz: {pct}%",
+    "priceChange5d": "5-Tage-Kurs",
+    "priceChange30d": "30-Tage-Kurs",
+    "lastReport": "Letzter Bericht",
+    "nextReport": "Nächster Bericht",
+    "guidance": "Guidance-Interpretation",
+    "marketReaction": "Marktreaktion",
+    "reasoning": "Begründung",
+    "epsHistory": "EPS-Historie",
+    "opportunities": "Chancen",
+    "risks": "Risiken",
+    "columns": {
+      "quarter": "Quartal",
+      "actual": "Actual",
+      "estimate": "Estimate",
+      "surprise": "Surprise"
+    }
+  },
+  "insider": {
+    "title": "Insider-Trades",
+    "subtitle": "Form-4-Transaktionen (letzte ~6 Monate)",
+    "loadError": "Ladefehler",
+    "loading": "Lade Insider-Daten…",
+    "empty": "Keine Insider-Transaktionen für diesen Ticker verfügbar.",
+    "buys": "Käufe",
+    "sells": "Verkäufe",
+    "buyLabel": "Buy",
+    "sellLabel": "Sell",
+    "columns": {
+      "date": "Datum",
+      "name": "Name",
+      "action": "Aktion",
+      "shares": "Aktien",
+      "value": "Wert"
+    },
+    "source": "Quelle: Yahoo Finance / SEC Form 4. Daten verzögert, oft nur für US-Ticker verfügbar."
+  },
+  "proScores": {
+    "title": "Pro-Scores & Markt-Signale",
+    "subtitle": "Fundamental-Qualität, Insolvenz-Risiko, Bewertung, Short-Interest, Analysten-Revisions",
+    "loading": "Lade Pro-Scores…",
+    "piotroski": {
+      "title": "Piotroski F-Score",
+      "outOf": "/ {max} — {label}",
+      "missing": "Nicht verfügbar — fehlende Bilanzdaten."
+    },
+    "altman": {
+      "title": "Altman Z-Score",
+      "zones": {
+        "safe": "Safe Zone",
+        "grey": "Grey Zone",
+        "distress": "Distress Zone"
+      }
+    },
+    "beneish": {
+      "title": "Beneish M-Score",
+      "threshold": "Schwellwert: −1,78"
+    },
+    "graham": {
+      "title": "Graham Number"
+    },
+    "shareholderYield": {
+      "title": "Shareholder Yield",
+      "div": "Div",
+      "buyback": "Buyback",
+      "debtPaydown": "Debt-Paydown"
+    },
+    "dividendGrowth": {
+      "title": "Dividend-Growth",
+      "cagr3y": "3J CAGR",
+      "cagr5y": "5J CAGR",
+      "cagr10y": "10J CAGR",
+      "streakSuffixOne": "Jahr in Folge steigende Dividende",
+      "streakSuffixOther": "Jahre in Folge steigende Dividende"
+    },
+    "shortInterest": {
+      "title": "Short-Interest",
+      "asOf": "(Stand {date})",
+      "pctFloat": "% Float short",
+      "daysToCover": "Days to Cover",
+      "mom": "MoM:"
+    },
+    "epsRevisions": {
+      "title": "Analysten-EPS-Revisions",
+      "columns": {
+        "period": "Zeitraum",
+        "avgEstimate": "Ø EPS-Schätzung",
+        "analysts": "Analysten",
+        "rev7d": "Revisions 7T",
+        "rev30d": "Revisions 30T"
+      }
+    },
+    "disclaimer": "Alle Scores aus öffentlichen Yahoo-Finance-Daten abgeleitet. Piotroski / Altman / Beneish / Graham sind akademische Modelle, die für Finanzwerte (Banken, Versicherungen, REITs) teilweise nicht aussagekräftig sind."
+  },
+  "thesis": {
+    "titleAll": "Investment-Thesen",
+    "titleFor": "Investment-Thesen für {ticker}",
+    "newThesis": "Neue These",
+    "intro": "Halte deine Kauf-These schriftlich fest. Per KI-Check lässt du die These gegen aktuelle Fakten prüfen — entweder sofort oder zu einem späteren Zeitpunkt. So siehst du, ob deine Kauf-Argumente noch tragen.",
+    "fields": {
+      "tickerPlaceholder": "Ticker (z.B. AAPL)",
+      "thesisPlaceholder": "Deine These: Warum kaufst du? Welche Annahme trägt?",
+      "exitPlaceholder": "Exit-Kriterien (optional): Wann verkaufst du? Stop-Loss, Kursziel, Zeithorizont",
+      "horizonPlaceholder": "Halteraum in Monaten"
+    },
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "saved": "Gespeichert.",
+    "loading": "Lade…",
+    "emptyAll": "Noch keine These.",
+    "emptyFor": "Noch keine These für {ticker}.",
+    "deleteConfirm": "These endgültig löschen?",
+    "closePrompt": "Wie geschlossen? (z.B. Verkauft, These widerlegt, Ziel erreicht)",
+    "aiCheckDone": "KI-Check abgeschlossen: {status}",
+    "aiCheck": "KI-Check",
+    "aiCheckTooltip": "KI prüft These gegen aktuelle Fakten",
+    "closeBtn": "Schließen",
+    "closeTitle": "Als geschlossen markieren",
+    "deleteAria": "These für {ticker} löschen",
+    "createdAt": "Angelegt: {date}",
+    "horizonMonths": " · Horizont: {months} Monate",
+    "entryPrice": " · Einstand: {price} {currency}",
+    "thesisLabel": "These:",
+    "exitLabel": "Exit:",
+    "aiCheckedAt": "KI-Check vom {date}",
+    "contradicts": "Widerspricht:",
+    "recommended": "Empfohlen:",
+    "status": {
+      "ACTIVE": "Aktiv (noch nicht geprüft)",
+      "ON_TRACK": "These trägt",
+      "AT_RISK": "Gefährdet",
+      "BROKEN": "These gebrochen",
+      "CLOSED": "Geschlossen"
+    }
+  },
+  "positionSizing": {
+    "title": "Position-Sizing",
+    "intro": "Die KI berechnet eine Positionsgröße unter Berücksichtigung deines Portfolios, deiner bestehenden Position in {ticker} und des Risikoprofils.",
+    "errorFallback": "Sizing fehlgeschlagen",
+    "compute": "Sizing berechnen",
+    "computing": "Berechne…",
+    "profiles": {
+      "conservative": "Konservativ",
+      "moderate": "Moderat",
+      "aggressive": "Aggressiv"
+    },
+    "recommendation": "Empfehlung",
+    "shares": "Anzahl Aktien",
+    "suggestedWeight": "Vorgeschlagenes Gewicht",
+    "maxWeight": "Max-Gewicht",
+    "basis": "Basis: Portfolio {value}",
+    "existingHolding": " · Du hast bereits {pct}% in {ticker}",
+    "riskProfile": " · Risikoprofil {profile}",
+    "confidence": " · Konfidenz {pct}%",
+    "reasoning": "Begründung",
+    "warnings": "Warnungen",
+    "alternatives": "Alternativen",
+    "disclaimer": "⚠️ Keine Anlageberatung. Eigene Due Diligence erforderlich."
+  },
+  "notes": {
+    "title": "Meine Notizen",
+    "intro": "Persönliche Notizen zu <b>{ticker}</b> — z. B. Investment-These, Beobachtungen, Earnings-Erwartungen. Nur für dich sichtbar. Gepinnte Notizen erscheinen oben.",
+    "newAria": "Neue Notiz für {ticker}",
+    "placeholder": "Notiz zu {ticker} schreiben…",
+    "pin": "Anpinnen",
+    "add": "Notiz hinzufügen",
+    "loading": "Lade…",
+    "empty": "Noch keine Notizen — die erste oben anlegen.",
+    "deleteConfirm": "Notiz wirklich löschen?",
+    "editAria": "Notiz bearbeiten",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "unpin": "Pin entfernen",
+    "pinAction": "Anpinnen",
+    "edit": "Bearbeiten",
+    "deleteTitle": "Löschen",
+    "deleteAria": "Notiz löschen",
+    "pinned": "gepinnt",
+    "editedSuffix": " · bearbeitet {date}"
+  },
+  "relationships": {
+    "title": "Geschäftsgeflecht",
+    "cached": "gecached",
+    "cachedAt": " · aktualisiert {date}",
+    "rerun": "Neu analysieren",
+    "run": "Geflecht analysieren",
+    "running": "KI analysiert…",
+    "checkingCache": "Prüfe Cache…",
+    "intro": "Zeigt, wer {ticker} ({name}) als Kunde, Lieferant, Partner oder Konkurrent hat — basierend auf öffentlich dokumentierten Geschäftsbeziehungen. <strong>Erstmalige Analyse ~30s</strong> (dann 30 Tage im Cache).",
+    "categories": {
+      "customer": "Kunden",
+      "supplier": "Lieferanten",
+      "partner": "Partner",
+      "competitor": "Konkurrenten",
+      "investor": "Investoren",
+      "subsidiary": "Tochterfirmen"
+    },
+    "categoryCount": "{label} ({count})",
+    "strengthAria": "Bedeutung: {strength}",
+    "disclaimer": "⚠️ Die KI generiert das Geflecht aus Trainingswissen. Bekannte Beziehungen sind meist akkurat, sehr neue oder kleine Verbindungen können fehlen. Bei Zweifeln — Quartalsbericht des Unternehmens prüfen."
+  },
+  "wikipedia": {
+    "title": "Wikipedia-Aufmerksamkeit",
+    "loading": "Lade Pageviews…",
+    "empty": "Keine Daten — vermutlich kein passender Wikipedia-Artikel zu „{name}\". Falls der Admin keinen User-Agent für die Wikipedia-API hinterlegt hat, ist die Quelle serverseitig deaktiviert.",
+    "intro": "Tägliche Aufrufe des Artikels <link>„{article}\"</link> — als Aufmerksamkeits-Proxy.",
+    "avg7": "7T Ø/Tag",
+    "baseline30": "30T Baseline",
+    "spike": "Spike",
+    "history": "Verlauf {count} Tage",
+    "totalViews": "Σ {count} Views in 7T",
+    "spikes": {
+      "strong": "Starker Spike",
+      "elevated": "Erhöht",
+      "declining": "Abnehmend",
+      "normal": "Normal"
+    }
+  },
+  "googleTrends": {
+    "title": "Google-Suchinteresse",
+    "loading": "Lade Trends…",
+    "empty": "Keine Trend-Daten verfügbar — Google liefert für „{keyword}\" zu wenige Datenpunkte oder hat den Request abgelehnt (zeitweiliges Rate-Limit).",
+    "intro": "Relatives Suchinteresse für „{keyword}\" ({geo}) — 0–100 normiert auf das Maximum im Beobachtungsfenster.",
+    "avg7": "7T Ø",
+    "baseline30": "30T Baseline",
+    "spike": "Spike",
+    "history": "Verlauf {count} Datenpunkte",
+    "rising": "Stark steigende verwandte Suchen",
+    "spikes": {
+      "strong": "Starker Spike",
+      "elevated": "Erhöht",
+      "declining": "Abnehmend",
+      "normal": "Normal"
+    }
+  },
+  "reddit": {
+    "title": "Reddit-Buzz",
+    "summary": "{posts} Posts · {upvotes} Upvotes · {comments} Kommentare",
+    "timeframes": {
+      "day": "24h",
+      "week": "7T",
+      "month": "30T"
+    },
+    "networkError": "Netzwerkfehler beim Reddit-Abruf.",
+    "empty": "Keine nennenswerten Erwähnungen im Zeitraum.",
+    "positive": "{pct}% positiv",
+    "footer": "Hinweis: Reddit-Sentiment ist rauschig. Stimmung, nicht Fakten."
+  },
+  "stocktwits": {
+    "title": "Stocktwits",
+    "postsCount": "{count} Posts",
+    "bullishCount": "{count} bullish",
+    "bearishCount": "{count} bearish",
+    "viewOnSite": "Auf Stocktwits ansehen",
+    "intro": "Trader-Sentiment der letzten Beiträge auf Stocktwits — die Plattform ist auf Aktien-Diskussionen spezialisiert, viele Posts sind explizit mit „Bullish\" oder „Bearish\" getaggt.",
+    "loading": "Lade Stocktwits-Stream…",
+    "notAvailable": "Symbol auf Stocktwits nicht verfügbar (deutsche Ticker werden dort häufig nicht geführt).",
+    "networkError": "Netzwerkfehler",
+    "bullishPct": "Bullish {pct}%",
+    "bearishPct": "Bearish {pct}%",
+    "sentimentAria": "Sentiment: {pct}% bullish",
+    "openOriginal": "Original-Beitrag öffnen",
+    "bullishTag": "Bullish",
+    "bearishTag": "Bearish"
+  },
+  "followUp": {
+    "label": "Vertiefen",
+    "header": "Vertiefung",
+    "close": "Vertiefung schließen",
+    "generating": "Antwort wird erzeugt…",
+    "errorFallback": "Fehler"
+  }
+}

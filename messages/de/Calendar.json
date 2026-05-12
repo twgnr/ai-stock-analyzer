@@ -1,0 +1,22 @@
+{
+  "title": "Earnings-Kalender",
+  "subtitle": "Nächste Quartalszahlen deiner Portfolio- und Watchlist-Aktien.",
+  "refresh": "Aktualisieren",
+  "filter": {
+    "all": "Alle",
+    "portfolio": "Portfolio",
+    "watchlist": "Watchlist"
+  },
+  "errorGeneric": "Fehler",
+  "loading": "Lade Earnings-Daten von Yahoo...",
+  "empty": "Keine anstehenden Earnings gefunden.",
+  "thDate": "Datum",
+  "thTicker": "Ticker",
+  "thEpsEstimate": "EPS-Schätzung",
+  "thStatus": "Status",
+  "inDays": "in {days} Tagen",
+  "today": "heute",
+  "daysAgo": "vor {days} Tagen",
+  "tagPortfolio": "Portfolio",
+  "tagWatchlist": "Watchlist"
+}

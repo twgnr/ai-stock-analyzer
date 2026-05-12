@@ -1,0 +1,37 @@
+{
+  "title": "Indikator-Backtest",
+  "description": "Simuliert eine Handelsstrategie auf historischen Kursen eines Tickers. Kauf-/Verkaufssignale werden aus Indikator-Crossings abgeleitet, die Positionsgröße ist all-in / all-out. Kosten (Spread, Kommission, Slippage, Steuern) werden <strong>nicht</strong> berücksichtigt. Ergebnisse sind rein historisch — keine Aussage über Zukunftsperformance.",
+  "form": {
+    "ticker": "Ticker",
+    "tickerPlaceholder": "z.B. AAPL, SAP.DE",
+    "strategy": "Strategie",
+    "range": "Zeitraum",
+    "initialCapital": "Startkapital (EUR)"
+  },
+  "start": "Backtest starten",
+  "errorRun": "Backtest fehlgeschlagen",
+  "errorGeneric": "Fehler",
+  "stats": {
+    "endCapital": "Endkapital",
+    "strategyReturn": "Strategie-Return",
+    "buyHold": "Buy & Hold",
+    "buyHoldBeat": "Strategie schlägt Baseline",
+    "buyHoldLose": "Baseline besser",
+    "maxDrawdown": "Max Drawdown",
+    "trades": "Trades",
+    "winRate": "Win-Rate",
+    "avgWin": "Ø Gewinn",
+    "avgLoss": "Ø Verlust"
+  },
+  "winLoss": "{wins}W / {losses}L",
+  "equityHeading": "Equity-Curve — {ticker} • {range}",
+  "tradesHeading": "Trades ({count})",
+  "table": {
+    "entry": "Einstieg",
+    "exit": "Ausstieg",
+    "buy": "Kauf",
+    "sell": "Verkauf",
+    "pnlPct": "PnL %",
+    "signal": "Signal"
+  }
+}

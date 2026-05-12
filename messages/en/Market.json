@@ -1,0 +1,38 @@
+{
+  "title": "Market radar",
+  "subtitle": "What's moving in your tickers right now — and what ideas does the AI suggest around them?",
+  "horizon": {
+    "label": "Time horizon",
+    "long": "Long-term",
+    "longDescription": "3-10+ years · Value & quality · Fundamentally strong names",
+    "swing": "Swing",
+    "swingDescription": "1-3 months · Sector rotation · Catalyst-driven",
+    "short": "Short-term",
+    "shortDescription": "Days-weeks · Highly speculative · Unreliable without live data",
+    "shortWarning": "⚠️ Short-term recommendations without real-time data are speculative. Use the screener for data-driven signals."
+  },
+  "focus": {
+    "label": "Optional focus (e.g. \"defensive dividend stocks\", \"AI sector\", \"European small caps\")",
+    "placeholder": "Leave empty for a broad market overview"
+  },
+  "start": "Start radar",
+  "scanning": "Scanning markets...",
+  "radarFailed": "Radar failed",
+  "analysisFailed": "Analysis failed",
+  "errorGeneric": "Error",
+  "marketOverview": "Market overview",
+  "sectorRotation": "Sector rotation",
+  "ideas": "Ideas ({count})",
+  "selectAll": "Select all",
+  "clearSelection": "Clear selection",
+  "discardResults": "Discard results",
+  "discard": "discard",
+  "deepAnalyze": "Run fundamental check on selection ({count})",
+  "aiAnalyzing": "AI analyzing...",
+  "deepCheckTitle": "Fundamental check (with live data)",
+  "confidence": "Confidence: {percent}%",
+  "thesis": "Thesis",
+  "whyNow": "Why now?",
+  "risks": "Risks",
+  "disclaimer": "⚠️ Not investment advice. The AI has no real-time market access — ideas are based on training data and market knowledge. Do your own due diligence."
+}

@@ -1,0 +1,254 @@
+{
+  "title": "Admin",
+  "refresh": "Refresh",
+  "tablistLabel": "Admin sections",
+  "tabs": {
+    "overview": "Overview",
+    "users": "Users",
+    "data": "Data providers",
+    "automation": "Automation",
+    "ai": "AI"
+  },
+  "common": {
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "error": "Error",
+    "spinner": "Loading",
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "stats": {
+    "users": "Users",
+    "verified": "Verified",
+    "pending": "Pending approval",
+    "aiCosts30d": "AI costs (30d)"
+  },
+  "overview": {
+    "registration": {
+      "title": "Registration settings",
+      "label": "New users must be approved",
+      "body": "When active, a newly registered user cannot sign in until an administrator approves them in the user list. Existing users and newly registered admins (the first user) are not affected.",
+      "footnote": "Note: regardless of this setting, currently pending users cannot sign in until you approve them in the table below ({count} pending).",
+      "enabled": "New users must now be approved first.",
+      "disabled": "New users can sign in directly again."
+    },
+    "magazine": {
+      "title": "Magazine analysis",
+      "label": "Allow sharing with other users",
+      "body": "When active, users can make their PDF magazine analyses visible to the community via the \"Share with all users\" checkbox. When disabled here, the checkbox disappears, the \"Shared\" tab is hidden and already shared analyses are no longer visible to other users. Personal analyses (private and public) remain unchanged.",
+      "allowed": "Allowed",
+      "blocked": "Blocked",
+      "enabled": "Magazine sharing is enabled again.",
+      "disabled": "Magazine sharing disabled — community view hidden.",
+      "confirmDisable": "Disable magazine sharing globally?\n\nAlready shared analyses become invisible to other users. The \"Share with all users\" checkbox is hidden. Personal analyses remain."
+    },
+    "emailTest": {
+      "title": "Email test",
+      "body": "Tests SMTP delivery. Without SMTP configuration the mail ends up in the server console.",
+      "placeholder": "Target address (empty = to yourself)",
+      "send": "Send test",
+      "sent": "Test email sent to {to} ✓",
+      "fallback": "SMTP not configured — test email is in the server console ({message})"
+    },
+    "loginNotice": {
+      "title": "Login notice",
+      "body": "This text appears on the login page above the login form. Use it for maintenance notices, welcome messages or important announcements, for example. Empty lines render as paragraphs. No HTML/Markdown — plain text only.",
+      "enabled": "Notice is enabled and shown",
+      "disabled": "Notice is disabled (text remains stored)",
+      "textLabel": "Login notice text",
+      "placeholder": "e.g. \"Welcome to AI Stock Analyzer! Registration is currently invitation-only.\"",
+      "preview": "Preview",
+      "saved": "Login notice saved and enabled.",
+      "savedDisabled": "Login notice saved (hidden)."
+    }
+  },
+  "users": {
+    "heading": "Users",
+    "columns": {
+      "email": "Email",
+      "role": "Role",
+      "status": "Status",
+      "calls": "Calls",
+      "tokens": "Tokens",
+      "cost30d": "Costs (30d)",
+      "lastLogin": "Last login"
+    },
+    "pending": "⏳ Pending approval",
+    "verified": "✓ Verified",
+    "unverified": "⚠ Unverified",
+    "aiKeyConfigured": "✓ AI key configured",
+    "aiKeyMissing": "✗ No AI key",
+    "actions": {
+      "approve": "Approve",
+      "approveAria": "Approve {email}",
+      "toUser": "Demote to user",
+      "toAdmin": "Promote to admin",
+      "toggleRoleAria": "{email} {role}",
+      "manualVerify": "Manually verify",
+      "manualVerifyAria": "Manually verify {email}",
+      "sendReset": "Send password reset",
+      "sendResetAria": "Send password reset to {email}",
+      "delete": "Delete user",
+      "deleteAria": "Delete {email}"
+    },
+    "messages": {
+      "approved": "{email} approved",
+      "roleChanged": "{email} is now {role}",
+      "verified": "{email} manually verified",
+      "deleted": "{email} deleted",
+      "resetSent": "Reset email sent to {email}",
+      "resetFallback": "SMTP not configured. Reset link: {url} (admin, forward manually)",
+      "confirmRole": "Change user {email} to \"{role}\"?",
+      "confirmDelete": "DELETE user {email} and all their data? Irreversible."
+    }
+  },
+  "yahooQuota": {
+    "title": "Yahoo Finance daily quota",
+    "body": "Maximum number of Yahoo Finance queries per calendar day (UTC). Each HTTP call counts once — regardless of how many tickers are in a batch request. When exceeded, further requests are blocked until midnight UTC. <b>0 = no limit.</b>",
+    "usedToday": "Used today",
+    "remainingToday": "Remaining today",
+    "unlimited": "unlimited",
+    "lastHit": "Last limit hit",
+    "limitLabel": "Daily limit (requests per day)",
+    "invalid": "Please enter an integer ≥ 0.",
+    "hint": "Recommended starting value: <b>5000</b>. Increase under heavy load (> 20 active users). Counter resets at 00:00 UTC.",
+    "savedDisabled": "Yahoo limit disabled (unlimited).",
+    "saved": "Yahoo limit set to {limit} requests/day."
+  },
+  "quoteProviders": {
+    "title": "Quote provider cascade",
+    "body": "Order and activation of providers for single quote requests (getQuote). The first active source that returns a result wins — if it fails, the next is tried. <b>Only relevant for quotes</b>; fundamentals, charts and news still run via Yahoo.",
+    "noneActive": "No provider active — quote requests will fail entirely.",
+    "moveUp": "Move {label} up",
+    "moveDown": "Move {label} down",
+    "keyConfigured": "Key configured ({hint})",
+    "keyMissing": "⚠ No key — provider will be skipped",
+    "active": "active",
+    "off": "off",
+    "finnhubKey": "Finnhub API key",
+    "finnhubKeyPlaceholderNew": "Enter new key (current: {hint})",
+    "finnhubKeyPlaceholderEmpty": "Paste Finnhub key (free at finnhub.io)",
+    "finnhubMissingNote": "Finnhub is enabled but no key is configured. The provider will be skipped automatically.",
+    "finnhubRegister": "Free tier: 60 requests/minute. Register for free at",
+    "finnhubRegisterRest": ".",
+    "providerLabels": {
+      "yahoo": "Yahoo Finance",
+      "finnhub": "Finnhub",
+      "stooq": "Stooq"
+    },
+    "providerNotes": {
+      "yahoo": "Primary source: realtime/delayed quotes, P/E, market cap, 52w, fundamentals.",
+      "finnhub": "Fallback: needs API key. Quote data only, no fundamentals.",
+      "stooq": "Last resort: EoD prices, no name and no 52w range."
+    },
+    "saved": "Quote providers saved."
+  },
+  "dataSources": {
+    "title": "External data sources",
+    "body": "Optional sources for the AI analyses — macro indicators (FRED), SEC filings, Wikipedia attention. If a key/user agent is missing, the corresponding source is simply omitted from the prompts; everything else continues normally.",
+    "fredTitle": "FRED API key (St. Louis Fed)",
+    "fredBody": "Provides interest rates, yield curve, CPI/inflation, unemployment, VIX etc. for the macro scenario feature and the weekly briefing. Request for free at:",
+    "fredKeyConfigured": "Key configured ({hint}).",
+    "fredPlaceholderNew": "New key to replace…",
+    "fredPlaceholderEmpty": "32-char FRED key",
+    "secTitle": "SEC EDGAR user agent",
+    "secBody1": "SEC requires an identifying line with an email (policy), otherwise filings requests respond with 403. Example:",
+    "secExample": "AI Stock Analyzer Tobias name@example.com",
+    "secBody2": ". Also used for Wikipedia pageviews requests.",
+    "secPlaceholder": "AI Stock Analyzer admin@example.com",
+    "redditTitle": "Reddit OAuth (client ID + secret)",
+    "redditBody": "With Reddit OAuth, the rate limit for Reddit buzz data rises from \"blocked when needed\" to 60–600 requests/min. Without credentials, Reddit buzz continues anonymously. Register a free app:",
+    "redditBodyRest": " — pick app type <b>web app</b>, enter any redirect URI (it is not called). The <em>client ID</em> then appears directly under the app name and the <em>secret</em> on the right.",
+    "redditClientIdPlaceholder": "Reddit client ID (14 chars)",
+    "redditSecretConfigured": "Secret configured ({hint}).",
+    "redditSecretPlaceholderNew": "New secret to replace…",
+    "redditSecretPlaceholderEmpty": "Reddit client secret",
+    "saved": "External data sources saved."
+  },
+  "moversAutoScan": {
+    "title": "Top 10 / Flop 10 — auto-scan",
+    "body": "Automatically refreshes the global indices (DAX, MDAX, SDAX, TecDAX, Xetra, Dow, S&P 500 top, Nasdaq 100) at a fixed interval — <b>but only when at least one user is signed in and their browser tab is active</b>. Portfolio and watchlist movers remain on-demand (pulled live when opened).",
+    "enabled": "Auto-scan is active",
+    "disabled": "Auto-scan is off",
+    "provider": "Data broker",
+    "providerYahoo": "Yahoo Finance (batch, fast)",
+    "providerFinnhub": "Finnhub (individual calls, slow)",
+    "finnhubMissingWarn": "⚠ Finnhub key is not configured — please add it in \"Quote providers\", otherwise the scan will fail.",
+    "finnhubSlowNote": "Note: with about 600 tickers a Finnhub scan takes around 10 minutes due to the 60-req/min limit.",
+    "interval": "Interval (minutes)",
+    "intervalTooSmall": "At least 5 minutes.",
+    "intervalHint": "A scan only runs when the last scan of an index is older than this interval. Recommended: 30.",
+    "tradingOnly": "Only scan during trading hours (XETRA Mon–Fri 9:00–17:30, NYSE Mon–Fri 15:30–22:00 CET)",
+    "saved": "Auto-scan settings saved."
+  },
+  "autoUpdate": {
+    "title": "Auto-update (portfolios, watchlists, movers)",
+    "body": "Keeps caches fresh for <b>all</b> users — gathers all distinct tickers from positions and watchlists, fetches them as a batch from Yahoo (chunks of 50) and rebuilds the top 10 / flop 10 for all scannable indices (DAX, MDAX, SDAX, TecDAX, Xetra, Dow, S&P 500 top, Nasdaq 100). The cron tick runs every minute, but a <b>real run</b> only starts when the interval is due, it is currently <b>Mon–Fri between 09:00 and 23:00 CET</b> and at least one user has been active in the last 5 minutes. \"Run now\" bypasses all gates.",
+    "enabled": "Auto-update is active",
+    "disabled": "Auto-update is off",
+    "interval": "Interval (minutes)",
+    "intervalRange": "Integer between 5 and 1440 (24h).",
+    "intervalHint": "Recommended: 30. Lower = fresher caches but more API calls and Yahoo quota consumption.",
+    "lastRun": "Last run",
+    "lastDuration": "Duration of last run",
+    "lastTickers": "Tickers in last run",
+    "trigger": "Run now",
+    "triggerTitle": "Start a run manually — bypasses the interval",
+    "saved": "Auto-update settings saved.",
+    "triggered": "Auto-update executed: {tickers} tickers, {movers} indices ({seconds}s).",
+    "triggerError": "Error during manual auto-update"
+  },
+  "ai": {
+    "title": "AI settings (global)",
+    "body": "These keys are used when a user has not configured an API key in their own settings — provided \"Allow shared key\" is active and the cost limit is not exceeded. Users with their own key are never affected and have no limits.",
+    "pauseTitle": "Emergency stop: pause shared key",
+    "pauseBody": "Immediate stop for all user requests that would use the shared key. Already configured user keys are not affected. The current user session remains, but the next request will be rejected.",
+    "pausedActive": "Shared key is currently paused",
+    "pauseToggle": "Pause shared key (effective immediately)",
+    "paused": "Shared key is paused — no users can currently use it.",
+    "unpaused": "Shared key is enabled again.",
+    "providers": {
+      "claudeLabel": "Claude (Anthropic)",
+      "geminiLabel": "Gemini (Google)",
+      "openaiLabel": "OpenAI-compatible (OpenAI, Groq, OpenRouter, …)",
+      "claudeModelPlaceholder": "claude-sonnet-4-6",
+      "geminiModelPlaceholder": "gemini-2.0-flash",
+      "openaiModelPlaceholder": "gpt-4o-mini",
+      "openaiBaseUrlPlaceholder": "Base URL (empty = OpenAI default). Groq: https://api.groq.com/openai/v1",
+      "currentKey": "Current key:",
+      "delete": "delete",
+      "noKey": "No key configured",
+      "keyPlaceholderEmpty": "Enter API key",
+      "keyPlaceholderConfigured": "Leave empty = unchanged"
+    },
+    "allowShared": "Allow shared key",
+    "allowSharedBody": "When active, users without their own API key may use the admin keys configured above. When disabled, users without their own key are excluded from AI features.",
+    "limitsTitle": "Cost limits per user (only for shared key)",
+    "limitsBody": "Input 0 = no limit. Costs are calculated from the estimated USD total in the UsageLog (day/month UTC-based).",
+    "dailyLimit": "Daily limit (USD)",
+    "monthlyLimit": "Monthly limit (USD)",
+    "saved": "AI settings saved.",
+    "keyDeleted": "Key deleted.",
+    "confirmDeleteKey": "Delete admin {label} key? Users without their own key lose the shared fallback for this provider.",
+    "totalCalls": "Total AI calls: {count}"
+  },
+  "usage": {
+    "byOperationTitle": "AI usage by operation (30 days)",
+    "columns": {
+      "operation": "Operation",
+      "calls": "Calls",
+      "inputTokens": "Input tokens",
+      "outputTokens": "Output tokens",
+      "cost": "Costs"
+    },
+    "recentTitle": "Last 20 activities",
+    "recentColumns": {
+      "time": "Time",
+      "user": "User",
+      "operation": "Operation",
+      "tokens": "Tokens",
+      "cost": "Costs"
+    }
+  }
+}

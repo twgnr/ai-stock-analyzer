@@ -1,0 +1,275 @@
+{
+  "title": "Settings",
+  "loading": "Loading...",
+  "tablistLabel": "Settings sections",
+  "tabs": {
+    "profile": "Profile",
+    "security": "Security",
+    "ai": "AI",
+    "notifications": "Notifications",
+    "usage": "Usage"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "error": "Error"
+  },
+  "emailVerify": {
+    "title": "Email not confirmed",
+    "body": "Your email address has not been confirmed yet. Without confirmation, your account cannot be recovered if you lose your password.",
+    "resend": "Resend confirmation email",
+    "sent": "New confirmation link sent (or printed to the server console if SMTP is not configured)"
+  },
+  "profile": {
+    "title": "Profile",
+    "email": "Email",
+    "name": "Name",
+    "baseCurrency": "Base currency",
+    "save": "Save profile",
+    "saved": "Profile saved"
+  },
+  "security": {
+    "twoFactor": {
+      "title": "Two-factor authentication (2FA)",
+      "active": "active",
+      "inactive": "inactive",
+      "description": "Extra security via authenticator app (Google Authenticator, Authy, 1Password, Microsoft Authenticator). At login a 6-digit code is required in addition to your password.",
+      "enable": "Enable 2FA",
+      "disable": "Disable 2FA",
+      "step1": "Step 1:",
+      "scanQr": "Scan the QR code with your authenticator app",
+      "qrAlt": "2FA QR code",
+      "manualEntry": "Or enter manually:",
+      "details": "Type: TOTP · Interval: 30s · Digits: 6",
+      "step2": "Step 2:",
+      "enterCode": "Enter the 6-digit code from your app",
+      "codePlaceholder": "123456",
+      "activate": "Activate",
+      "cancel": "Cancel",
+      "enabled": "2FA enabled",
+      "disabled": "2FA disabled",
+      "disablePrompt": "To confirm: enter your current password and current 2FA code.",
+      "passwordPlaceholder": "Password",
+      "totpPlaceholder": "2FA code",
+      "confirmDisable": "Disable"
+    },
+    "password": {
+      "title": "Change password",
+      "current": "Current password",
+      "new": "New password (min. 10 chars, at least two character classes)",
+      "confirm": "Confirm new password",
+      "save": "Change password",
+      "saved": "Password changed",
+      "mismatch": "Passwords do not match",
+      "tooShort": "Password must be at least 10 characters and combine at least two character classes."
+    }
+  },
+  "ai": {
+    "kiUsageTitle": "AI usage",
+    "kiUsageBody": "You can temporarily disable all AI features for your account. While the lock is active, no requests are sent to the AI providers — neither using your own key nor a shared admin key. Your stored keys are preserved.",
+    "pausedActive": "AI usage is paused — uncheck to re-enable.",
+    "pauseToggle": "Pause AI usage (no requests, no costs)",
+    "paused": "AI usage paused.",
+    "unpaused": "AI usage re-enabled."
+  },
+  "notifications": {
+    "title": "Notifications",
+    "emailLabel": "Notification email (optional, otherwise account email)",
+    "alertsLabel": "<b>Price alerts active</b> — when an alert is triggered, an email is sent. Check interval every 15 min.",
+    "digestLabel": "<b>Daily portfolio digest</b> — every morning at 08:00 an AI analysis by email (requires AI API key).",
+    "save": "Save",
+    "saved": "Notification settings saved"
+  },
+  "usage": {
+    "title": "My AI usage",
+    "calls30d": "Calls (30d)",
+    "cost30d": "Costs (30d)",
+    "callsTotal": "Calls total",
+    "costTotal": "Costs total",
+    "byOperation": "By operation (30 days)",
+    "callsSuffix": "calls",
+    "billingNote": "Billing runs through your own API key with the selected provider. The shown costs are estimates based on public price lists.",
+    "noData": "No AI usage data yet."
+  },
+  "preferences": {
+    "title": "App & onboarding",
+    "appearance": "Appearance",
+    "appearanceBody": "\"System\" follows your OS settings, otherwise pick manually.",
+    "accent": "Accent color",
+    "accentBody": "Determines the main color of buttons, links and active icons (blue by default). Takes effect immediately and in both theme variants. The choice is stored in your browser.",
+    "threeDTitle": "3D effect",
+    "threeDBody": "Cards tilt slightly toward the mouse on hover — purely decorative, no performance hit. The effect is disabled automatically when \"Reduced motion\" is enabled in your OS.",
+    "installTitle": "Install app",
+    "installBody": "AI Stock Analyzer can be installed as a standalone app on your home screen — it then launches like a native app in its own window without the browser UI.",
+    "installed": "App is already running in standalone mode.",
+    "installNow": "Install now",
+    "installStarted": "Installation started.",
+    "installCancelled": "Installation cancelled.",
+    "noInstall": "Your browser does not currently offer installation. On iOS use \"Add to home screen\" from the Safari menu. On desktop browsers an install icon appears in the address bar once the app meets the criteria.",
+    "tourTitle": "Onboarding tour",
+    "tourBody": "Would you like to see the welcome tour again — with the most important features and onboarding hints?",
+    "tourRestart": "Restart tour",
+    "languageTitle": "Language",
+    "languageBody": "Controls the app UI language and automated emails (verification, reset, alerts, digests).",
+    "languageSaving": "Saving …",
+    "languageSaved": "Language saved.",
+    "languageError": "Could not save language."
+  },
+  "account": {
+    "title": "Data rights (GDPR)",
+    "body": "You can export all data stored about you at any time, or delete your account entirely. The former is a JSON file per Art. 15/20 GDPR, the latter performs the irreversible deletion per Art. 17 GDPR.",
+    "exportTitle": "Export my data",
+    "exportBody": "Downloads a JSON file with your profile, portfolio, transactions, watchlist, alerts, dividends, snapshots and AI usage log. No password hashes, no API keys.",
+    "exportDownload": "Download export",
+    "deleteTitle": "Delete account",
+    "deleteBody": "Irreversibly deletes all your portfolio data, watchlists, alerts, analyses and your profile. Content you have shared (watchlists, magazine analyses) is deleted along with it. To confirm, you must enter your current password.",
+    "deleteAction": "Delete account",
+    "deleteWarning": "Final warning: this step <b>cannot</b> be undone.",
+    "deletePasswordPlaceholder": "Current password to confirm",
+    "deleting": "Deleting...",
+    "deleteFinal": "Delete permanently",
+    "passwordRequired": "Password required",
+    "deleted": "Account deleted. You will be signed out..."
+  },
+  "push": {
+    "title": "Push notifications",
+    "body": "Instant browser notifications for triggered alerts — even when the app is closed. Must be enabled separately per device and browser.",
+    "loading": "Checking status…",
+    "unsupported": "Browser does not support web push (e.g. iOS outside an installed PWA).",
+    "serverDisabled": "Server has no VAPID keys configured — the admin must enable the feature first.",
+    "denied": "Browser permission was denied. Enable it in the site settings, then reload this page.",
+    "active": "Active on this device.",
+    "disable": "Disable",
+    "enable": "Enable",
+    "vapidUnavailable": "VAPID public key not available.",
+    "permissionDenied": "Permission for notifications was denied.",
+    "swUnregistered": "Service worker not registered.",
+    "subscriptionIncomplete": "Subscription response incomplete.",
+    "subscriptionRejected": "Subscription rejected by server.",
+    "subscribed": "Push notifications active on this device.",
+    "unsubscribed": "Push notifications disabled.",
+    "enableError": "Error while enabling.",
+    "disableError": "Error while disabling."
+  },
+  "aiAccess": {
+    "ownKey": "You are using your <b>own</b> AI API key. No cost limits, no shared usage.",
+    "noAccessTitle": "No AI features available",
+    "noAccessBody": "{reason} To use AI analyses, enter your own API key in the settings below.",
+    "reasonNoSharedKey": "Your administrator has not configured a shared AI key.",
+    "reasonSharedDisabled": "Shared use of the admin key is disabled.",
+    "reasonLimitExceeded": "Your cost limit for the shared key is exhausted.",
+    "sharedActive": "You are using the admin's <b>shared AI key</b>.",
+    "sharedBody": "Configure your own key to be independent and have no cost limit.",
+    "today": "Today",
+    "noLimit": "no limit",
+    "remaining": "{amount} remaining"
+  },
+  "aiProvider": {
+    "title": "AI provider",
+    "activeProvider": "Active provider",
+    "switchTo": "Switch to \"{label}\"",
+    "apiKey": "API key",
+    "endpoint": "Endpoint (base URL)",
+    "model": "Model",
+    "modelNameManual": "Model name manually",
+    "save": "Save",
+    "saved": "Saved",
+    "activeSaved": "Active provider: {label}",
+    "keyConfigured": "Key configured:",
+    "configured": "Configured:",
+    "defaultModel": "(no model)",
+    "defaultEmpty": "(default)",
+    "geminiHint": "💡 Google AI Studio gives you a free key without a credit card. Rate limits are generous for personal use.",
+    "groqHint": "💡 <b>Groq</b> offers free API keys for Llama models with very high speed. Perfect for getting started.",
+    "ollamaWarningTitle": "Important:",
+    "ollamaWarning": "The application server must be able to reach this URL — with <code>localhost</code> that means Ollama runs on the same machine as the app. In a Docker setup, use <code>host.docker.internal</code> or start Ollama in the same network. PDF analysis, tool use and JSON schema output work to varying degrees depending on the model — small models (< 7B) are only of limited use for the structured analysis features.",
+    "ollamaOwnUrl": "— enter custom URL —",
+    "ollamaModelExample": "e.g. qwen2.5:14b",
+    "ollamaTest": "Test connection",
+    "ollamaTestTitle": "Check connection to the Ollama server and list installed models",
+    "ollamaSuccess": "Connection successful",
+    "ollamaInstalled": "installed.",
+    "ollamaNoModels": "No models installed. Download one with e.g. <code>ollama pull llama3.1:8b</code>.",
+    "ollamaFailed": "Connection failed:",
+    "ollamaUnknownError": "Unknown error",
+    "ollamaNetworkError": "Network error",
+    "ollamaTip": "💡 Install Ollama, then download a model with <code>ollama pull llama3.1:8b</code>. Default port is 11434. For privacy beginners: <code>llama3.2:3b</code> is small and fast; for serious analysis tasks use <code>qwen2.5:14b</code>.",
+    "orderTitle": "Order & availability",
+    "orderBody": "With multiple keys, the top one is tried first. Disabled ones are skipped, the key stays stored. Applies to stock analysis, news digest, briefing etc. The <b>magazine analysis</b> has its own switch per PDF.",
+    "moveUp": "Move {label} up",
+    "moveDown": "Move {label} down",
+    "paused": "Paused",
+    "primary": "Primary",
+    "enableAria": "Re-enable",
+    "disableAria": "Pause (key stays stored)",
+    "enable": "Enable",
+    "disable": "Pause",
+    "savePriority": "Save order & status",
+    "savedPriority": "Order & status saved",
+    "allPausedWarning": "All keys are paused. Until they are re-enabled, AI features will not use any user key (fallback only via the admin shared key).",
+    "providers": {
+      "claude": {
+        "label": "Claude (Anthropic)",
+        "description": "Top quality for tool use and complex analyses. Paid.",
+        "helpLabel": "Get API key"
+      },
+      "gemini": {
+        "label": "Gemini (Google)",
+        "description": "Google AI Studio offers generous free rate limits for Gemini 2.0 Flash. Ideal to start without a credit card.",
+        "helpLabel": "Get free key",
+        "badge": "free"
+      },
+      "openai-compat": {
+        "label": "OpenAI-compatible",
+        "description": "Works for OpenAI, Groq (free with Llama), OpenRouter, Together AI, Deepseek and any other provider with an OpenAI-compatible API. Just adjust the base URL.",
+        "helpLabel": "Groq: free (Llama)",
+        "badge": "flexible"
+      },
+      "ollama": {
+        "label": "Ollama (local)",
+        "description": "Locally running LLM on your own machine. Full data control, no API costs. Requires Ollama on a URL reachable from the server.",
+        "helpLabel": "Install Ollama",
+        "badge": "local"
+      }
+    },
+    "modelPresets": {
+      "claude": {
+        "sonnet46": "Sonnet 4.6 (recommended)",
+        "opus47": "Opus 4.7 (expensive, best quality)",
+        "haiku45": "Haiku 4.5 (cheap, fast)"
+      },
+      "gemini": {
+        "flash20": "2.0 Flash (recommended, free)",
+        "flash20Exp": "2.0 Flash (experimental)",
+        "pro15": "1.5 Pro",
+        "flash15": "1.5 Flash"
+      },
+      "openaiCompat": {
+        "gpt4oMini": "GPT-4o mini (OpenAI)",
+        "gpt4o": "GPT-4o (OpenAI)",
+        "llama70b": "Llama 3.3 70B (Groq)",
+        "llama8b": "Llama 3.1 8B (Groq, fast)",
+        "deepseek": "DeepSeek Chat"
+      },
+      "ollama": {
+        "llama8b": "Llama 3.1 8B (good for tool use, ~4.7 GB)",
+        "qwen14b": "Qwen 2.5 14B (very good quality, ~9 GB)",
+        "qwen7b": "Qwen 2.5 7B (~4.7 GB)",
+        "mistralNemo": "Mistral Nemo 12B (~7 GB)",
+        "llama3b": "Llama 3.2 3B (small, fast, ~2 GB)",
+        "llamaVision": "Llama 3.2 Vision 11B (with images)"
+      }
+    },
+    "ollamaPresets": {
+      "localhost": "localhost:11434 (default)",
+      "docker": "host.docker.internal (for Docker)"
+    },
+    "baseUrlPresets": {
+      "default": "OpenAI (default)",
+      "groq": "Groq (free, Llama)",
+      "openrouter": "OpenRouter",
+      "together": "Together AI",
+      "deepseek": "DeepSeek"
+    }
+  }
+}

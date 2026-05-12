@@ -1,0 +1,83 @@
+{
+  "verifyEmail": {
+    "subject": "Please confirm your email address",
+    "greetingNamed": "Hi {name},",
+    "greetingPlain": "Hi,",
+    "intro": "welcome to AI Stock Analyzer. Please confirm your email address using the following link (valid for 24 hours):",
+    "introResend": "here is a fresh confirmation link for your email address (valid for 24 hours):",
+    "ignore": "If you didn't sign up, just ignore this email."
+  },
+  "registerAttempt": {
+    "subject": "Sign-up attempt with your email address",
+    "greeting": "Hi,",
+    "intro": "someone just tried to create a new AI Stock Analyzer account using your email address. If that wasn't you, you can ignore this message — no new account was created.",
+    "resetHint": "If you've forgotten your password, you can reset it here: {url}"
+  },
+  "resetPassword": {
+    "subject": "Reset your password",
+    "subjectAdmin": "Reset your password (initiated by admin)",
+    "greeting": "Hi,",
+    "greetingNamed": "Hi {name},",
+    "intro": "someone (hopefully you) requested a password reset for your AI Stock Analyzer account.",
+    "introAdmin": "an administrator has initiated a password reset for your account.",
+    "ctaLine": "Reset your password here (valid for 1 hour):",
+    "ignore": "If that wasn't you, just ignore this email."
+  },
+  "accountApproved": {
+    "subject": "Your account has been approved",
+    "greeting": "Hi,",
+    "greetingNamed": "Hi {name},",
+    "intro": "your AI Stock Analyzer account has just been approved by an administrator. You can now log in:",
+    "verifyHint": "Note: don't forget to confirm your email address (link from the verification email)."
+  },
+  "alert": {
+    "subjectSingular": "🔔 1 alert triggered",
+    "subjectPlural": "🔔 {count} alerts triggered",
+    "greeting": "Hi,",
+    "intro": "the following alerts have been triggered:",
+    "lineIndicator": "• {ticker}: {condition} (price {price})",
+    "linePriceAbove": "• {ticker}: price {price} ≥ threshold {threshold}",
+    "linePriceBelow": "• {ticker}: price {price} ≤ threshold {threshold}",
+    "footer": "Alerts are deactivated once triggered. Reactivate them at {url}/alerts."
+  },
+  "portfolioDigest": {
+    "subject": "📊 Portfolio digest {date}",
+    "greeting": "Hi,",
+    "greetingNamed": "Hi {name},",
+    "intro": "your daily portfolio digest:",
+    "sectionOverview": "=== OVERVIEW ===",
+    "labelPortfolioValue": "Portfolio value: {value}",
+    "labelTotalPL": "Total P/L: {value} ({percent})",
+    "labelTodayChange": "Today (weighted): {percent}",
+    "sectionTopMovers": "=== TOP MOVERS TODAY ===",
+    "labelGainers": "Gainers:",
+    "labelLosers": "Losers:",
+    "lineGainer": "  ↑ {ticker}: {percent}",
+    "lineLoser": "  ↓ {ticker}: {percent}",
+    "sectionAI": "=== AI ASSESSMENT ===",
+    "labelRiskLevel": "Risk level: {level}",
+    "labelDiversification": "Diversification:",
+    "labelSuggestions": "Suggestions:",
+    "details": "Details: {url}",
+    "unsubscribe": "To unsubscribe: Settings → disable 'Daily digest'."
+  },
+  "newsDigest": {
+    "subject": "📰 Portfolio digest {periodDays}d — {headline}",
+    "greeting": "Hi,",
+    "greetingNamed": "Hi {name},",
+    "intro": "your AI news digest for the last {periodDays} days:",
+    "sectionMarket": "=== MARKET OVERVIEW ===",
+    "sectionPerTicker": "=== PER POSITION ===",
+    "sectionWatchNext": "=== ON YOUR RADAR THIS WEEK ===",
+    "sectionUpcoming": "=== UPCOMING EVENTS ===",
+    "fullView": "Full view: {url}",
+    "defaultHeadline": "Portfolio digest"
+  },
+  "testEmail": {
+    "subject": "Test email from AI Stock Analyzer",
+    "body": "If you can see this email, your SMTP setup is working.\n\nSent by: {email}\nTime: {time}"
+  },
+  "common": {
+    "signature": "— AI Stock Analyzer"
+  }
+}

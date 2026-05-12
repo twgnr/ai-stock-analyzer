@@ -1,0 +1,254 @@
+{
+  "title": "Admin",
+  "refresh": "Aktualisieren",
+  "tablistLabel": "Admin-Bereiche",
+  "tabs": {
+    "overview": "Übersicht",
+    "users": "User",
+    "data": "Daten-Provider",
+    "automation": "Automatisierung",
+    "ai": "KI"
+  },
+  "common": {
+    "save": "Speichern",
+    "saving": "Speichere…",
+    "cancel": "Abbrechen",
+    "error": "Fehler",
+    "spinner": "Lädt",
+    "active": "Aktiv",
+    "inactive": "Inaktiv"
+  },
+  "stats": {
+    "users": "User",
+    "verified": "Verifiziert",
+    "pending": "Wartet auf Freischaltung",
+    "aiCosts30d": "KI-Kosten (30T)"
+  },
+  "overview": {
+    "registration": {
+      "title": "Registrierungs-Einstellungen",
+      "label": "Neue User müssen genehmigt werden",
+      "body": "Wenn aktiv, kann sich ein neu registrierter User nicht anmelden, bis ein Administrator ihn in der Userliste freischaltet. Bestehende User und neu registrierte Admins (erster User) sind nicht betroffen.",
+      "footnote": "Hinweis: Unabhängig von dieser Einstellung können gerade wartende User nicht anmelden, bis du sie in der Tabelle unten freischaltest ({count} wartende).",
+      "enabled": "Neue User müssen jetzt erst genehmigt werden.",
+      "disabled": "Neue User können sich wieder direkt anmelden."
+    },
+    "magazine": {
+      "title": "Zeitschriften-Analyse",
+      "label": "Teilen mit anderen Usern erlauben",
+      "body": "Wenn aktiv, können User ihre PDF-Zeitschriften-Analysen über die Checkbox „Für alle User freigeben\" für die Community sichtbar machen. Wird hier deaktiviert, verschwindet die Checkbox, der „Geteilt\"-Tab wird ausgeblendet und bereits geteilte Analysen sind für fremde User nicht mehr einsehbar. Eigene Analysen (privat wie öffentlich) bleiben unverändert erhalten.",
+      "allowed": "Erlaubt",
+      "blocked": "Gesperrt",
+      "enabled": "Zeitschriften-Sharing ist wieder aktiv.",
+      "disabled": "Zeitschriften-Sharing deaktiviert — Community-Ansicht ausgeblendet.",
+      "confirmDisable": "Zeitschriften-Sharing global ausschalten?\n\nBereits geteilte Analysen werden für andere User unsichtbar. Die Checkbox \"Für alle User freigeben\" wird ausgeblendet. Eigene Analysen bleiben erhalten."
+    },
+    "emailTest": {
+      "title": "E-Mail-Test",
+      "body": "Testet den SMTP-Versand. Ohne SMTP-Konfiguration landet die Mail in der Server-Console.",
+      "placeholder": "Ziel-Adresse (leer = an dich)",
+      "send": "Test senden",
+      "sent": "Test-Mail an {to} gesendet ✓",
+      "fallback": "SMTP nicht konfiguriert — Test-Mail steht in der Server-Console ({message})"
+    },
+    "loginNotice": {
+      "title": "Login-Hinweis",
+      "body": "Dieser Text erscheint auf der Login-Seite über dem Login-Formular. Nutze ihn z.B. für Wartungshinweise, Willkommensbotschaften oder wichtige Ankündigungen. Leerzeilen werden als Absatz gerendert. Kein HTML/Markdown — nur reiner Text.",
+      "enabled": "Hinweis ist aktiviert und wird angezeigt",
+      "disabled": "Hinweis ist deaktiviert (Text bleibt gespeichert)",
+      "textLabel": "Login-Hinweistext",
+      "placeholder": "z.B. „Willkommen bei AI Stock Analyzer! Registrierung aktuell nur auf Einladung.",
+      "preview": "Vorschau",
+      "saved": "Login-Hinweis gespeichert und aktiviert.",
+      "savedDisabled": "Login-Hinweis gespeichert (ausgeblendet)."
+    }
+  },
+  "users": {
+    "heading": "User",
+    "columns": {
+      "email": "E-Mail",
+      "role": "Rolle",
+      "status": "Status",
+      "calls": "Calls",
+      "tokens": "Tokens",
+      "cost30d": "Kosten (30T)",
+      "lastLogin": "Letzter Login"
+    },
+    "pending": "⏳ Wartet auf Freischaltung",
+    "verified": "✓ Verifiziert",
+    "unverified": "⚠ Unverifiziert",
+    "aiKeyConfigured": "✓ KI-Key hinterlegt",
+    "aiKeyMissing": "✗ Kein KI-Key",
+    "actions": {
+      "approve": "Freischalten",
+      "approveAria": "{email} freischalten",
+      "toUser": "Zu User machen",
+      "toAdmin": "Zu Admin machen",
+      "toggleRoleAria": "{email} {role}",
+      "manualVerify": "Manuell verifizieren",
+      "manualVerifyAria": "{email} manuell verifizieren",
+      "sendReset": "Passwort-Reset senden",
+      "sendResetAria": "Passwort-Reset an {email} senden",
+      "delete": "User löschen",
+      "deleteAria": "{email} löschen"
+    },
+    "messages": {
+      "approved": "{email} freigeschaltet",
+      "roleChanged": "{email} ist jetzt {role}",
+      "verified": "{email} manuell verifiziert",
+      "deleted": "{email} gelöscht",
+      "resetSent": "Reset-Mail an {email} gesendet",
+      "resetFallback": "SMTP nicht konfiguriert. Reset-Link: {url} (Admin, weiterleiten)",
+      "confirmRole": "User {email} auf \"{role}\" ändern?",
+      "confirmDelete": "User {email} und alle seine Daten LÖSCHEN? Unwiderruflich."
+    }
+  },
+  "yahooQuota": {
+    "title": "Yahoo-Finance-Tageslimit",
+    "body": "Maximale Zahl an Yahoo-Finance-Abfragen pro Kalendertag (UTC). Jeder HTTP-Call zählt einmal — unabhängig davon, wie viele Ticker in einer Batch-Anfrage stehen. Bei Überschreitung werden weitere Anfragen bis Mitternacht UTC blockiert. <b>0 = kein Limit.</b>",
+    "usedToday": "Heute verbraucht",
+    "remainingToday": "Verbleibend heute",
+    "unlimited": "unbegrenzt",
+    "lastHit": "Letzter Limit-Treffer",
+    "limitLabel": "Tageslimit (Anfragen pro Tag)",
+    "invalid": "Bitte eine ganze Zahl ≥ 0 eingeben.",
+    "hint": "Empfohlener Startwert: <b>5000</b>. Bei starker Auslastung (> 20 aktive User) erhöhen. Zähler resetet um 00:00 UTC.",
+    "savedDisabled": "Yahoo-Limit deaktiviert (unbegrenzt).",
+    "saved": "Yahoo-Limit auf {limit} Requests/Tag gesetzt."
+  },
+  "quoteProviders": {
+    "title": "Kurs-Provider-Kaskade",
+    "body": "Reihenfolge und Aktivierung der Provider für Einzel-Kurs-Abfragen (getQuote). Die erste aktive Quelle, die ein Ergebnis liefert, gewinnt — scheitert sie, wird die nächste probiert. <b>Nur relevant für Kurse</b>; Fundamentals, Charts und News laufen weiter über Yahoo.",
+    "noneActive": "Kein Provider aktiv — Kurs-Abfragen werden komplett fehlschlagen.",
+    "moveUp": "{label} nach oben",
+    "moveDown": "{label} nach unten",
+    "keyConfigured": "Key hinterlegt ({hint})",
+    "keyMissing": "⚠ Kein Key — Provider wird übersprungen",
+    "active": "aktiv",
+    "off": "aus",
+    "finnhubKey": "Finnhub API-Key",
+    "finnhubKeyPlaceholderNew": "Neuen Key eingeben (aktuell: {hint})",
+    "finnhubKeyPlaceholderEmpty": "Finnhub-Key einfügen (kostenlos unter finnhub.io)",
+    "finnhubMissingNote": "Finnhub ist aktiviert, aber kein Key hinterlegt. Der Provider wird automatisch übersprungen.",
+    "finnhubRegister": "Free-Tier: 60 Requests/Minute. Kostenlos auf",
+    "finnhubRegisterRest": "registrieren.",
+    "providerLabels": {
+      "yahoo": "Yahoo Finance",
+      "finnhub": "Finnhub",
+      "stooq": "Stooq"
+    },
+    "providerNotes": {
+      "yahoo": "Primärquelle: Realtime/verzögerte Quotes, KGV, Marktkap., 52-W, Fundamentals.",
+      "finnhub": "Fallback: benötigt API-Key. Nur Quote-Daten, keine Fundamentals.",
+      "stooq": "Letztes Netz: EoD-Kurse, ohne Namen und 52-W-Range."
+    },
+    "saved": "Kurs-Provider gespeichert."
+  },
+  "dataSources": {
+    "title": "Externe Datenquellen",
+    "body": "Optionale Quellen für die KI-Analysen — Makro-Indikatoren (FRED), SEC-Filings, Wikipedia-Aufmerksamkeit. Wenn ein Key/User-Agent fehlt, wird die jeweilige Quelle in den Prompts einfach weggelassen, alles andere läuft normal weiter.",
+    "fredTitle": "FRED API-Key (St. Louis Fed)",
+    "fredBody": "Liefert Zinsen, Yield-Curve, CPI/Inflation, Arbeitslosenquote, VIX etc. für das Macro-Szenario-Feature und das Wochen-Briefing. Kostenlos beantragen:",
+    "fredKeyConfigured": "Key hinterlegt ({hint}).",
+    "fredPlaceholderNew": "Neuer Key zum Ersetzen…",
+    "fredPlaceholderEmpty": "32-stelliger FRED-Key",
+    "secTitle": "SEC EDGAR User-Agent",
+    "secBody1": "SEC verlangt eine identifizierende Zeile mit E-Mail (Policy), sonst antworten Filings-Anfragen mit 403. Beispiel:",
+    "secExample": "AI Stock Analyzer Tobias name@example.com",
+    "secBody2": ". Wird auch für Wikipedia-Pageviews-Requests verwendet.",
+    "secPlaceholder": "AI Stock Analyzer admin@example.com",
+    "redditTitle": "Reddit OAuth (Client-ID + Secret)",
+    "redditBody": "Mit Reddit-OAuth steigt das Rate-Limit der Reddit-Buzz-Daten von „bei Bedarf geblockt\" auf 60–600 Requests/Min. Ohne Credentials läuft Reddit-Buzz weiter anonym. Eine kostenlose App registrieren:",
+    "redditBodyRest": " — App-Typ <b>web app</b> wählen, beliebige redirect-URI eintragen (wird nicht aufgerufen). Anschließend erscheint die <em>Client-ID</em> direkt unter dem App-Namen, das <em>Secret</em> rechts daneben.",
+    "redditClientIdPlaceholder": "Reddit Client-ID (14-stellig)",
+    "redditSecretConfigured": "Secret hinterlegt ({hint}).",
+    "redditSecretPlaceholderNew": "Neues Secret zum Ersetzen…",
+    "redditSecretPlaceholderEmpty": "Reddit Client-Secret",
+    "saved": "Externe Datenquellen gespeichert."
+  },
+  "moversAutoScan": {
+    "title": "Top 10 / Flop 10 — Auto-Scan",
+    "body": "Aktualisiert die globalen Indizes (DAX, MDAX, SDAX, TecDAX, Xetra, Dow, S&P-500-Top, Nasdaq 100) automatisch in einem festen Intervall — <b>aber nur wenn mindestens ein User eingeloggt ist und dessen Browser-Tab aktiv ist</b>. Portfolio- und Watchlist-Movers bleiben on-demand (sie werden beim Öffnen live gezogen).",
+    "enabled": "Auto-Scan ist aktiv",
+    "disabled": "Auto-Scan ist aus",
+    "provider": "Datenbroker",
+    "providerYahoo": "Yahoo Finance (Batch, schnell)",
+    "providerFinnhub": "Finnhub (Einzelabrufe, langsam)",
+    "finnhubMissingWarn": "⚠ Finnhub-Key ist nicht hinterlegt — bitte bei „Kurs-Provider\" eintragen, sonst schlägt der Scan fehl.",
+    "finnhubSlowNote": "Hinweis: Bei ca. 600 Tickern braucht ein Finnhub-Scan wegen des 60-req/min-Limits rund 10 Minuten.",
+    "interval": "Intervall (Minuten)",
+    "intervalTooSmall": "Mindestens 5 Minuten.",
+    "intervalHint": "Ein Scan läuft nur, wenn der letzte Scan eines Index älter als dieses Intervall ist. Empfohlen: 30.",
+    "tradingOnly": "Nur während Börsenzeiten scannen (XETRA Mo–Fr 9:00–17:30, NYSE Mo–Fr 15:30–22:00 MEZ)",
+    "saved": "Auto-Scan-Einstellungen gespeichert."
+  },
+  "autoUpdate": {
+    "title": "Auto-Update (Portfolios, Watchlisten, Movers)",
+    "body": "Hält die Caches für <b>alle</b> User frisch — sammelt sämtliche eindeutigen Tickers aus Positions und Watchlists, holt sie als Batch von Yahoo (50er Chunks) und baut die Top 10 / Flop 10 für alle scanbaren Indizes (DAX, MDAX, SDAX, TecDAX, Xetra, Dow, S&P-500-Top, Nasdaq 100) neu auf. Cron-Tick läuft minütlich, ein <b>echter Lauf</b> startet aber nur, wenn das Intervall fällig ist, gerade <b>Mo–Fr zwischen 09:00 und 23:00 MEZ</b> ist und in den letzten 5 Minuten mindestens ein User aktiv war. „Jetzt ausführen\" umgeht alle Gates.",
+    "enabled": "Auto-Update ist aktiv",
+    "disabled": "Auto-Update ist aus",
+    "interval": "Intervall (Minuten)",
+    "intervalRange": "Ganze Zahl zwischen 5 und 1440 (24 h).",
+    "intervalHint": "Empfohlen: 30. Niedriger = frischere Caches, aber mehr API-Calls und Yahoo-Quota-Verbrauch.",
+    "lastRun": "Letzter Lauf",
+    "lastDuration": "Dauer letzter Lauf",
+    "lastTickers": "Tickers letzter Lauf",
+    "trigger": "Jetzt ausführen",
+    "triggerTitle": "Lauf manuell starten — umgeht das Intervall",
+    "saved": "Auto-Update-Einstellungen gespeichert.",
+    "triggered": "Auto-Update ausgeführt: {tickers} Tickers, {movers} Indizes ({seconds}s).",
+    "triggerError": "Fehler beim manuellen Auto-Update"
+  },
+  "ai": {
+    "title": "KI-Einstellungen (global)",
+    "body": "Diese Keys werden verwendet, wenn ein User in seinen eigenen Einstellungen keinen API-Key hinterlegt hat — vorausgesetzt „Shared-Key erlauben\" ist aktiv und das Kostenlimit nicht überschritten. User mit eigenem Key sind nie betroffen und haben keine Limits.",
+    "pauseTitle": "Not-Aus: Shared-Key pausieren",
+    "pauseBody": "Sofortiger Stop für alle User-Anfragen, die den Shared-Key nutzen würden. Bereits hinterlegte User-Keys sind nicht betroffen. Aktuelle Nutzer-Session bleibt bestehen, die nächste Anfrage wird jedoch abgewiesen.",
+    "pausedActive": "Shared-Key ist aktuell pausiert",
+    "pauseToggle": "Shared-Key pausieren (sofort aktiv)",
+    "paused": "Shared-Key ist pausiert — keine User können ihn aktuell nutzen.",
+    "unpaused": "Shared-Key ist wieder freigegeben.",
+    "providers": {
+      "claudeLabel": "Claude (Anthropic)",
+      "geminiLabel": "Gemini (Google)",
+      "openaiLabel": "OpenAI-kompatibel (OpenAI, Groq, OpenRouter, …)",
+      "claudeModelPlaceholder": "claude-sonnet-4-6",
+      "geminiModelPlaceholder": "gemini-2.0-flash",
+      "openaiModelPlaceholder": "gpt-4o-mini",
+      "openaiBaseUrlPlaceholder": "Base-URL (leer = OpenAI Standard). Groq: https://api.groq.com/openai/v1",
+      "currentKey": "Aktueller Key:",
+      "delete": "löschen",
+      "noKey": "Kein Key hinterlegt",
+      "keyPlaceholderEmpty": "API-Key eingeben",
+      "keyPlaceholderConfigured": "Leer lassen = unverändert"
+    },
+    "allowShared": "Shared-Key erlauben",
+    "allowSharedBody": "Wenn aktiv, dürfen User ohne eigenen API-Key die oben hinterlegten Admin-Keys nutzen. Wird dies deaktiviert, sind User ohne eigenen Key von KI-Funktionen ausgeschlossen.",
+    "limitsTitle": "Kosten-Limits pro User (nur bei Shared-Key)",
+    "limitsBody": "Eingabe 0 = kein Limit. Kosten werden aus der geschätzten USD-Summe im UsageLog berechnet (Tag/Monat UTC-basiert).",
+    "dailyLimit": "Tageslimit (USD)",
+    "monthlyLimit": "Monatslimit (USD)",
+    "saved": "KI-Einstellungen gespeichert.",
+    "keyDeleted": "Key gelöscht.",
+    "confirmDeleteKey": "Admin-{label}-Key löschen? User ohne eigenen Key verlieren den Shared-Fallback für diesen Provider.",
+    "totalCalls": "KI-Calls insgesamt: {count}"
+  },
+  "usage": {
+    "byOperationTitle": "KI-Nutzung nach Operation (30 Tage)",
+    "columns": {
+      "operation": "Operation",
+      "calls": "Calls",
+      "inputTokens": "Input Tokens",
+      "outputTokens": "Output Tokens",
+      "cost": "Kosten"
+    },
+    "recentTitle": "Letzte 20 Aktivitäten",
+    "recentColumns": {
+      "time": "Zeit",
+      "user": "User",
+      "operation": "Operation",
+      "tokens": "Tokens",
+      "cost": "Kosten"
+    }
+  }
+}

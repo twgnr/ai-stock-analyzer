@@ -1,0 +1,50 @@
+{
+  "title": "Tax report",
+  "allYears": "All years",
+  "csv": "CSV",
+  "description": "Evaluation of realized gains/losses based on the FIFO assignment of your transactions. All amounts are in {currency} (converted using the FX rate on the sale day). The tax estimate uses 25% capital gains tax, 5.5% solidarity surcharge, and the single saver's allowance ({pauschbetrag}).",
+  "noAdvice": "Not tax advice",
+  "noAdviceSuffix": " — for the tax authority use the actual annual tax statement from your broker.",
+  "loadError": "Load failed",
+  "loading": "Loading...",
+  "netPL": "Net P/L",
+  "gains": "Gains",
+  "losses": "Losses",
+  "trades": "Trades",
+  "tradesCount": "{count} trades",
+  "sinceStart": "since start",
+  "inYear": "in year {year}",
+  "taxEstimate": "Tax estimate",
+  "kv": {
+    "gross": "Gross gain",
+    "pauschbetrag": "Saver's allowance",
+    "taxable": "Taxable",
+    "abgeltung": "Capital gains tax (25%)",
+    "soli": "Solidarity surcharge (5.5%)",
+    "estTotal": "Total estimate"
+  },
+  "taxNotice": "Church tax not considered. Loss offset pot (stocks vs. other capital income) not modeled.",
+  "yearlyHistory": "Yearly history",
+  "yearlyHeaders": {
+    "year": "Year",
+    "trades": "Trades",
+    "netPL": "Net P/L ({currency})"
+  },
+  "byTicker": "Breakdown by ticker",
+  "tickerHeaders": {
+    "ticker": "Ticker",
+    "trades": "Trades",
+    "pnl": "P/L"
+  },
+  "singleTransactions": "Individual transactions",
+  "singleHeaders": {
+    "date": "Date",
+    "ticker": "Ticker",
+    "shares": "Shares",
+    "buy": "Buy",
+    "sell": "Sell",
+    "currency": "Curr",
+    "pnlIn": "P/L ({currency})"
+  },
+  "noGains": "No realized gains/losses in the selected period."
+}

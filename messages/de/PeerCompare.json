@@ -1,0 +1,33 @@
+{
+  "title": "Peer-Vergleich",
+  "description": "Stelle zwei Aktien gegenüber. KI bewertet Bewertung, Wachstum, Profitabilität, Risiken und Burggraben — und gibt eine Empfehlung, welche aktuell der bessere Kauf ist.",
+  "stockA": "Aktie A",
+  "stockB": "Aktie B",
+  "selectBoth": "Bitte beide Aktien wählen",
+  "placeholderA": "z.B. NVDA",
+  "placeholderB": "z.B. AMD",
+  "compare": "Vergleichen",
+  "comparing": "Vergleiche mit KI...",
+  "error": "Fehler",
+  "verdict": "Verdict",
+  "tieResult": "Unentschieden — beide gleichwertig",
+  "winsSuffix": "gewinnt",
+  "scenario": "Wann welche Aktie passt:",
+  "summary": "Zusammenfassung",
+  "asset": "Aktie {side}",
+  "conviction": "Conviction:",
+  "winner": "Winner",
+  "table": {
+    "category": "Kategorie",
+    "winner": "Sieger",
+    "tie": "Tie"
+  },
+  "categories": {
+    "valuation": "Bewertung",
+    "growth": "Wachstum",
+    "profitability": "Profitabilität",
+    "risks": "Risiken",
+    "moat": "Burggraben"
+  },
+  "disclaimer": "⚠️ Keine Anlageberatung. Eigene Due Diligence erforderlich."
+}

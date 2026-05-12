@@ -1,0 +1,102 @@
+{
+  "title": "Alerts",
+  "subtitle": "Email notifications for price or indicator signals. Check interval: every 15 minutes.",
+  "history": "History",
+  "newAlert": "New alert",
+  "priceAlert": "Price alert",
+  "indicatorAlert": "Indicator alert",
+  "stock": "Stock",
+  "tickerPlaceholder": "Ticker...",
+  "direction": "Direction",
+  "directionBelow": "Below",
+  "directionAbove": "Above",
+  "threshold": "Threshold",
+  "currency": "Currency",
+  "condition": "Condition",
+  "indicatorHint": "Alert fires once when the condition is crossed (event, not continuous state). Daily candles are evaluated every 15 minutes.",
+  "note": "Note",
+  "cancel": "Cancel",
+  "create": "Create alert",
+  "loading": "Loading...",
+  "empty": "No alerts yet. Create one to get notified automatically.",
+  "deleteConfirm": "Delete alert?",
+  "deleteAria": "Delete alert for {ticker}",
+  "statusTriggered": "Triggered",
+  "statusActive": "Active",
+  "statusPaused": "Paused",
+  "activate": "Enable",
+  "deactivate": "Disable",
+  "indicator": "Indicator",
+  "price": "Price",
+  "columns": {
+    "status": "Status",
+    "ticker": "Ticker",
+    "type": "Type",
+    "rule": "Rule",
+    "note": "Note",
+    "created": "Created"
+  },
+  "errors": {
+    "tickerRequired": "Ticker required",
+    "thresholdRequired": "Threshold required",
+    "generic": "Error"
+  },
+  "indicators": {
+    "groups": {
+      "oscillator": "Oscillator",
+      "trendFollowing": "Trend-following",
+      "volatility": "Volatility"
+    },
+    "options": {
+      "rsi_below_30": "RSI oversold (< 30)",
+      "rsi_above_70": "RSI overbought (> 70)",
+      "macd_bullish_cross": "MACD bullish crossover",
+      "macd_bearish_cross": "MACD bearish crossover",
+      "sma_golden_cross": "Golden cross (SMA 50/200)",
+      "sma_death_cross": "Death cross (SMA 50/200)",
+      "price_above_sma200": "Price crosses above SMA 200",
+      "price_below_sma200": "Price crosses below SMA 200",
+      "bb_breakout_upper": "Bollinger breakout up",
+      "bb_breakout_lower": "Bollinger breakout down"
+    }
+  },
+  "historyPage": {
+    "back": "Back to alerts",
+    "title": "Alert history",
+    "refresh": "Refresh",
+    "intro": "All previously triggered price alerts, chronologically by trigger date. After triggering, alerts are automatically deactivated — to get a new signal on the same ticker/threshold, create a new alert.",
+    "stats": {
+      "totalTriggered": "Total triggered",
+      "last30d": "Last 30 days",
+      "uniqueTickers": "Unique tickers"
+    },
+    "filterPlaceholder": "Filter by ticker...",
+    "loading": "Loading...",
+    "emptyAll": "No alerts triggered yet.",
+    "emptyFiltered": "No matches for this filter.",
+    "columns": {
+      "ticker": "Ticker",
+      "condition": "Condition",
+      "triggered": "Triggered",
+      "waited": "Waited",
+      "note": "Note"
+    },
+    "daysShort": "d",
+    "monthCount": "{month} ({count})",
+    "errors": {
+      "load": "Load failed"
+    },
+    "indicatorLabels": {
+      "rsi_below_30": "RSI oversold",
+      "rsi_above_70": "RSI overbought",
+      "macd_bullish_cross": "MACD bullish",
+      "macd_bearish_cross": "MACD bearish",
+      "sma_golden_cross": "Golden cross",
+      "sma_death_cross": "Death cross",
+      "bb_breakout_upper": "BB breakout ↑",
+      "bb_breakout_lower": "BB breakout ↓",
+      "price_above_sma200": "Price > SMA200",
+      "price_below_sma200": "Price < SMA200"
+    }
+  }
+}

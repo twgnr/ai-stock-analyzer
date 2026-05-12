@@ -1,0 +1,40 @@
+{
+  "common": {
+    "error": "Error",
+    "loading": "Loading..."
+  },
+  "list": {
+    "title": "AI news digest",
+    "intro": "The AI reads all news for your positions (and optionally your watchlist) for the chosen period, aggregates it, and explains what happened — grouped by relevance, with price context. On-demand or by email.",
+    "createTitle": "Create new digest",
+    "period": "Period",
+    "period3d": "3 days",
+    "period7d": "7 days (week)",
+    "period14d": "14 days",
+    "period30d": "30 days",
+    "includeWatchlist": "Include watchlist",
+    "sendEmail": "Send by email",
+    "create": "Create digest",
+    "creating": "Creating digest...",
+    "createdSuccess": "Digest created.",
+    "creatingHint": "This can take 30-60 seconds — depending on the number of positions and the provider.",
+    "emptyList": "No digests created yet. Start the first one above.",
+    "history": "History",
+    "tickerHighlights": "{count} ticker highlights"
+  },
+  "detail": {
+    "back": "Back to list",
+    "confirmDelete": "Delete digest permanently?",
+    "delete": "Delete",
+    "period": "Period: {days} days",
+    "tickersAnalyzed": "{count} tickers analyzed",
+    "created": "Created: {date}",
+    "model": "Model: {model}",
+    "delivered": "Delivered",
+    "marketOverview": "Market overview",
+    "watchNext": "On the radar this week",
+    "upcomingEvents": "Upcoming events",
+    "relevantMoves": "Relevant moves",
+    "inPeriod": "in period"
+  }
+}

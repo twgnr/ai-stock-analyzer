@@ -1,0 +1,7 @@
+{
+  "title": "App installieren",
+  "description": "Zum Home-Screen hinzufügen — läuft dann wie eine native App.",
+  "install": "Installieren",
+  "dismissTitle": "Später",
+  "dismissAria": "Install-Banner ausblenden"
+}

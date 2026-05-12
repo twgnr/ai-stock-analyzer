@@ -1,0 +1,475 @@
+{
+  "common": {
+    "loading": "Loading…",
+    "error": "Error",
+    "noData": "No data",
+    "analyzing": "Analyzing…",
+    "refresh": "Refresh"
+  },
+  "bullBear": {
+    "title": "Bull / Base / Bear + Advocatus Diaboli",
+    "intro": "The AI works through three scenarios with probabilities and then plays \"Advocatus Diaboli\" — deliberately arguing against the prevailing view. Not investment advice.",
+    "generate": "Generate scenarios",
+    "regenerate": "Regenerate",
+    "analyzing": "Analyzing…",
+    "expectedReturn": "Expected return (probability-weighted):",
+    "advocatusDiaboli": "Advocatus Diaboli",
+    "counterArguments": "Counter-arguments",
+    "warningSignals": "Warning signals to watch",
+    "priceTarget": "Price target",
+    "return": "Return",
+    "probability": "P = {value}"
+  },
+  "dcf": {
+    "title": "DCF fair value",
+    "cardTitle": "DCF fair-value calculator",
+    "cardSubtitle": "Discounted cash flow with bull/base/bear scenarios + reverse DCF (what growth is priced in?)",
+    "start": "Start DCF",
+    "close": "Close",
+    "recompute": "Recompute",
+    "errorFallback": "DCF error",
+    "fields": {
+      "initialFcf": "Initial FCF (annual)",
+      "growthPhase1": "Phase 1 growth",
+      "terminalGrowth": "Terminal growth",
+      "wacc": "WACC",
+      "years": "Forecast years",
+      "autoPlaceholder": "auto"
+    },
+    "scenarioGrowth": "Growth {value}",
+    "vsPrice": "vs. price",
+    "reverse": {
+      "title": "Reverse DCF",
+      "subtitle": "— what growth justifies the current price?",
+      "perYearFor": "{value} p.a. for {years} years"
+    },
+    "stats": {
+      "startFcf": "Initial FCF:",
+      "shares": "Shares:",
+      "sharesUnit": "M",
+      "netDebt": "Net debt:"
+    },
+    "footer": "Two-stage DCF with Gordon-growth terminal value. WACC as discount rate. All scenarios use the same terminal growth and WACC — bear/bull differ only in phase-1 growth (±4% vs. base). Not investment advice."
+  },
+  "fundamentals": {
+    "title": "Fundamentals deep",
+    "reload": "Reload",
+    "reloadAria": "Reload data",
+    "tabs": {
+      "earnings": "Earnings surprise",
+      "ratings": "Analyst history",
+      "owners": "Owners",
+      "financials": "Multi-year financials"
+    },
+    "earnings": {
+      "nextReport": "Next report:",
+      "beatRate": "Beat rate (last {count} quarters)",
+      "empty": "No earnings surprise data available.",
+      "columns": {
+        "quarter": "Quarter",
+        "estimate": "EPS estimate",
+        "actual": "EPS actual",
+        "surprise": "Surprise"
+      }
+    },
+    "ratings": {
+      "empty": "No rating changes found.",
+      "actions": {
+        "up": "Upgrade",
+        "main": "Maintained",
+        "down": "Downgrade",
+        "init": "Initiated",
+        "reit": "Reiterated"
+      },
+      "columns": {
+        "date": "Date",
+        "analyst": "Analyst",
+        "action": "Action",
+        "rating": "Rating"
+      }
+    },
+    "owners": {
+      "institutional": "Institutional",
+      "insider": "Insider",
+      "topInstitutional": "Top institutional",
+      "topFunds": "Top funds",
+      "empty": "No ownership data available."
+    },
+    "financials": {
+      "empty": "No multi-year financials available.",
+      "metric": "Metric",
+      "revenue": "Revenue",
+      "operatingIncome": "Operating income",
+      "netIncome": "Net income",
+      "operatingCf": "Operating CF",
+      "freeCf": "Free cash flow",
+      "totalAssets": "Total assets",
+      "longTermDebt": "Long-term debt",
+      "currencyNote": "Currency: {currency}. Yahoo Finance provides up to 4 years of historical annual statements."
+    }
+  },
+  "indicators": {
+    "title": "AI indicator evaluation",
+    "activeCountOne": "{count} indicator active",
+    "activeCountOther": "{count} indicators active",
+    "evaluate": "Evaluate indicators",
+    "evaluating": "Analyzing…",
+    "needIndicators": "Activate at least one indicator above in the chart (RSI, MACD, Bollinger Bands etc.), then the AI can evaluate it.",
+    "tooltipNoIndicators": "First activate indicators in the chart",
+    "overallSignal": "Overall signal: {signal}",
+    "confidence": "Confidence {pct}%",
+    "indicatorsEvaluated": "· {count} indicators evaluated",
+    "perIndicator": "Per-indicator evaluation",
+    "valuePrefix": "Value: {value}",
+    "divergences": "Divergences",
+    "observations": "Observations",
+    "risks": "Risks",
+    "nextSteps": "Next steps",
+    "disclaimer": "⚠️ Technical analysis is not a buy signal. Combine with fundamentals and your own assessment.",
+    "signals": {
+      "BULLISH": "Bullish",
+      "BEARISH": "Bearish",
+      "NEUTRAL": "Neutral"
+    },
+    "selector": {
+      "title": "Indicators",
+      "tooltip": "Select indicators",
+      "activeLabel": "{count} active",
+      "clearAll": "Clear all",
+      "categories": {
+        "Gleitender Durchschnitt": "Moving average",
+        "Trendfolge": "Trend following",
+        "Oscillator": "Oscillator"
+      }
+    },
+    "vision": {
+      "title": "Vision-based pattern recognition",
+      "intro": "The AI analyzes a chart image visually and identifies classic patterns (cup-and-handle, flag, double bottom etc.), marks support/resistance and gives a concrete trade setup. Either from the current chart or uploaded (e.g. TradingView screenshot).",
+      "analyzeCurrent": "Analyze chart above",
+      "analyzingCurrent": "Analyzing chart…",
+      "uploadImage": "Upload chart image",
+      "analyzingUpload": "Analyzing upload…",
+      "tooltipCurrent": "Take a screenshot of the chart above and analyze it",
+      "errorNotReady": "Chart not ready — please wait a moment and try again.",
+      "errorFileType": "Please select an image file (PNG, JPG, WebP)",
+      "showImage": "Show analyzed image",
+      "imageAlt": "Analyzed chart",
+      "trendLabel": "· Trend: {trend}",
+      "trends": {
+        "uptrend": "Uptrend",
+        "downtrend": "Downtrend",
+        "sideways": "Sideways"
+      },
+      "patterns": "Detected patterns",
+      "patternConfidence": "Confidence: {value}",
+      "support": "Support levels",
+      "resistance": "Resistance levels",
+      "indicatorObservations": "Indicator signals",
+      "observations": "Observations",
+      "risks": "Risks",
+      "tradeSetup": "Trade setup",
+      "disclaimer": "⚠️ Visual pattern recognition by AI is not a buy signal. Patterns can be interpreted subjectively. Your own assessment and risk management remain important."
+    }
+  },
+  "consensus": {
+    "title": "Multi-model consensus",
+    "intro": "Lets the same stock be analyzed by all configured AI providers and shows where they agree or disagree. Only available when ≥ 2 keys are set in Settings.",
+    "start": "Start consensus",
+    "starting": "Analyzing all models…",
+    "costHint": "Estimate based on typical prompt size for this stock.",
+    "labels": {
+      "Einstimmig": "Unanimous",
+      "Mehrheit": "Majority",
+      "Gespalten": "Split"
+    },
+    "agreement": "Agreement: {pct}%",
+    "avgConfidence": "Ø confidence: {pct}%",
+    "successCount": "{ok}/{total} successful",
+    "distribution": "Distribution:",
+    "confidence": "Confidence: {pct}%"
+  },
+  "earningsReaction": {
+    "title": "Earnings reaction analysis",
+    "intro": "Analyzes the most recent earnings event: beat/miss on EPS and revenue, guidance from news, market reaction (5-day and 30-day price). AI assesses whether the move is over- or under-reacting and gives a recommendation for your position.",
+    "run": "Check earnings reaction",
+    "running": "Analyzing…",
+    "beatMiss": {
+      "beat": "Beat",
+      "miss": "Miss",
+      "mixed": "Mixed",
+      "inline": "In line",
+      "unknown": "Unclear"
+    },
+    "confidence": "Confidence: {pct}%",
+    "priceChange5d": "5-day price",
+    "priceChange30d": "30-day price",
+    "lastReport": "Last report",
+    "nextReport": "Next report",
+    "guidance": "Guidance interpretation",
+    "marketReaction": "Market reaction",
+    "reasoning": "Reasoning",
+    "epsHistory": "EPS history",
+    "opportunities": "Opportunities",
+    "risks": "Risks",
+    "columns": {
+      "quarter": "Quarter",
+      "actual": "Actual",
+      "estimate": "Estimate",
+      "surprise": "Surprise"
+    }
+  },
+  "insider": {
+    "title": "Insider trades",
+    "subtitle": "Form-4 transactions (last ~6 months)",
+    "loadError": "Load error",
+    "loading": "Loading insider data…",
+    "empty": "No insider transactions available for this ticker.",
+    "buys": "Buys",
+    "sells": "Sells",
+    "buyLabel": "Buy",
+    "sellLabel": "Sell",
+    "columns": {
+      "date": "Date",
+      "name": "Name",
+      "action": "Action",
+      "shares": "Shares",
+      "value": "Value"
+    },
+    "source": "Source: Yahoo Finance / SEC Form 4. Data delayed, often only available for US tickers."
+  },
+  "proScores": {
+    "title": "Pro scores & market signals",
+    "subtitle": "Fundamental quality, bankruptcy risk, valuation, short interest, analyst revisions",
+    "loading": "Loading pro scores…",
+    "piotroski": {
+      "title": "Piotroski F-Score",
+      "outOf": "/ {max} — {label}",
+      "missing": "Not available — missing balance sheet data."
+    },
+    "altman": {
+      "title": "Altman Z-Score",
+      "zones": {
+        "safe": "Safe Zone",
+        "grey": "Grey Zone",
+        "distress": "Distress Zone"
+      }
+    },
+    "beneish": {
+      "title": "Beneish M-Score",
+      "threshold": "Threshold: −1.78"
+    },
+    "graham": {
+      "title": "Graham Number"
+    },
+    "shareholderYield": {
+      "title": "Shareholder Yield",
+      "div": "Div",
+      "buyback": "Buyback",
+      "debtPaydown": "Debt paydown"
+    },
+    "dividendGrowth": {
+      "title": "Dividend growth",
+      "cagr3y": "3y CAGR",
+      "cagr5y": "5y CAGR",
+      "cagr10y": "10y CAGR",
+      "streakSuffixOne": "year of consecutive dividend growth",
+      "streakSuffixOther": "years of consecutive dividend growth"
+    },
+    "shortInterest": {
+      "title": "Short interest",
+      "asOf": "(as of {date})",
+      "pctFloat": "% Float short",
+      "daysToCover": "Days to cover",
+      "mom": "MoM:"
+    },
+    "epsRevisions": {
+      "title": "Analyst EPS revisions",
+      "columns": {
+        "period": "Period",
+        "avgEstimate": "Avg EPS estimate",
+        "analysts": "Analysts",
+        "rev7d": "Revisions 7d",
+        "rev30d": "Revisions 30d"
+      }
+    },
+    "disclaimer": "All scores derived from public Yahoo Finance data. Piotroski / Altman / Beneish / Graham are academic models that may be inconclusive for financials (banks, insurers, REITs)."
+  },
+  "thesis": {
+    "titleAll": "Investment theses",
+    "titleFor": "Investment theses for {ticker}",
+    "newThesis": "New thesis",
+    "intro": "Capture your buy thesis in writing. Run an AI check to validate the thesis against current facts — immediately or later. This way you can see whether your buy arguments still hold.",
+    "fields": {
+      "tickerPlaceholder": "Ticker (e.g. AAPL)",
+      "thesisPlaceholder": "Your thesis: Why are you buying? Which assumption carries it?",
+      "exitPlaceholder": "Exit criteria (optional): When do you sell? Stop loss, target, time horizon",
+      "horizonPlaceholder": "Holding period in months"
+    },
+    "cancel": "Cancel",
+    "save": "Save",
+    "saved": "Saved.",
+    "loading": "Loading…",
+    "emptyAll": "No thesis yet.",
+    "emptyFor": "No thesis yet for {ticker}.",
+    "deleteConfirm": "Delete thesis permanently?",
+    "closePrompt": "How was it closed? (e.g. Sold, thesis refuted, target reached)",
+    "aiCheckDone": "AI check complete: {status}",
+    "aiCheck": "AI check",
+    "aiCheckTooltip": "AI checks thesis against current facts",
+    "closeBtn": "Close",
+    "closeTitle": "Mark as closed",
+    "deleteAria": "Delete thesis for {ticker}",
+    "createdAt": "Created: {date}",
+    "horizonMonths": " · Horizon: {months} months",
+    "entryPrice": " · Entry: {price} {currency}",
+    "thesisLabel": "Thesis:",
+    "exitLabel": "Exit:",
+    "aiCheckedAt": "AI check on {date}",
+    "contradicts": "Contradicts:",
+    "recommended": "Recommended:",
+    "status": {
+      "ACTIVE": "Active (not yet checked)",
+      "ON_TRACK": "Thesis on track",
+      "AT_RISK": "At risk",
+      "BROKEN": "Thesis broken",
+      "CLOSED": "Closed"
+    }
+  },
+  "positionSizing": {
+    "title": "Position sizing",
+    "intro": "The AI computes a position size considering your portfolio, your existing position in {ticker}, and your risk profile.",
+    "errorFallback": "Sizing failed",
+    "compute": "Compute sizing",
+    "computing": "Computing…",
+    "profiles": {
+      "conservative": "Conservative",
+      "moderate": "Moderate",
+      "aggressive": "Aggressive"
+    },
+    "recommendation": "Recommendation",
+    "shares": "Shares",
+    "suggestedWeight": "Suggested weight",
+    "maxWeight": "Max weight",
+    "basis": "Basis: Portfolio {value}",
+    "existingHolding": " · You already hold {pct}% in {ticker}",
+    "riskProfile": " · Risk profile {profile}",
+    "confidence": " · Confidence {pct}%",
+    "reasoning": "Reasoning",
+    "warnings": "Warnings",
+    "alternatives": "Alternatives",
+    "disclaimer": "⚠️ Not investment advice. Own due diligence required."
+  },
+  "notes": {
+    "title": "My notes",
+    "intro": "Personal notes on <b>{ticker}</b> — e.g. investment thesis, observations, earnings expectations. Only visible to you. Pinned notes appear at the top.",
+    "newAria": "New note for {ticker}",
+    "placeholder": "Write a note for {ticker}…",
+    "pin": "Pin",
+    "add": "Add note",
+    "loading": "Loading…",
+    "empty": "No notes yet — create the first one above.",
+    "deleteConfirm": "Really delete note?",
+    "editAria": "Edit note",
+    "cancel": "Cancel",
+    "save": "Save",
+    "unpin": "Unpin",
+    "pinAction": "Pin",
+    "edit": "Edit",
+    "deleteTitle": "Delete",
+    "deleteAria": "Delete note",
+    "pinned": "pinned",
+    "editedSuffix": " · edited {date}"
+  },
+  "relationships": {
+    "title": "Business network",
+    "cached": "cached",
+    "cachedAt": " · updated {date}",
+    "rerun": "Re-analyze",
+    "run": "Analyze network",
+    "running": "AI analyzing…",
+    "checkingCache": "Checking cache…",
+    "intro": "Shows who has {ticker} ({name}) as customer, supplier, partner or competitor — based on publicly documented business relationships. <strong>Initial analysis ~30s</strong> (then cached for 30 days).",
+    "categories": {
+      "customer": "Customers",
+      "supplier": "Suppliers",
+      "partner": "Partners",
+      "competitor": "Competitors",
+      "investor": "Investors",
+      "subsidiary": "Subsidiaries"
+    },
+    "categoryCount": "{label} ({count})",
+    "strengthAria": "Strength: {strength}",
+    "disclaimer": "⚠️ The AI generates the network from its training knowledge. Known relationships are usually accurate, very new or small connections may be missing. When in doubt — check the company's quarterly report."
+  },
+  "wikipedia": {
+    "title": "Wikipedia attention",
+    "loading": "Loading pageviews…",
+    "empty": "No data — likely no matching Wikipedia article for \"{name}\". If the admin has not configured a user agent for the Wikipedia API, the source is server-side disabled.",
+    "intro": "Daily views of the article <link>\"{article}\"</link> — as an attention proxy.",
+    "avg7": "7d avg/day",
+    "baseline30": "30d baseline",
+    "spike": "Spike",
+    "history": "Last {count} days",
+    "totalViews": "Σ {count} views in 7d",
+    "spikes": {
+      "strong": "Strong spike",
+      "elevated": "Elevated",
+      "declining": "Declining",
+      "normal": "Normal"
+    }
+  },
+  "googleTrends": {
+    "title": "Google search interest",
+    "loading": "Loading trends…",
+    "empty": "No trend data available — Google returns too few data points for \"{keyword}\" or rejected the request (temporary rate limit).",
+    "intro": "Relative search interest for \"{keyword}\" ({geo}) — 0–100 normalized to the maximum within the observation window.",
+    "avg7": "7d avg",
+    "baseline30": "30d baseline",
+    "spike": "Spike",
+    "history": "Last {count} data points",
+    "rising": "Strongly rising related searches",
+    "spikes": {
+      "strong": "Strong spike",
+      "elevated": "Elevated",
+      "declining": "Declining",
+      "normal": "Normal"
+    }
+  },
+  "reddit": {
+    "title": "Reddit buzz",
+    "summary": "{posts} posts · {upvotes} upvotes · {comments} comments",
+    "timeframes": {
+      "day": "24h",
+      "week": "7d",
+      "month": "30d"
+    },
+    "networkError": "Network error fetching from Reddit.",
+    "empty": "No notable mentions in this period.",
+    "positive": "{pct}% positive",
+    "footer": "Note: Reddit sentiment is noisy. Mood, not facts."
+  },
+  "stocktwits": {
+    "title": "Stocktwits",
+    "postsCount": "{count} posts",
+    "bullishCount": "{count} bullish",
+    "bearishCount": "{count} bearish",
+    "viewOnSite": "View on Stocktwits",
+    "intro": "Trader sentiment from recent Stocktwits posts — the platform specializes in stock discussion, many posts are explicitly tagged \"Bullish\" or \"Bearish\".",
+    "loading": "Loading Stocktwits stream…",
+    "notAvailable": "Symbol not available on Stocktwits (German tickers are often not listed there).",
+    "networkError": "Network error",
+    "bullishPct": "Bullish {pct}%",
+    "bearishPct": "Bearish {pct}%",
+    "sentimentAria": "Sentiment: {pct}% bullish",
+    "openOriginal": "Open original post",
+    "bullishTag": "Bullish",
+    "bearishTag": "Bearish"
+  },
+  "followUp": {
+    "label": "Follow up",
+    "header": "Follow-up",
+    "close": "Close follow-up",
+    "generating": "Generating answer…",
+    "errorFallback": "Error"
+  }
+}

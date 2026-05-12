@@ -1,0 +1,86 @@
+{
+  "title": "Watchlist",
+  "subtitle": "Aktien zum Beobachten — keine echte Position, nur im Blick",
+  "community": "Community",
+  "refresh": "Aktualisieren",
+  "addStock": "Aktie hinzufügen",
+  "tickerOrName": "Ticker oder Firmenname...",
+  "adding": "Hinzufügen...",
+  "empty": "Noch keine Aktien auf der Watchlist. Füge oben welche hinzu.",
+  "removeConfirm": "Von Watchlist entfernen?",
+  "remove": "Entfernen",
+  "removeAria": "{ticker} aus Watchlist entfernen",
+  "errors": {
+    "apiNoArray": "Watchlist-API hat kein Array zurückgeliefert",
+    "load": "Ladefehler"
+  },
+  "columns": {
+    "ticker": "Ticker",
+    "price": "Kurs",
+    "today": "Heute",
+    "trend3M": "Trend (3M)",
+    "distHigh": "Abstand 52W-Hoch",
+    "distLow": "Abstand 52W-Tief",
+    "conviction": "Conviction",
+    "note": "Notiz"
+  },
+  "community_page": {
+    "back": "Zurück zur Watchlist",
+    "title": "Watchlist-Community",
+    "publishNew": "Neue Liste veröffentlichen",
+    "intro": "Veröffentliche kuratierte Watchlists (z.B. \"Dividenden-Könige\", \"KI-Plays\", \"EU-Small-Caps\") und entdecke Listen anderer User. Mit einem Klick in die eigene Watchlist übernehmen.",
+    "newList": "Neue Liste",
+    "titlePlaceholder": "Titel (z.B. Dividenden-Aristokraten)",
+    "descriptionPlaceholder": "Beschreibung (optional, max 500 Zeichen)",
+    "tickersPlaceholder": "Ticker kommagetrennt (z.B. JNJ, PG, KO, PEP, MMM)",
+    "publicOption": "Öffentlich — für alle User sichtbar",
+    "cancel": "Abbrechen",
+    "publish": "Veröffentlichen",
+    "tabCommunity": "Community ({count})",
+    "tabMine": "Meine ({count})",
+    "loading": "Lade...",
+    "emptyCommunity": "Noch keine Community-Listen verfügbar.",
+    "emptyMine": "Du hast noch keine Listen erstellt.",
+    "moreCount": "+{count} weitere",
+    "importCount": "{count}× importiert",
+    "details": "Details",
+    "import": "Import",
+    "importTitle": "In eigene Watchlist übernehmen",
+    "listCreated": "Liste erstellt.",
+    "importedMessage": "{added} neue Ticker übernommen, {skipped} waren bereits in deiner Watchlist.",
+    "errors": {
+      "minOneTicker": "Mindestens ein Ticker.",
+      "generic": "Fehler",
+      "load": "Ladefehler"
+    }
+  },
+  "shared": {
+    "back": "Zurück zur Community",
+    "loading": "Lade...",
+    "public": "Öffentlich",
+    "private": "Privat",
+    "importToWatchlist": "In Watchlist übernehmen",
+    "edit": "Bearbeiten",
+    "makePrivate": "Privat machen",
+    "publish": "Veröffentlichen",
+    "delete": "Löschen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "descriptionPlaceholder": "Beschreibung",
+    "tickersPlaceholder": "Ticker kommagetrennt",
+    "tickerCount": "{count} Ticker",
+    "importedCount": "{count}× von anderen importiert",
+    "createdOn": "Erstellt: {date}",
+    "columns": {
+      "ticker": "Ticker",
+      "name": "Name",
+      "note": "Notiz"
+    },
+    "deleteConfirm": "Liste endgültig löschen?",
+    "saved": "Gespeichert.",
+    "importedMessage": "{added} neue Ticker in deine Watchlist übernommen, {skipped} waren schon drin.",
+    "errors": {
+      "generic": "Fehler"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "metaTitle": "Investment-Strategien — AI Stock Analyzer",
+  "metaDescription": "Kuratierte Anlage-Strategien als Vorlage für den Screener: Value, Growth, Dividend-Growth, Quality, Momentum und Contrarian.",
+  "back": "Zurück",
+  "title": "Investment-Strategien",
+  "intro": "Kuratierte Vorlagen für den Screener. Jede Karte erklärt eine Strategie, nennt die typischen Kriterien und verlinkt direkt in den vorkonfigurierten Screener. Keine Anlageberatung.",
+  "openInScreener": "Im Screener öffnen",
+  "criteriaHeading": "Typische Kriterien",
+  "historyHeading": "Historie",
+  "risksHeading": "Risiken",
+  "strategies": {
+    "value": {
+      "label": "Value",
+      "tagline": "Benjamin Graham / Warren Buffett",
+      "description": "Günstig bewertete Qualitätsunternehmen mit solider Bilanz. Ziel: Aktien unter intrinsischem Wert kaufen und warten, bis der Markt sie fair bewertet.",
+      "bullet1": "KGV < 15",
+      "bullet2": "Kurs-Buchwert < 2,5",
+      "bullet3": "Mindest-Marktkapitalisierung 1 Mrd.",
+      "bullet4": "Tiefe in DCF-Rechner prüfen (implied growth)",
+      "historical": "Historisch leichte Überrendite in Aktien-Zyklen, aber lange Schwächephasen möglich (z. B. 2010–2020).",
+      "risks": "Value-Traps: günstig, weil das Geschäftsmodell stirbt. Immer Qualität und Moat prüfen."
+    },
+    "dividend-growth": {
+      "label": "Dividend Growth",
+      "tagline": "Dividenden-Aristokraten, DGI",
+      "description": "Unternehmen mit langer Historie steigender Dividenden, robuster Payout-Ratio und wachsendem Free Cash Flow. Fokus auf Einkommen plus Kursanstieg.",
+      "bullet1": "Dividendenrendite ≥ 3 %",
+      "bullet2": "Mindestens 5–10 Jahre ununterbrochen steigende Dividenden",
+      "bullet3": "Payout Ratio < 60 %",
+      "bullet4": "Mindest-Marktkap. 2 Mrd.",
+      "historical": "Geringerer Drawdown als Gesamtmarkt, stabilere Erträge. Dividenden-Reinvest erzielt Zinseszins-Effekt.",
+      "risks": "Zinssensitiv (hohe Dividendenaktien verlieren bei steigenden Zinsen). Dividenden-Kürzung bei Rezession."
+    },
+    "growth": {
+      "label": "Quality-Growth",
+      "tagline": "GARP / Fisher",
+      "description": "Wachstumsunternehmen mit überdurchschnittlichem Umsatz-/Gewinnwachstum, hoher Marge und defensiver Bilanz — aber zu nicht-extremer Bewertung (GARP = Growth at a Reasonable Price).",
+      "bullet1": "Umsatzwachstum > 10 % YoY",
+      "bullet2": "Operative Marge > 20 %",
+      "bullet3": "Nahe am 52-Wochen-Hoch (positive Marktreaktion)",
+      "bullet4": "Marktkap. > 5 Mrd.",
+      "historical": "Starke Outperformance in Tiefzinsphasen, stärkere Drawdowns bei Marktkorrekturen.",
+      "risks": "Hohe Bewertung → begrenzter Puffer bei Wachstums-Enttäuschungen. Momentum kann schnell drehen."
+    },
+    "momentum": {
+      "label": "Momentum",
+      "tagline": "Trend-Following",
+      "description": "Aktien, die in den letzten Monaten stark gestiegen sind, tendieren dazu, weiter zu steigen — bis der Trend bricht. Kombiniert mit Volumen-Bestätigung und Trendqualität.",
+      "bullet1": "Kursanstieg > 2 % am aktuellen Tag + starkes Volumen",
+      "bullet2": "Nahe 52-Wochen-Hoch",
+      "bullet3": "Breakout-Screener nutzen",
+      "bullet4": "Stop-Loss-Disziplin (−7 bis −10 %)",
+      "historical": "Gut dokumentierter Faktor (Jegadeesh & Titman, 1993). Starke Out-/Underperformance-Zyklen.",
+      "risks": "Kurze Reversals können schmerzhaft sein. Fügt Portfolio hohe Volatilität hinzu."
+    },
+    "contrarian": {
+      "label": "Contrarian / Oversold",
+      "tagline": "Deep Value + Mean Reversion",
+      "description": "Qualitätsunternehmen, die nahe am 52-Wochen-Tief handeln — oft nach übertriebener Reaktion auf Quartalsergebnisse oder Branchen-News. Erfordert Geduld und Research.",
+      "bullet1": "Nahe 52-Wochen-Tief (< 20 % vom Low)",
+      "bullet2": "Marktkap. > 1 Mrd. (kein Micro-Cap-Risiko)",
+      "bullet3": "Due Diligence: Bilanz, Cashflow, Management-Aussagen",
+      "bullet4": "Thesen-Tracker zwingend nutzen",
+      "historical": "Ursprung moderner Value-Strategien (DeBondt/Thaler). Starke Rebounds möglich, aber auch echte Zombies.",
+      "risks": "Value-Trap ist hier am gefährlichsten. Mindestens eine Bull-Bear-Analyse + Conviction-Score prüfen."
+    },
+    "defensive": {
+      "label": "Defensive Blue-Chips",
+      "tagline": "Risiko-minimierend",
+      "description": "Großkapitalisierte Unternehmen mit nicht-zyklischem Geschäftsmodell (Konsumgüter, Healthcare, Versorger), niedrigem Beta und robuster Dividende. Der ruhige Kern im Portfolio.",
+      "bullet1": "Marktkap. > 20 Mrd.",
+      "bullet2": "Beta < 0,9",
+      "bullet3": "Sektor: Consumer Staples, Healthcare, Utilities",
+      "bullet4": "Dividende ausgeschüttet und stabil",
+      "historical": "Geringe Volatilität, stabile Performance. In Hausse-Phasen Underperformance, in Baisse Schutz.",
+      "risks": "Zinssensitiv (Versorger). Wachstumsfantasie begrenzt — Total Return kommt stark aus Dividenden."
+    }
+  }
+}

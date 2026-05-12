@@ -1,0 +1,22 @@
+{
+  "back": "Back",
+  "title": "Weekly briefing",
+  "refresh": "Refresh",
+  "description": "Compact recap of the last 5 trading days: strongest moves in portfolio and watchlist, most important news, theses currently under pressure. Not investment advice — a tool to get a quick overview.",
+  "errorGeneric": "Error",
+  "loading": "Collecting price data and news from the last week…",
+  "generated": "Generated {time} · {positions} positions, {watchlist} watchlist entries",
+  "thesenAlert": {
+    "title": "Theses in focus",
+    "atRiskHeading": "At risk or refuted",
+    "uncheckedOne": "{count} thesis has never been checked by AI:",
+    "uncheckedOther": "{count} theses have never been checked by AI:"
+  },
+  "movers": {
+    "topGainers": "Top gainers of the week",
+    "topLosers": "Top losers of the week",
+    "empty": "Nothing remarkable in this direction this week.",
+    "portfolioBadge": "Portfolio"
+  },
+  "newsHeading": "News of the week"
+}

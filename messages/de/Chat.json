@@ -1,0 +1,24 @@
+{
+  "title": "Ask the Portfolio",
+  "description": "Natürlichsprachige Konversation mit deinem Portfolio. KI kennt alle Positionen, Transaktionen, Gewichtungen und die Entwicklung der letzten 30 Tage.",
+  "refreshContext": "Kontext neu laden",
+  "refreshContextTitle": "Portfolio-Kontext neu laden",
+  "clear": "Löschen",
+  "confirmClear": "Unterhaltung löschen?",
+  "emptyTitle": "Leg los mit einer Frage",
+  "emptyBody": "Die KI kennt dein Portfolio — frag was immer du wissen willst.",
+  "placeholder": "Frage stellen...",
+  "send": "Senden",
+  "answerGenerating": "Antwort wird erzeugt",
+  "footer": "💡 Die KI sieht nur die Daten die in deinem Portfolio stehen. Kontext wird 5 Min lang gecached für schnellere Antworten.",
+  "noStreamBody": "Kein Stream-Body",
+  "error": "Fehler",
+  "suggestions": {
+    "riskiest": "Welche Position ist am riskantesten?",
+    "chinaExposure": "Wie viel China-Exposure habe ich?",
+    "last30Days": "Warum lag mein Portfolio in den letzten 30 Tagen so?",
+    "topConcerns": "Welche Top-3 Sorgenkinder habe ich?",
+    "techWeighted": "Bin ich in Tech zu stark gewichtet?",
+    "reduce": "Welche Aktie sollte ich reduzieren?"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "overview": {
+    "back": "Back",
+    "title": "Macro & sentiment",
+    "reload": "Reload",
+    "intro": "Overview of the most important macro and sentiment indicators. All data comes from Yahoo Finance (US Treasuries, SPDR sector ETFs, VIX, DXY, commodity futures). An inverted yield curve (short-term rates higher than the 10-year yield) is a widely watched recession indicator.",
+    "errorGeneric": "Error",
+    "loading": "Loading macro data...",
+    "yieldCurve": {
+      "title": "US yield curve",
+      "spread10y3m": "10Y − 3M spread",
+      "status": "Status",
+      "inverted": "Inverted (recession signal)",
+      "normal": "Normal"
+    },
+    "sentiment": {
+      "title": "Sentiment & commodities"
+    },
+    "sectors": {
+      "title": "US sector heatmap (SPDR ETFs, day change)",
+      "intensityNote": "Color intensity is proportional to the magnitude of the day change (capped at ±3%)."
+    }
+  },
+  "scenario": {
+    "title": "Macro scenarios on your portfolio",
+    "subtitle": "Describe a macro scenario in your own words. The AI evaluates each position individually and estimates the overall impact.",
+    "scenarioLabel": "Scenario",
+    "placeholder": "e.g. 'ECB raises policy rate by 150 bp, EUR/USD climbs to 1.20, German yields +100bp.'",
+    "charCount": "{count}/1000 characters",
+    "costHint": "Uses your primary provider.",
+    "run": "Analyze scenario",
+    "calculating": "Calculating…",
+    "errorGeneric": "Error",
+    "presets": {
+      "ecb100bp": {
+        "label": "ECB +100 bp",
+        "scenario": "The ECB raises policy rates by a total of 100 basis points over the next 6 months. EUR/USD rises by 5%, German Bund yields +80bp."
+      },
+      "fedPivot": {
+        "label": "Fed pivot −150 bp",
+        "scenario": "The Fed unexpectedly starts an aggressive cutting cycle of 150 basis points within 9 months. USD weakens against EUR by 8%, US tech multiples expand."
+      },
+      "brent120": {
+        "label": "Brent $120",
+        "scenario": "Geopolitical escalation lifts Brent oil to USD 120, European natural gas prices +60%. Inflation returns to the 4-5% range."
+      },
+      "chinaTech": {
+        "label": "China tech sanctions",
+        "scenario": "The US significantly tightens semiconductor sanctions against China; Chinese retaliation hits Western auto and consumer goods makers operating in China. Hang Seng -15%, S&P -8%."
+      },
+      "usdEur": {
+        "label": "USD/EUR -10%",
+        "scenario": "USD loses 10% against EUR within 3 months — without further shock, primarily driven by Fed expectations and twin-deficit concerns."
+      },
+      "aiBubble": {
+        "label": "AI bubble bursts",
+        "scenario": "A broad re-rating of AI-driven tech stocks sets in: NVIDIA −40%, Mag-7 on average −25%, semiconductor ETFs −30% within 3 months."
+      }
+    },
+    "result": {
+      "riskAssessment": "Risk assessment",
+      "portfolioEffect": "estimated total effect on portfolio",
+      "keyDrivers": "Key drivers",
+      "mostExposed": "Most exposed",
+      "mostInsulated": "Most insulated",
+      "hedges": "Possible hedges",
+      "positionByPosition": "Position by position",
+      "thTicker": "Ticker",
+      "thExpected": "Exp. %",
+      "thSeverity": "Severity",
+      "thReasoning": "Reasoning"
+    }
+  }
+}

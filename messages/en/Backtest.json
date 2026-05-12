@@ -1,0 +1,37 @@
+{
+  "title": "Indicator backtest",
+  "description": "Simulates a trading strategy on historical prices of a ticker. Buy/sell signals are derived from indicator crossings, position size is all-in / all-out. Costs (spread, commission, slippage, taxes) are <strong>not</strong> considered. Results are purely historical — no statement about future performance.",
+  "form": {
+    "ticker": "Ticker",
+    "tickerPlaceholder": "e.g. AAPL, SAP.DE",
+    "strategy": "Strategy",
+    "range": "Range",
+    "initialCapital": "Initial capital (EUR)"
+  },
+  "start": "Start backtest",
+  "errorRun": "Backtest failed",
+  "errorGeneric": "Error",
+  "stats": {
+    "endCapital": "Final capital",
+    "strategyReturn": "Strategy return",
+    "buyHold": "Buy & hold",
+    "buyHoldBeat": "Strategy beats baseline",
+    "buyHoldLose": "Baseline better",
+    "maxDrawdown": "Max drawdown",
+    "trades": "Trades",
+    "winRate": "Win rate",
+    "avgWin": "Avg win",
+    "avgLoss": "Avg loss"
+  },
+  "winLoss": "{wins}W / {losses}L",
+  "equityHeading": "Equity curve — {ticker} • {range}",
+  "tradesHeading": "Trades ({count})",
+  "table": {
+    "entry": "Entry",
+    "exit": "Exit",
+    "buy": "Buy",
+    "sell": "Sell",
+    "pnlPct": "PnL %",
+    "signal": "Signal"
+  }
+}

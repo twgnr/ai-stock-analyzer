@@ -1,0 +1,7 @@
+{
+  "title": "Install app",
+  "description": "Add to your home screen — it then runs like a native app.",
+  "install": "Install",
+  "dismissTitle": "Later",
+  "dismissAria": "Dismiss install banner"
+}

@@ -1,0 +1,33 @@
+{
+  "attention": {
+    "title": "Attention radar",
+    "reloadTitle": "Reload",
+    "refresh": "Refresh",
+    "intro": "Wikipedia pageviews and Google search interest for your watchlist + portfolio. Tickers with something moving right now show at the top.",
+    "loading": "Gathering attention signals for your tickers — first run can take up to a minute.",
+    "empty": "No tickers in watchlist or portfolio yet — add some to see spike signals here.",
+    "error": "Error",
+    "thead": {
+      "ticker": "Ticker",
+      "wiki": "Wiki",
+      "google": "Google",
+      "rising": "Rising searches"
+    },
+    "inPortfolio": "In portfolio",
+    "explanation": "Spike factor = last 7-day avg / 30-day baseline. Combined max of Wikipedia and Google Trends drives the sort order."
+  },
+  "newsFeed": {
+    "title": "Top news (watchlist + portfolio)",
+    "reloadTitle": "Reload",
+    "refresh": "Refresh",
+    "intro": "The 20 most recent Yahoo news stories across all your tickers — deduplicated and sorted by recency.",
+    "loading": "Loading news…",
+    "empty": "No news found — add tickers to watchlist or portfolio.",
+    "error": "Error",
+    "agePrefix": "",
+    "ageSeconds": "{n}s ago",
+    "ageMinutes": "{n} min ago",
+    "ageHours": "{n} h ago",
+    "ageDays": "{n}d ago"
+  }
+}

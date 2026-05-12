@@ -1,0 +1,22 @@
+{
+  "title": "Earnings calendar",
+  "subtitle": "Upcoming quarterly results for your portfolio and watchlist stocks.",
+  "refresh": "Refresh",
+  "filter": {
+    "all": "All",
+    "portfolio": "Portfolio",
+    "watchlist": "Watchlist"
+  },
+  "errorGeneric": "Error",
+  "loading": "Loading earnings data from Yahoo...",
+  "empty": "No upcoming earnings found.",
+  "thDate": "Date",
+  "thTicker": "Ticker",
+  "thEpsEstimate": "EPS estimate",
+  "thStatus": "Status",
+  "inDays": "in {days} days",
+  "today": "today",
+  "daysAgo": "{days} days ago",
+  "tagPortfolio": "Portfolio",
+  "tagWatchlist": "Watchlist"
+}

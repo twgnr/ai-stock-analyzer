@@ -1,0 +1,5 @@
+{
+  "ariaLabel": "Live market ticker",
+  "itemAriaWithData": "{label} analysis: price {price}, change {change}",
+  "itemAriaFallback": "{label} ({symbol}) — open analysis"
+}

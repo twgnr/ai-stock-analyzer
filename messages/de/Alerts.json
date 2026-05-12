@@ -1,0 +1,102 @@
+{
+  "title": "Alerts",
+  "subtitle": "Benachrichtigung per E-Mail bei Preis- oder Indikator-Signalen. Check-Intervall: alle 15 Minuten.",
+  "history": "Historie",
+  "newAlert": "Neuer Alert",
+  "priceAlert": "Preis-Alert",
+  "indicatorAlert": "Indikator-Alert",
+  "stock": "Aktie",
+  "tickerPlaceholder": "Ticker...",
+  "direction": "Richtung",
+  "directionBelow": "Unter (below)",
+  "directionAbove": "Über (above)",
+  "threshold": "Schwelle",
+  "currency": "Währung",
+  "condition": "Bedingung",
+  "indicatorHint": "Alert feuert einmalig beim Kreuzen der Bedingung (Ereignis, nicht Dauerzustand). Alle 15 Minuten werden Tages-Candles ausgewertet.",
+  "note": "Notiz",
+  "cancel": "Abbrechen",
+  "create": "Alert erstellen",
+  "loading": "Lade...",
+  "empty": "Noch keine Alerts. Leg einen an, um automatisch informiert zu werden.",
+  "deleteConfirm": "Alert löschen?",
+  "deleteAria": "Alert für {ticker} löschen",
+  "statusTriggered": "Ausgelöst",
+  "statusActive": "Aktiv",
+  "statusPaused": "Pausiert",
+  "activate": "Aktivieren",
+  "deactivate": "Deaktivieren",
+  "indicator": "Indikator",
+  "price": "Preis",
+  "columns": {
+    "status": "Status",
+    "ticker": "Ticker",
+    "type": "Typ",
+    "rule": "Regel",
+    "note": "Notiz",
+    "created": "Erstellt"
+  },
+  "errors": {
+    "tickerRequired": "Ticker erforderlich",
+    "thresholdRequired": "Schwelle erforderlich",
+    "generic": "Fehler"
+  },
+  "indicators": {
+    "groups": {
+      "oscillator": "Oszillator",
+      "trendFollowing": "Trendfolge",
+      "volatility": "Volatilität"
+    },
+    "options": {
+      "rsi_below_30": "RSI-Oversold (< 30)",
+      "rsi_above_70": "RSI-Overbought (> 70)",
+      "macd_bullish_cross": "MACD bullish crossover",
+      "macd_bearish_cross": "MACD bearish crossover",
+      "sma_golden_cross": "Golden Cross (SMA 50/200)",
+      "sma_death_cross": "Death Cross (SMA 50/200)",
+      "price_above_sma200": "Kurs kreuzt über SMA 200",
+      "price_below_sma200": "Kurs kreuzt unter SMA 200",
+      "bb_breakout_upper": "Bollinger-Breakout nach oben",
+      "bb_breakout_lower": "Bollinger-Breakout nach unten"
+    }
+  },
+  "historyPage": {
+    "back": "Zurück zu Alerts",
+    "title": "Alert-Historie",
+    "refresh": "Aktualisieren",
+    "intro": "Alle bereits ausgelösten Preis-Alerts, chronologisch nach Auslöse-Datum. Nach dem Auslösen werden Alerts automatisch deaktiviert — für ein neues Signal am gleichen Ticker/Schwellenwert einen neuen Alert anlegen.",
+    "stats": {
+      "totalTriggered": "Ausgelöst gesamt",
+      "last30d": "Letzte 30 Tage",
+      "uniqueTickers": "Verschiedene Ticker"
+    },
+    "filterPlaceholder": "Nach Ticker filtern...",
+    "loading": "Lade...",
+    "emptyAll": "Noch keine Alerts ausgelöst.",
+    "emptyFiltered": "Keine Treffer für diesen Filter.",
+    "columns": {
+      "ticker": "Ticker",
+      "condition": "Bedingung",
+      "triggered": "Ausgelöst",
+      "waited": "Wartete",
+      "note": "Notiz"
+    },
+    "daysShort": "T",
+    "monthCount": "{month} ({count})",
+    "errors": {
+      "load": "Ladefehler"
+    },
+    "indicatorLabels": {
+      "rsi_below_30": "RSI-Oversold",
+      "rsi_above_70": "RSI-Overbought",
+      "macd_bullish_cross": "MACD bullish",
+      "macd_bearish_cross": "MACD bearish",
+      "sma_golden_cross": "Golden Cross",
+      "sma_death_cross": "Death Cross",
+      "bb_breakout_upper": "BB-Breakout ↑",
+      "bb_breakout_lower": "BB-Breakout ↓",
+      "price_above_sma200": "Kurs > SMA200",
+      "price_below_sma200": "Kurs < SMA200"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "back": "Zurück",
+  "title": "Wochen-Briefing",
+  "refresh": "Aktualisieren",
+  "description": "Kompakter Rückblick auf die letzten 5 Handelstage: stärkste Bewegungen in Portfolio und Watchlist, wichtigste News, Thesen die aktuell unter Druck stehen. Keine Anlageberatung — ein Werkzeug, um schnell den Überblick zu bekommen.",
+  "errorGeneric": "Fehler",
+  "loading": "Sammle Kursdaten und News der letzten Woche…",
+  "generated": "Generiert {time} · {positions} Positionen, {watchlist} Watchlist-Einträge",
+  "thesenAlert": {
+    "title": "Thesen im Fokus",
+    "atRiskHeading": "Gefährdet oder gebrochen",
+    "uncheckedOne": "{count} These wurde noch nie per KI geprüft:",
+    "uncheckedOther": "{count} Thesen wurden noch nie per KI geprüft:"
+  },
+  "movers": {
+    "topGainers": "Top Gewinner der Woche",
+    "topLosers": "Top Verlierer der Woche",
+    "empty": "Nichts Bemerkenswertes in dieser Richtung diese Woche.",
+    "portfolioBadge": "Portfolio"
+  },
+  "newsHeading": "News der Woche"
+}

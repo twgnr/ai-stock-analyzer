@@ -1,0 +1,33 @@
+{
+  "title": "Peer compare",
+  "description": "Put two stocks head-to-head. AI evaluates valuation, growth, profitability, risks and moat — and gives a recommendation on which is the better buy right now.",
+  "stockA": "Stock A",
+  "stockB": "Stock B",
+  "selectBoth": "Please pick both stocks",
+  "placeholderA": "e.g. NVDA",
+  "placeholderB": "e.g. AMD",
+  "compare": "Compare",
+  "comparing": "Comparing with AI...",
+  "error": "Error",
+  "verdict": "Verdict",
+  "tieResult": "Tie — both equivalent",
+  "winsSuffix": "wins",
+  "scenario": "When which stock fits:",
+  "summary": "Summary",
+  "asset": "Stock {side}",
+  "conviction": "Conviction:",
+  "winner": "Winner",
+  "table": {
+    "category": "Category",
+    "winner": "Winner",
+    "tie": "Tie"
+  },
+  "categories": {
+    "valuation": "Valuation",
+    "growth": "Growth",
+    "profitability": "Profitability",
+    "risks": "Risks",
+    "moat": "Moat"
+  },
+  "disclaimer": "⚠️ Not investment advice. Do your own due diligence."
+}

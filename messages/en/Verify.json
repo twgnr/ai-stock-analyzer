@@ -1,0 +1,6 @@
+{
+  "banner": "Please verify your email address <strong>{email}</strong>.",
+  "resend": "Send a new link",
+  "sending": "Sending …",
+  "resent": "New verification link sent (or printed to the server console if SMTP is missing)"
+}

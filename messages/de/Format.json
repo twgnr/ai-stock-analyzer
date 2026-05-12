@@ -1,0 +1,8 @@
+{
+  "age": {
+    "justNow": "gerade eben",
+    "minutesAgo": "vor {value} Min.",
+    "hoursAgo": "vor {value} Std.",
+    "daysAgo": "{value, plural, =1 {vor 1 Tag} other {vor # Tagen}}"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Markt-Radar",
+  "subtitle": "Was bewegt sich gerade bei deinen Tickers — und welche Ideen schlägt die KI dazu vor?",
+  "horizon": {
+    "label": "Zeithorizont",
+    "long": "Langfristig",
+    "longDescription": "3-10+ Jahre · Value & Qualität · Fundamentalstarke Titel",
+    "swing": "Swing",
+    "swingDescription": "1-3 Monate · Sektor-Rotation · Katalysator-getrieben",
+    "short": "Kurzfristig",
+    "shortDescription": "Tage-Wochen · Sehr spekulativ · ohne Live-Daten unzuverlässig",
+    "shortWarning": "⚠️ Kurzfristige Empfehlungen ohne Echtzeit-Daten sind spekulativ. Nutze den Screener für datengetriebene Signale."
+  },
+  "focus": {
+    "label": "Optionaler Fokus (z.B. \"defensive Dividendentitel\", \"KI-Sektor\", \"europäische Small Caps\")",
+    "placeholder": "Leer lassen für breiten Marktüberblick"
+  },
+  "start": "Radar starten",
+  "scanning": "Scanne Märkte...",
+  "radarFailed": "Radar fehlgeschlagen",
+  "analysisFailed": "Analyse fehlgeschlagen",
+  "errorGeneric": "Fehler",
+  "marketOverview": "Marktüberblick",
+  "sectorRotation": "Sektor-Rotation",
+  "ideas": "Ideen ({count})",
+  "selectAll": "Alle auswählen",
+  "clearSelection": "Auswahl löschen",
+  "discardResults": "Ergebnisse verwerfen",
+  "discard": "verwerfen",
+  "deepAnalyze": "Auswahl fundamental prüfen ({count})",
+  "aiAnalyzing": "KI analysiert...",
+  "deepCheckTitle": "Fundamentale Prüfung (mit Live-Daten)",
+  "confidence": "Konfidenz: {percent}%",
+  "thesis": "These",
+  "whyNow": "Warum jetzt?",
+  "risks": "Risiken",
+  "disclaimer": "⚠️ Keine Anlageberatung. Die KI hat keinen Echtzeit-Marktzugang — Ideen basieren auf Trainingsdaten und Marktwissen. Eigene Due Diligence erforderlich."
+}

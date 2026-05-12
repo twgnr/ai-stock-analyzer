@@ -1,0 +1,18 @@
+{
+  "loading": "Loading …",
+  "save": "Save",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "edit": "Edit",
+  "close": "Close",
+  "back": "Back",
+  "next": "Next",
+  "submit": "Submit",
+  "search": "Search",
+  "yes": "Yes",
+  "no": "No",
+  "error": "Error",
+  "retry": "Try again",
+  "loggedOut": "Logged out",
+  "notLoggedIn": "Not logged in"
+}

@@ -1,0 +1,129 @@
+{
+  "stepCounter": "Step {current} of {total}",
+  "skip": "Skip tour",
+  "skipAria": "Skip tour",
+  "later": "Later",
+  "laterTitle": "Minimize",
+  "back": "Back",
+  "next": "Next",
+  "finish": "Let's go",
+  "resume": "Resume tour ({current}/{total})",
+  "resumeAria": "Resume tour",
+  "resumeTitle": "Resume tour",
+  "endAria": "Finish tour",
+  "endTitle": "Finish tour",
+  "primaryLinkHint": "Tip: You can browse the page — the tour waits in the bottom right (\"Resume tour\").",
+  "steps": {
+    "welcome": {
+      "title": "Welcome to AI Stock Analyzer",
+      "bodyP1": "This tool bundles portfolio tracking, watchlist, AI analyses, risk and macro evaluations in one place. You'll need about 5 minutes to set everything up.",
+      "bodyP2Html": "Tip: Toggle the <strong>question mark</strong> in the top right to enable help mode — an info bar then explains every menu item, every table column and every chart indicator on hover."
+    },
+    "dataSources": {
+      "title": "Data sources — where do the numbers come from?",
+      "bodyIntro": "AI Stock Analyzer aggregates several free sources:",
+      "sourceYahooHtml": "<strong>Yahoo Finance</strong> — prices (15-min delay), fundamentals, news, earnings, insider, dividends, financial history, ETF top holdings.",
+      "sourceFinnhubHtml": "<strong>Finnhub</strong> — real-time quotes (free tier 60 req/min) + analyst consensus, price targets, insider sentiment, earnings surprises.",
+      "sourceStooqHtml": "<strong>Stooq</strong> — backup quote provider for EU stocks.",
+      "sourceRedditHtml": "<strong>Reddit</strong> — subreddit buzz per ticker as a sentiment proxy.",
+      "sourceFredHtml": "<strong>FRED (St. Louis Fed)</strong> — macro indicators: yield curve, Fed/ECB rates, CPI, unemployment, VIX, USD/EUR, WTI oil.",
+      "sourceSecHtml": "<strong>SEC EDGAR</strong> — 10-K, 10-Q, 8-K, Form-4 (insider trades) straight from the source.",
+      "sourceWikipediaHtml": "<strong>Wikipedia pageviews</strong> — daily article views as an attention proxy.",
+      "sourceTrendsHtml": "<strong>Google Trends</strong> — relative search interest + strongly rising related queries (early catalyst hints).",
+      "sourceEcbHtml": "<strong>ECB</strong> — daily FX reference rates for multi-currency portfolios.",
+      "sourceMagazineHtml": "<strong>Yahoo (PDF magazine pipeline)</strong> — AI parses uploaded market magazines.",
+      "keysNoteHtml": "External API keys (Claude/Gemini/OpenAI for AI, Finnhub/FRED for data) are stored by the admin in <strong>Admin settings</strong> — keys are stored encrypted."
+    },
+    "aiAccess": {
+      "title": "Set up AI access",
+      "bodyP1Html": "For single-stock analysis, portfolio insights, chat and macro scenarios you need <strong>your own API key</strong> with one of the supported providers: Claude (Anthropic), Gemini (Google), Groq or OpenAI. You store the key in Settings under \"AI\" — requests go directly between your browser and the provider.",
+      "bodyP2Html": "Instructions per provider — where to get the key, what it costs, which limits apply — under <strong>Help &amp; FAQ → Set up API keys</strong>.",
+      "linkLabel": "View instructions"
+    },
+    "dashboard": {
+      "title": "Dashboard — your cockpit",
+      "bodyP1Html": "On the <strong>dashboard</strong> you see portfolio value, P/L, day change, 180-day equity chart, health score and top market movers.",
+      "bodyP2Html": "Use the <strong>\"Customize\"</strong> button to toggle widgets on/off and reorder them — saved in your browser.",
+      "linkLabel": "Open dashboard"
+    },
+    "portfolio": {
+      "title": "Create your portfolio",
+      "bodyP1": "Enter positions manually or import a CSV export from your broker (Trade Republic, comdirect, ING, IBKR …).",
+      "bodyP2": "From your positions we later compute performance metrics, tax report, risk analyses and the weekly briefing digest.",
+      "linkLabel": "Open portfolio"
+    },
+    "watchlist": {
+      "title": "Watchlist & alerts",
+      "bodyP1Html": "In the <strong>watchlist</strong> you collect tracked stocks with a trend sparkline, 52-week position and conviction score.",
+      "bodyP2Html": "<strong>Alerts</strong> are price or indicator triggers (RSI &lt; 30, MACD cross, 52-week high, …) — when triggered you get an email and optionally a web push notification.",
+      "linkLabel": "Open watchlist"
+    },
+    "aiAnalysis": {
+      "title": "AI analysis per stock",
+      "bodyP1Html": "On every stock's <strong>detail page</strong> you can trigger an AI analysis. The AI receives fundamentals, news, Reddit buzz, Wikipedia attention, Google Trends, Finnhub analytics (consensus, price targets, insider) and SEC filings — and returns a recommendation + reasoning + risks/opportunities.",
+      "bodyP2Html": "<strong>Multi-model consensus</strong> lets several providers analyze in parallel and shows agreement/disagreement.",
+      "linkLabel": "View discoveries"
+    },
+    "risk": {
+      "title": "Risk analyses",
+      "bodyP1Html": "Under <strong>Portfolio → Risk</strong> you get value-at-risk, Monte Carlo simulation, historical stress tests (COVID, 2008, rate shock) and a factor exposure breakdown (value/growth/quality/momentum).",
+      "bodyP2Html": "The <strong>portfolio health score</strong> on the dashboard summarizes the whole portfolio into a grade A–F.",
+      "linkLabel": "Open risk page"
+    },
+    "macro": {
+      "title": "Macro & macro scenarios",
+      "bodyP1Html": "<strong>Macro & sentiment</strong> shows market breadth, fear & greed, Reddit sentiment.",
+      "bodyP2Html": "<strong>Macro scenarios</strong> simulate concrete shocks (\"ECB +100bp\", \"Brent $120\", \"AI bubble pops\") against your portfolio. The AI rates each position individually and gives an overall impact.",
+      "linkLabel": "Open macro scenarios"
+    },
+    "marketRadar": {
+      "title": "Market radar",
+      "bodyIntroHtml": "What is moving right now? The <strong>market radar</strong> shows:",
+      "li1": "Attention spikes (Wikipedia + Google) on your tickers",
+      "li2": "Top 20 news from your watchlist + portfolio",
+      "li3": "AI idea generator for stocks you don't hold",
+      "linkLabel": "Open market radar"
+    },
+    "screener": {
+      "title": "Screener, breakouts & discoveries",
+      "bodyP1Html": "<strong>Screener</strong>: multi-criteria filter (P/E, yield, sector, …) across the stock universe.",
+      "bodyP2Html": "<strong>Breakout</strong>: stocks breaking out of 52-week highs/lows or violating Bollinger Bands right now.",
+      "bodyP3Html": "<strong>Discoveries</strong>: AI recommendations of stocks similar to your portfolio + gap analysis.",
+      "linkLabel": "Open screener"
+    },
+    "trackRecord": {
+      "title": "AI track record",
+      "bodyHtml": "How good were the AI recommendations really? The <strong>AI track record</strong> compares every saved recommendation against the subsequent price action — hit rate, avg. return and buckets per model.",
+      "linkLabel": "View track record"
+    },
+    "chat": {
+      "title": "Chat & briefing",
+      "bodyP1Html": "<strong>Chat</strong> (\"Ask the Portfolio\") — natural-language chat with your portfolio context, streaming answers.",
+      "bodyP2Html": "<strong>Weekly briefing</strong> — daily/weekly AI report: what changed, new risks, new opportunities.",
+      "linkLabel": "Open chat"
+    },
+    "personalization": {
+      "title": "Personalization",
+      "bodyIntroHtml": "In <strong>Settings</strong>:",
+      "li1Html": "<strong>Profile</strong> — name, base currency, app settings",
+      "li2Html": "<strong>Security</strong> — password, 2FA",
+      "li3Html": "<strong>AI</strong> — own API keys, model selection, limits",
+      "li4Html": "<strong>Notifications</strong> — email address, alerts, digest, web push",
+      "li5Html": "<strong>Appearance</strong> — light/dark/system, optional 3D effect",
+      "li6Html": "<strong>Usage</strong> — AI token usage, costs",
+      "linkLabel": "Open settings"
+    },
+    "shortcuts": {
+      "title": "Keyboard shortcuts",
+      "bodyP1Html": "<strong>Cmd/Ctrl + K</strong> opens the command palette: open a page, run an action or analyze a ticker — the fastest way through the app.",
+      "bodyP2": "Top right of the nav: bell for notifications, question mark for help mode, avatar for logout/settings."
+    },
+    "help": {
+      "title": "Help & glossary",
+      "bodyP1Html": "All features are documented under <strong>Help &amp; FAQ</strong>, financial terms are explained in the <strong>glossary</strong>, ready-to-use investment strategies live under <strong>Strategies</strong>.",
+      "bodyP2Html": "Don't forget the <strong>help mode</strong> in the top right — it explains every menu item, every table column and every chart indicator on hover.",
+      "disclaimer": "⚠️ AI Stock Analyzer is not financial advice and provides informational content only.",
+      "linkLabel": "Open help"
+    }
+  }
+}

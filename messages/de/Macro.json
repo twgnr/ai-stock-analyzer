@@ -1,0 +1,74 @@
+{
+  "overview": {
+    "back": "Zurück",
+    "title": "Makro & Sentiment",
+    "reload": "Neu laden",
+    "intro": "Übersicht der wichtigsten Makro- und Stimmungsindikatoren. Alle Daten stammen aus Yahoo Finance (US-Treasuries, SPDR-Sektor-ETFs, VIX, DXY, Rohstoff-Futures). Ein inverser Yield-Curve (kurzfristige Zinsen höher als 10-Jahres-Rendite) ist ein viel beachteter Rezessions-Indikator.",
+    "errorGeneric": "Fehler",
+    "loading": "Lade Makro-Daten...",
+    "yieldCurve": {
+      "title": "US-Yield-Curve",
+      "spread10y3m": "10Y − 3M Spread",
+      "status": "Status",
+      "inverted": "Invertiert (Rezessions-Signal)",
+      "normal": "Normal"
+    },
+    "sentiment": {
+      "title": "Sentiment & Rohstoffe"
+    },
+    "sectors": {
+      "title": "US-Sektor-Heatmap (SPDR-ETFs, Tagesveränderung)",
+      "intensityNote": "Intensität der Farbe proportional zum Betrag der Tagesveränderung (Obergrenze ±3%)."
+    }
+  },
+  "scenario": {
+    "title": "Macro-Szenarien aufs Portfolio",
+    "subtitle": "Beschreibe ein Makro-Szenario in eigenen Worten. Die KI bewertet jede Position einzeln und schätzt den Gesamteinfluss.",
+    "scenarioLabel": "Szenario",
+    "placeholder": "z. B. 'EZB hebt Leitzins um 150 bp, EUR/USD steigt auf 1.20, deutsche Renditen +100bp.'",
+    "charCount": "{count}/1000 Zeichen",
+    "costHint": "Nutzt deinen primären Provider.",
+    "run": "Szenario analysieren",
+    "calculating": "Berechne…",
+    "errorGeneric": "Fehler",
+    "presets": {
+      "ecb100bp": {
+        "label": "EZB +100 bp",
+        "scenario": "Die EZB hebt die Leitzinsen um insgesamt 100 Basispunkte über die nächsten 6 Monate. EUR/USD steigt um 5%, deutsche Bundrenditen +80bp."
+      },
+      "fedPivot": {
+        "label": "Fed-Pivot −150 bp",
+        "scenario": "Die Fed beginnt unerwartet einen aggressiven Senkungszyklus von 150 Basispunkten innerhalb von 9 Monaten. USD schwächt sich gegen EUR um 8%, US-Tech-Multiples expandieren."
+      },
+      "brent120": {
+        "label": "Brent $120",
+        "scenario": "Geopolitische Eskalation hebt Brent-Öl auf 120 USD, Erdgas-Preise in Europa +60%. Inflation kehrt in den 4-5% Bereich zurück."
+      },
+      "chinaTech": {
+        "label": "China-Tech-Sanktionen",
+        "scenario": "USA verschärfen Halbleiter-Sanktionen gegen China deutlich; chinesische Vergeltung trifft westliche Auto- und Konsumgüter-Hersteller in China. Hang-Seng -15%, S&P -8%."
+      },
+      "usdEur": {
+        "label": "USD/EUR -10%",
+        "scenario": "USD verliert binnen 3 Monaten 10% gegen EUR — ohne weiteren Schock, primär getrieben durch Fed-Erwartungen und Twin-Deficit-Sorgen."
+      },
+      "aiBubble": {
+        "label": "KI-Bubble platzt",
+        "scenario": "Eine breite Re-Bewertung von KI-getriebenen Tech-Werten setzt ein: NVIDIA −40%, Mag-7 im Schnitt −25%, Halbleiter-ETFs −30% binnen 3 Monaten."
+      }
+    },
+    "result": {
+      "riskAssessment": "Risiko-Bewertung",
+      "portfolioEffect": "geschätzter Gesamteffekt aufs Portfolio",
+      "keyDrivers": "Key-Drivers",
+      "mostExposed": "Am stärksten betroffen",
+      "mostInsulated": "Am stabilsten",
+      "hedges": "Mögliche Hedges",
+      "positionByPosition": "Position-für-Position",
+      "thTicker": "Ticker",
+      "thExpected": "Erw. %",
+      "thSeverity": "Severity",
+      "thReasoning": "Begründung"
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "metaTitle": "Finanz-Glossar — AI Stock Analyzer",
+  "metaDescription": "Kurzerklärungen zu allen wichtigen Finanz-Kennzahlen und Begriffen, die in AI Stock Analyzer auftauchen.",
+  "backToHelp": "Zur Hilfe",
+  "title": "Finanz-Glossar",
+  "intro": "Kurzerklärungen zu allen Finanzbegriffen, die in AI Stock Analyzer auftauchen. Verlinkbar per Sprunganker, z. B. <code>/glossar#sharpe-ratio</code>.",
+  "indexLabel": "Alphabetischer Index",
+  "seeAlso": "Siehe auch:",
+  "entries": {
+    "aktie": {
+      "term": "Aktie",
+      "description": "Anteilsschein an einem Unternehmen. Der Halter ist Miteigentümer, hat Stimmrechte (bei Stammaktien) und Anspruch auf Gewinn-Ausschüttungen (Dividenden)."
+    },
+    "beta": {
+      "term": "Beta",
+      "description": "Maß der Kursbewegung relativ zum Gesamtmarkt. Beta 1 bedeutet im Gleichschritt mit dem Markt, 0,5 halb so stark, 2,0 doppelt so stark. Wird aus historischen Renditen regressiert."
+    },
+    "book-value": {
+      "term": "Buchwert (Book Value)",
+      "description": "Eigenkapital eines Unternehmens laut Bilanz, geteilt durch Anzahl ausstehender Aktien. Basis für das Kurs-Buchwert-Verhältnis."
+    },
+    "cagr": {
+      "term": "CAGR",
+      "short": "Compound Annual Growth Rate",
+      "description": "Durchschnittliche jährliche Wachstumsrate, die aus einem Anfangs- und Endwert über N Jahre berechnet wird. Formel: (Ende/Anfang)^(1/N) − 1."
+    },
+    "conviction-score": {
+      "term": "Conviction-Score",
+      "description": "Eigener 0–100-Score, der Analysten-Konsens, Bewertung, 52-Wochen-Position, KI-Empfehlung und Momentum zu einer Gesamtüberzeugung verdichtet. 75+ = starke Konviktion."
+    },
+    "cvar": {
+      "term": "CVaR (Conditional VaR / Expected Shortfall)",
+      "description": "Erwarteter Verlust in den Tagen, an denen der VaR überschritten wird. Anders ausgedrückt: durchschnittlicher Verlust im schlimmsten Prozentbereich. CVaR ist strenger als VaR."
+    },
+    "dcf": {
+      "term": "DCF",
+      "short": "Discounted Cash Flow",
+      "description": "Bewertungsverfahren, das zukünftige Free Cash Flows auf den heutigen Wert diskontiert. Kerninput: Wachstumsrate, Terminal-Wachstum, WACC. Kleine Änderungen bei WACC und Terminal-Growth haben große Effekte — Sensitivität prüfen."
+    },
+    "dividendenrendite": {
+      "term": "Dividendenrendite",
+      "description": "Dividende pro Aktie geteilt durch Kurs. Eine hohe Rendite kann attraktiv sein — oder Warnsignal, weil der Kurs zuvor stark gefallen ist und die Ausschüttung eventuell unter Druck gerät."
+    },
+    "drawdown": {
+      "term": "Drawdown",
+      "description": "Rückgang vom letzten Hoch zum aktuellen Kurs (oder zum Tief vor einer Erholung) in Prozent. Max-Drawdown ist der größte historisch beobachtete Einbruch."
+    },
+    "ebit": {
+      "term": "EBIT",
+      "short": "Earnings Before Interest and Taxes",
+      "description": "Gewinn vor Zinsen und Steuern. Gibt operative Profitabilität wieder, unabhängig von der Finanzierungsstruktur."
+    },
+    "ebitda": {
+      "term": "EBITDA",
+      "short": "Earnings Before Interest, Taxes, Depreciation, Amortization",
+      "description": "EBIT plus Abschreibungen. Annäherung an den operativen Cashflow, allerdings ohne CapEx und Working-Capital-Effekte — darum kritisch sehen."
+    },
+    "eps": {
+      "term": "EPS",
+      "short": "Earnings per Share / Gewinn je Aktie",
+      "description": "Nettoergebnis geteilt durch Anzahl ausstehender Aktien. Grundlage fürs KGV."
+    },
+    "fcf": {
+      "term": "Free Cash Flow (FCF)",
+      "description": "Operativer Cashflow minus Investitionen ins Sachanlagevermögen (CapEx). Geld, das tatsächlich für Dividenden, Buybacks oder Schuldentilgung verfügbar ist."
+    },
+    "faktor-exposure": {
+      "term": "Faktor-Exposure",
+      "description": "Zerlegung eines Portfolios in typische Stil-Faktoren: Value, Growth, Size (Large-/Small-Cap), Quality, Momentum. Zeigt, welcher Stil aktuell dominant ist — auch bei scheinbar diversifizierten Portfolios."
+    },
+    "forward-pe": {
+      "term": "Forward P/E (Forward-KGV)",
+      "description": "Aktueller Kurs geteilt durch erwarteten Gewinn der nächsten 12 Monate. Reagiert schneller auf Erwartungsrevisionen als das Trailing-KGV."
+    },
+    "gordon-growth": {
+      "term": "Gordon-Growth-Modell",
+      "description": "Formel für den Terminal Value im DCF: TV = FCF × (1 + g) / (WACC − g). Ergibt nur sinnvolle Werte, wenn WACC größer als g."
+    },
+    "growth": {
+      "term": "Growth-Werte",
+      "description": "Unternehmen mit überdurchschnittlichem Umsatz- oder Gewinnwachstum, üblicherweise mit höherer Bewertung. Gegenteil: Value."
+    },
+    "kgv": {
+      "term": "KGV",
+      "short": "Kurs-Gewinn-Verhältnis / P/E",
+      "description": "Aktueller Kurs geteilt durch den Jahresgewinn pro Aktie. KGV 15 heißt: du zahlst 15 Jahre aktuellen Gewinn. Hoch kann teuer oder Wachstumserwartung heißen."
+    },
+    "kbv": {
+      "term": "KBV",
+      "short": "Kurs-Buchwert-Verhältnis / P/B",
+      "description": "Kurs geteilt durch Buchwert je Aktie. Für kapitalintensive, bilanzstarke Unternehmen (Banken, Versicherer) aussagekräftiger als KGV."
+    },
+    "monte-carlo": {
+      "term": "Monte-Carlo-Simulation",
+      "description": "Stochastisches Verfahren, das viele Zukunftspfade simuliert (z. B. 1000 Pfade über 1 Jahr). Ergebnis: Verteilung möglicher Ausgänge mit Perzentilen. Bei uns per Historical-Bootstrap (zufälliges Ziehen beobachteter Tages-Returns) statt Normalverteilung — robuster gegen Fat-Tails."
+    },
+    "momentum": {
+      "term": "Momentum",
+      "description": "Ein Faktor, der annimmt: Aktien, die in den letzten 6–12 Monaten gestiegen sind, steigen tendenziell weiter. Vereinfacht bildet die 52-Wochen-Position ab, wie weit ein Kurs unter/über seinem 52W-Tief/-Hoch liegt."
+    },
+    "net-debt": {
+      "term": "Net Debt (Netto-Verschuldung)",
+      "description": "Gesamt-Schulden minus Bargeld/kurzfristige Wertpapiere. Wichtig, um Enterprise Value in Equity Value zu überführen."
+    },
+    "payout-ratio": {
+      "term": "Payout Ratio",
+      "description": "Anteil des Nettogewinns, der als Dividende ausgeschüttet wird. Unter 60 % gilt als nachhaltig; über 100 % heißt: Dividende aus der Substanz, Warnsignal."
+    },
+    "peer-compare": {
+      "term": "Peer-Vergleich",
+      "description": "Side-by-Side-Vergleich mehrerer Unternehmen im selben Sektor anhand fundamentaler und technischer Metriken. Hilft, Ausreißer zu identifizieren."
+    },
+    "portfolio-health": {
+      "term": "Portfolio-Health-Score",
+      "description": "Gesamtnote A–F aus fünf gewichteten Sub-Scores: Diversifikation, Qualität, Bewertung, Momentum und Risiko. Transparent zerlegbar, keine Blackbox."
+    },
+    "quality": {
+      "term": "Quality-Faktor",
+      "description": "Stilfaktor, der hohe Margen, stabile Profitabilität und solide Bilanzen belohnt. In AI Stock Analyzer aus Operating Margin, Profit Margin und Debt/Equity berechnet."
+    },
+    "rebalance": {
+      "term": "Rebalance",
+      "description": "Wiederherstellung einer Ziel-Gewichtung im Portfolio durch Kauf unterbewerteter und Verkauf übergewichteter Positionen. Diszipliniert gegen Klumpenbildung."
+    },
+    "reverse-dcf": {
+      "term": "Reverse-DCF",
+      "description": "Dreht das DCF um: statt Fair-Value zu berechnen, fragt man bei gegebenem Kurs, welche Wachstumsrate der Markt einpreist. Sehr gutes Werkzeug, um Erwartungen greifbar zu machen."
+    },
+    "roe": {
+      "term": "ROE",
+      "short": "Return on Equity / Eigenkapitalrendite",
+      "description": "Nettoergebnis geteilt durch Eigenkapital. 15 %+ gilt meist als solide, über 25 % sehr hoch — aber Achtung bei hoher Verschuldung, die ROE künstlich hebelt."
+    },
+    "sharpe-ratio": {
+      "term": "Sharpe-Ratio",
+      "description": "Überrendite über dem risikofreien Zins, geteilt durch die Standardabweichung der Renditen. Misst risikoadjustierte Performance — höher ist besser, 1+ gilt als gut."
+    },
+    "short-interest": {
+      "term": "Short Interest",
+      "description": "Anzahl der leerverkauften Aktien im Verhältnis zum Streubesitz. Hoher Short-Interest kann einen Short-Squeeze triggern, wenn News positiv überraschen."
+    },
+    "size": {
+      "term": "Size-Faktor",
+      "description": "Stilfaktor für Unternehmensgröße. Large-Caps (> 10 Mrd.) bieten Stabilität, Small-Caps (< 2 Mrd.) historisch höhere Renditen bei höherer Volatilität."
+    },
+    "sortino-ratio": {
+      "term": "Sortino-Ratio",
+      "description": "Wie Sharpe-Ratio, aber im Nenner nur die Abwärts-Volatilität. Bestraft also nur negative Schwankungen, nicht positive — wirtschaftlich sinnvoller."
+    },
+    "stress-test": {
+      "term": "Stress-Test",
+      "description": "Anwendung historischer Krisen-Perioden (COVID 2020, Finanzkrise 2008 etc.) auf das heutige Portfolio. Zeigt, wie stark es verloren hätte, wenn die Krise heute neu passieren würde."
+    },
+    "twr": {
+      "term": "Time-Weighted Return (TWR)",
+      "description": "Rendite-Berechnung, die den Einfluss von Ein- und Auszahlungen neutralisiert. Für faire Performance-Vergleiche zwischen Portfolios mit unterschiedlichen Cash-Flows."
+    },
+    "value": {
+      "term": "Value-Werte",
+      "description": "Unternehmen mit günstiger Bewertung (niedriges KGV/KBV) und meist geringerem Wachstumstempo. Historisch haben Value-Werte langfristig eine leichte Überrendite gezeigt."
+    },
+    "var": {
+      "term": "VaR (Value-at-Risk)",
+      "description": "Statistischer Verlust, der mit einer gewissen Wahrscheinlichkeit (üblich 95 % oder 99 %) in einem Zeitraum nicht überschritten wird. Empirisch aus historischen Returns, parametrisch unter Normalannahme — beide haben Grenzen."
+    },
+    "vix": {
+      "term": "VIX",
+      "description": "„Angst-Index\" — implizite 30-Tages-Volatilität des S&P 500, abgeleitet aus Optionspreisen. Unter 15 = ruhig, über 30 = Panik. Historisch kontrarisch: VIX-Spitzen markieren oft lokale Kurstiefs."
+    },
+    "volatilitaet": {
+      "term": "Volatilität",
+      "description": "Standardabweichung der Renditen, meist annualisiert. Hoch = starke Schwankungen. Als Risikomaß verbreitet, aber unvollständig, weil Aufwärts- und Abwärtsschwankungen gleich behandelt werden."
+    },
+    "wacc": {
+      "term": "WACC",
+      "short": "Weighted Average Cost of Capital",
+      "description": "Gewichteter Durchschnitt aus Eigen- und Fremdkapitalkosten. Diskontfaktor im DCF. Typisch 6–12 % je nach Branche und Verschuldung. Höherer WACC → niedrigerer Fair-Value."
+    },
+    "yield-curve": {
+      "term": "Yield Curve (Zinskurve)",
+      "description": "Renditen der Staatsanleihen nach Laufzeit aufgetragen. Normalerweise steigend (längere Laufzeiten = höhere Rendite). Inverse Kurve (kurz > lang) ist historisch Frühindikator für Rezession, vorlaufende 12–18 Monate."
+    },
+    "hhi": {
+      "term": "HHI (Herfindahl-Index)",
+      "description": "Summe der quadrierten Gewichte in einem Portfolio. 1,0 = alles in einer Position, nahe 0 = breit verteilt. Gutes Maß für Konzentrationsrisiko."
+    }
+  }
+}

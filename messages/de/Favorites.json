@@ -1,0 +1,9 @@
+{
+  "title": "Favoriten",
+  "empty": "Markiere oben rechts auf einer Seite den Stern, um sie hier als Schnellzugriff abzulegen.",
+  "remove": "Aus Favoriten entfernen",
+  "removeAria": "„{label}\" aus Favoriten entfernen",
+  "addAria": "„{label}\" zu Favoriten hinzufügen",
+  "isFavorite": "Favorit",
+  "addToFavorites": "Als Favorit"
+}

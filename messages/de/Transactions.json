@@ -1,0 +1,53 @@
+{
+  "title": "Transaktionen",
+  "subtitle": "Journal aller Käufe, Verkäufe, Dividenden. Aktualisiert Positionen automatisch.",
+  "refresh": "Aktualisieren",
+  "newTransaction": "Neue Transaktion",
+  "type": "Typ",
+  "stock": "Aktie",
+  "tickerPlaceholder": "Ticker...",
+  "shares": "Anzahl",
+  "pricePerShare": "Preis / Aktie",
+  "amount": "Betrag",
+  "date": "Datum",
+  "currency": "Währung",
+  "fees": "Gebühren",
+  "noteOptional": "Notiz (optional)",
+  "cancel": "Abbrechen",
+  "save": "Speichern",
+  "selectTicker": "Bitte Ticker auswählen",
+  "errorGeneric": "Fehler",
+  "deleteConfirm": "Transaktion löschen? Position wird neu berechnet.",
+  "deleteAria": "Transaktion {ticker} vom {date} löschen",
+  "types": {
+    "buy": "Kauf",
+    "sell": "Verkauf",
+    "dividend": "Dividende",
+    "fee": "Gebühr"
+  },
+  "realizedYear": "Realisierte Gewinne {year}",
+  "totalTransactions": "Transaktionen gesamt",
+  "dividendsReceived": "Dividenden erhalten",
+  "salesCount": "Verkäufe",
+  "allTransactions": "Alle Transaktionen",
+  "noTransactions": "Noch keine Transaktionen.",
+  "headers": {
+    "date": "Datum",
+    "type": "Typ",
+    "ticker": "Ticker",
+    "count": "Anzahl",
+    "priceAmount": "Preis/Betrag",
+    "fee": "Gebühr",
+    "total": "Total",
+    "note": "Notiz"
+  },
+  "realizedGains": "Realisierte Gewinne",
+  "gainsHeaders": {
+    "date": "Datum",
+    "ticker": "Ticker",
+    "count": "Anzahl",
+    "avgBuy": "Ø Kauf",
+    "sell": "Verkauf",
+    "pnl": "G/V (EUR)"
+  }
+}

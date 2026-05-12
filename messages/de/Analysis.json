@@ -1,0 +1,62 @@
+{
+  "back": "Zurück zum Dashboard",
+  "loading": "Lade {ticker}...",
+  "errorLoad": "Ladefehler",
+  "errorNoQuote": "Kein Kurs für {ticker} gefunden",
+  "header": {
+    "dayHigh": "Tageshoch:",
+    "dayLow": "Tagestief:",
+    "weekHigh52": "52W Hoch:",
+    "weekLow52": "52W Tief:",
+    "createAlert": "Alert anlegen",
+    "createAlertTitle": "Preis-Alert für diesen Wert anlegen"
+  },
+  "chart": {
+    "title": "Chart",
+    "noteFx": "Kurse in EUR (umgerechnet mit aktuellem Spot-FX, historische Werte approximativ)",
+    "noteEur": "Kurse in EUR",
+    "empty": "Keine Chart-Daten"
+  },
+  "ai": {
+    "title": "KI-Analyse",
+    "analyzing": "Analysiere...",
+    "rerun": "Neu analysieren",
+    "run": "Jetzt analysieren",
+    "errorFailed": "Analyse fehlgeschlagen",
+    "confidence": "Konfidenz: {pct}%",
+    "model": "Modell: {model}",
+    "reasoning": "Begründung",
+    "priceTargets": "Kursziele",
+    "low": "Low",
+    "base": "Basis",
+    "high": "High",
+    "opportunities": "Chancen",
+    "risks": "Risiken",
+    "positionSize": "Positionsgröße",
+    "disclaimer": "⚠️ Keine Anlageberatung. Eigene Due Diligence erforderlich.",
+    "followUp": {
+      "recommendation": "Empfehlung",
+      "summary": "Zusammenfassung",
+      "reasoning": "Begründung",
+      "risks": "Risiken",
+      "opportunities": "Chancen"
+    }
+  },
+  "fundamentals": {
+    "title": "Fundamentals",
+    "sector": "Sektor",
+    "industry": "Industrie",
+    "country": "Land",
+    "marketCap": "Marktkapit.",
+    "peTtm": "KGV (TTM)",
+    "peFwd": "KGV (Fwd)",
+    "dividendYield": "Div.-Rendite",
+    "beta": "Beta",
+    "profitMargin": "Gewinnmarge",
+    "analystTarget": "Analysten-Ziel",
+    "analystRec": "Analysten-Reko"
+  },
+  "news": {
+    "title": "News"
+  }
+}

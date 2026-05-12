@@ -1,0 +1,20 @@
+{
+  "labels": {
+    "BUY": "Buy",
+    "SELL": "Sell",
+    "HOLD": "Hold",
+    "ACCUMULATE": "Accumulate",
+    "REDUCE": "Reduce"
+  },
+  "conviction": {
+    "title": "Conviction score {score}/100 — {label}",
+    "ariaLabel": "Conviction score {score} of 100, {label}",
+    "breakdown": {
+      "analyst": "Analyst consensus",
+      "valuation": "Valuation (P/E)",
+      "position52W": "52W position",
+      "aiRecommendation": "AI recommendation",
+      "momentum": "Momentum"
+    }
+  }
+}

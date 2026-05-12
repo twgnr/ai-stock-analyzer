@@ -1,0 +1,42 @@
+{
+  "form": {
+    "stockSearchLabel": "Search stock",
+    "tickerPlaceholder": "Enter ticker or company name...",
+    "tradingIn": "trades in {currency}",
+    "sharesLabel": "Shares",
+    "avgPriceLabel": "Avg. purchase price",
+    "purchaseCurrencyLabel": "Purchase currency",
+    "purchaseCurrencyInfoBold": "The purchase currency is what your account was debited in.",
+    "purchaseCurrencyInfo": "German broker → usually EUR, even when the stock trades in {currency}.",
+    "fxNote": "The display converts the current price via FX into your purchase currency. That way your gain/loss is in the currency you actually paid.",
+    "noteLabel": "Note (optional)",
+    "notePlaceholder": "e.g. long term, dividend pick...",
+    "submit": "Add position",
+    "tip": "Tip: if the ticker already exists in the same purchase currency, the new position is merged via blended price.",
+    "errors": {
+      "tickerRequired": "Please search for and select a stock.",
+      "valuesPositive": "Shares and price must be greater than 0.",
+      "saveFailed": "Failed to save",
+      "generic": "Error"
+    },
+    "successAdded": "Position {ticker} added"
+  },
+  "edit": {
+    "title": "Edit position",
+    "closeTitle": "Close (Esc)",
+    "closeAria": "Close dialog",
+    "sharesLabel": "Shares",
+    "avgPriceLabel": "Avg. purchase price",
+    "currencyLabel": "Purchase currency",
+    "noteLabel": "Note",
+    "notePlaceholder": "e.g. long term, dividend pick...",
+    "cancel": "Cancel",
+    "save": "Save",
+    "successUpdated": "Position {ticker} updated",
+    "errors": {
+      "valuesPositive": "Shares and price must be greater than 0.",
+      "saveFailed": "Failed to save",
+      "generic": "Error"
+    }
+  }
+}

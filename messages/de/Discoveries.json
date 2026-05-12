@@ -1,0 +1,68 @@
+{
+  "title": "Entdeckungen",
+  "description": "Kleinere Werte und frische Börsengänge — spekulativer als Large-Caps, aber mit potenziell höheren Renditen.",
+  "tabs": {
+    "smallcaps": "Small-/Micro-Caps",
+    "ipos": "Recent IPOs"
+  },
+  "presets": {
+    "label": "Yahoo-Preset",
+    "aggressiveSmallCaps": {
+      "label": "Small Caps",
+      "description": "Yahoo's aggressive small caps"
+    },
+    "smallCapGainers": {
+      "label": "Gewinner heute",
+      "description": "Small caps mit Tages-Momentum"
+    },
+    "undervaluedGrowth": {
+      "label": "Unterbewertetes Wachstum",
+      "description": "Growth + niedrige Bewertung"
+    },
+    "growthTech": {
+      "label": "Growth-Tech",
+      "description": "Technologie-Wachstumswerte"
+    }
+  },
+  "maxMarketCap": "Max Marktkap.",
+  "maxCapOptions": {
+    "all": "Alle",
+    "micro": "≤ 300 Mio. (Micro)",
+    "small": "≤ 1 Mrd. (Small)",
+    "smallMid": "≤ 5 Mrd. (Small-Mid)"
+  },
+  "ipoAge": "Zeitraum seit IPO",
+  "ipoAgeOptions": {
+    "m6": "Letzte 6 Monate",
+    "y1": "Letzte 12 Monate",
+    "y2": "Letzte 2 Jahre",
+    "y3": "Letzte 3 Jahre"
+  },
+  "loading": "Lade...",
+  "loadSmallCaps": "Small-Caps laden",
+  "loadIpos": "Recent IPOs laden",
+  "ipoNote": "Kuratierte Liste bekannter IPOs aus den letzten Jahren. IPO-Datum kommt live aus Yahoo.",
+  "errorGeneric": "Fehler",
+  "stocksCount": "{count} Aktien",
+  "discardSaved": "Gespeicherte Ergebnisse verwerfen",
+  "discard": "verwerfen",
+  "clearSelection": "Auswahl löschen",
+  "aiAnalyzing": "KI analysiert...",
+  "analyzeSelection": "Auswahl analysieren ({count})",
+  "analyzeTop5": "Top-5 mit KI analysieren",
+  "aiHeading": "KI-Analyse",
+  "confidence": "Konfidenz: {pct}%",
+  "table": {
+    "ticker": "Ticker",
+    "price": "Kurs",
+    "today": "Heute",
+    "threeMonths": "3M",
+    "marketCap": "Marktkap.",
+    "ipo": "IPO",
+    "pos52w": "52W-Pos",
+    "volume": "Vol."
+  },
+  "ipoAgo": "vor {days}T",
+  "analysis": "Analyse",
+  "riskFooter": "⚠️ Kleinere Werte und IPOs sind deutlich volatiler als Large-Caps. Höhere Chancen, aber auch höhere Verluste möglich. Positions-Sizing entsprechend konservativ wählen."
+}

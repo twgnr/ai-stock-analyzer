@@ -1,0 +1,24 @@
+{
+  "title": "Ask the Portfolio",
+  "description": "Natural-language conversation with your portfolio. The AI knows all positions, transactions, weightings and the last 30 days of performance.",
+  "refreshContext": "Reload context",
+  "refreshContextTitle": "Reload portfolio context",
+  "clear": "Clear",
+  "confirmClear": "Clear conversation?",
+  "emptyTitle": "Start with a question",
+  "emptyBody": "The AI knows your portfolio — ask anything you want to know.",
+  "placeholder": "Ask a question...",
+  "send": "Send",
+  "answerGenerating": "Generating answer",
+  "footer": "💡 The AI only sees the data in your portfolio. Context is cached for 5 minutes for faster answers.",
+  "noStreamBody": "No stream body",
+  "error": "Error",
+  "suggestions": {
+    "riskiest": "Which position is the riskiest?",
+    "chinaExposure": "How much China exposure do I have?",
+    "last30Days": "Why did my portfolio perform like this over the last 30 days?",
+    "topConcerns": "What are my top 3 problem positions?",
+    "techWeighted": "Am I too heavily weighted in tech?",
+    "reduce": "Which stock should I reduce?"
+  }
+}

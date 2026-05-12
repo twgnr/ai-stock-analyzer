@@ -1,0 +1,83 @@
+{
+  "verifyEmail": {
+    "subject": "Bitte E-Mail-Adresse bestätigen",
+    "greetingNamed": "Hallo {name},",
+    "greetingPlain": "Hallo,",
+    "intro": "willkommen bei AI Stock Analyzer. Bitte bestätige deine E-Mail-Adresse über folgenden Link (gültig 24 Stunden):",
+    "introResend": "hier ist ein neuer Bestätigungslink für deine E-Mail-Adresse (gültig 24 Stunden):",
+    "ignore": "Falls du dich nicht registriert hast, ignorier diese Mail."
+  },
+  "registerAttempt": {
+    "subject": "Registrierungsversuch mit deiner E-Mail",
+    "greeting": "Hallo,",
+    "intro": "soeben hat jemand versucht, mit deiner E-Mail-Adresse ein neues Konto bei AI Stock Analyzer anzulegen. Falls das nicht du warst, kannst du diese Nachricht ignorieren — es wurde kein neues Konto erstellt.",
+    "resetHint": "Falls du dein Passwort vergessen hast, kannst du es hier zurücksetzen: {url}"
+  },
+  "resetPassword": {
+    "subject": "Passwort zurücksetzen",
+    "subjectAdmin": "Passwort zurücksetzen (Admin-initiiert)",
+    "greeting": "Hallo,",
+    "greetingNamed": "Hallo {name},",
+    "intro": "jemand (hoffentlich du) hat ein Zurücksetzen des Passworts für dein Stock-Analysis-Konto angefordert.",
+    "introAdmin": "ein Administrator hat ein Passwort-Zurücksetzen für deinen Account initiiert.",
+    "ctaLine": "Setze dein Passwort hier zurück (gültig für 1 Stunde):",
+    "ignore": "Falls du das nicht warst, ignorier diese Mail."
+  },
+  "accountApproved": {
+    "subject": "Dein Account wurde freigeschaltet",
+    "greeting": "Hallo,",
+    "greetingNamed": "Hallo {name},",
+    "intro": "dein Account bei AI Stock Analyzer wurde soeben von einem Administrator freigeschaltet. Du kannst dich jetzt anmelden:",
+    "verifyHint": "Hinweis: Vergiss nicht, deine E-Mail-Adresse noch zu bestätigen (Link aus der Verifizierungs-Mail)."
+  },
+  "alert": {
+    "subjectSingular": "🔔 1 Alert ausgelöst",
+    "subjectPlural": "🔔 {count} Alerts ausgelöst",
+    "greeting": "Hallo,",
+    "intro": "folgende Alerts wurden ausgelöst:",
+    "lineIndicator": "• {ticker}: {condition} (Kurs {price})",
+    "linePriceAbove": "• {ticker}: Kurs {price} ≥ Schwelle {threshold}",
+    "linePriceBelow": "• {ticker}: Kurs {price} ≤ Schwelle {threshold}",
+    "footer": "Alerts werden nach dem Auslösen deaktiviert. Reaktivier sie unter {url}/alerts."
+  },
+  "portfolioDigest": {
+    "subject": "📊 Portfolio-Digest {date}",
+    "greeting": "Hallo,",
+    "greetingNamed": "Hallo {name},",
+    "intro": "dein täglicher Portfolio-Digest:",
+    "sectionOverview": "=== ÜBERSICHT ===",
+    "labelPortfolioValue": "Portfolio-Wert: {value}",
+    "labelTotalPL": "Gesamt G/V: {value} ({percent})",
+    "labelTodayChange": "Heute gewichtet: {percent}",
+    "sectionTopMovers": "=== TOP-BEWEGER HEUTE ===",
+    "labelGainers": "Gewinner:",
+    "labelLosers": "Verlierer:",
+    "lineGainer": "  ↑ {ticker}: {percent}",
+    "lineLoser": "  ↓ {ticker}: {percent}",
+    "sectionAI": "=== KI-EINSCHÄTZUNG ===",
+    "labelRiskLevel": "Risiko-Level: {level}",
+    "labelDiversification": "Diversifikation:",
+    "labelSuggestions": "Vorschläge:",
+    "details": "Details: {url}",
+    "unsubscribe": "Zum Abbestellen: Einstellungen → 'Täglicher Digest' deaktivieren."
+  },
+  "newsDigest": {
+    "subject": "📰 Portfolio-Digest {periodDays}T — {headline}",
+    "greeting": "Hallo,",
+    "greetingNamed": "Hallo {name},",
+    "intro": "dein KI-News-Digest der letzten {periodDays} Tage:",
+    "sectionMarket": "=== MARKT-ÜBERBLICK ===",
+    "sectionPerTicker": "=== PRO POSITION ===",
+    "sectionWatchNext": "=== DIESE WOCHE IM BLICK ===",
+    "sectionUpcoming": "=== KOMMENDE EVENTS ===",
+    "fullView": "Vollständige Ansicht: {url}",
+    "defaultHeadline": "Portfolio-Digest"
+  },
+  "testEmail": {
+    "subject": "Test-E-Mail von AI Stock Analyzer",
+    "body": "Wenn du diese Mail siehst, funktioniert dein SMTP-Setup.\n\nGesendet von: {email}\nZeit: {time}"
+  },
+  "common": {
+    "signature": "— AI Stock Analyzer"
+  }
+}

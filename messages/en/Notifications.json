@@ -1,0 +1,12 @@
+{
+  "title": "Notifications",
+  "unreadAria": "{count, plural, one {# unread notification} other {# unread notifications}}",
+  "allAlerts": "All alerts",
+  "empty": "No notifications in the last 14 days.",
+  "relative": {
+    "seconds": "{value}s ago",
+    "minutes": "{value} min ago",
+    "hours": "{value} h ago",
+    "days": "{value}d ago"
+  }
+}

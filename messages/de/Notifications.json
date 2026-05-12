@@ -1,0 +1,12 @@
+{
+  "title": "Benachrichtigungen",
+  "unreadAria": "{count, plural, one {# ungelesene Benachrichtigung} other {# ungelesene Benachrichtigungen}}",
+  "allAlerts": "Alle Alerts",
+  "empty": "Keine Benachrichtigungen der letzten 14 Tage.",
+  "relative": {
+    "seconds": "vor {value}s",
+    "minutes": "vor {value} Min",
+    "hours": "vor {value} Std",
+    "days": "vor {value}T"
+  }
+}

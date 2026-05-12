@@ -1,0 +1,347 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="dark"] {
+  --background: #0a0b0f;
+  --surface: #12141a;
+  --surface-2: #1a1d26;
+  --border: #262a35;
+  /* WCAG-konformer Border für interaktive UI-Controls (Inputs, Buttons,
+     Card-Umrisse) — 3:1 Kontrast gegen --surface. */
+  --border-strong: #6e7485;
+  --foreground: #e8eaed;
+  --muted: #8a8f9a;
+  --accent: #3b82f6;
+  --green: #22c55e;
+  --red: #ef4444;
+}
+
+[data-theme="light"] {
+  --background: #f7f8fa;
+  --surface: #ffffff;
+  --surface-2: #f1f3f5;
+  --border: #e2e5ea;
+  --border-strong: #9aa1ad;
+  --foreground: #1a1d26;
+  --muted: #5a6271;
+  --accent: #2563eb;
+  --green: #16a34a;
+  --red: #dc2626;
+}
+
+/* Auto-Modus: folgt dem System-Setting. Default ohne data-theme bleibt dark. */
+@media (prefers-color-scheme: light) {
+  [data-theme="auto"] {
+    --background: #f7f8fa;
+    --surface: #ffffff;
+    --surface-2: #f1f3f5;
+    --border: #e2e5ea;
+    --border-strong: #9aa1ad;
+    --foreground: #1a1d26;
+    --muted: #5a6271;
+    --accent: #2563eb;
+    --green: #16a34a;
+    --red: #dc2626;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html, body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+/* Sticky-Nav (≈3.5rem) + Liveticker (≈2rem) — Scroll-Padding sorgt dafür,
+   dass Anker-Scroll und tab-fokussierte Elemente nicht unter der Nav landen
+   (WCAG 2.4.11 Focus Not Obscured). */
+html {
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* Einheitlicher Fokus-Indikator (WCAG 2.4.7 Focus Visible).
+   Tailwind entfernt den Browser-Default; wir ziehen ihn gezielt wieder rein. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+/* Keine Outline, wenn Fokus per Maus gesetzt wurde — nur bei Tastatur-Nav. */
+:focus:not(:focus-visible) { outline: none; }
+
+/* Skip-Link: unsichtbar bis Fokus, dann klar sichtbar. */
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  z-index: 100;
+  background: var(--accent);
+  color: white;
+  padding: 0.5rem 0.875rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transform: translateY(-200%);
+  transition: transform 0.15s;
+}
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+body {
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  font-feature-settings: "cv11", "ss01";
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+/* ── 3D-Modus (optional, per User-Preference) ────────────────────────────
+   Wird via `[data-3d="on"]` auf <html> aktiviert. Cards bekommen einen
+   permanenten 3D-Look (Drop-Shadow, Lichteinfall, Tiefen-Schatten, leichter
+   Surface-Gradient) plus on-hover einen Maus-folgenden Tilt-Effekt
+   (ThreeDProvider setzt --3d-tilt-x/y per JS).
+   Bei prefers-reduced-motion bleibt der statische Look erhalten — nur die
+   Bewegungen werden entfernt. */
+[data-3d="on"] .card {
+  /* Permanent 3D-Look: Top-Highlight + Boden-Linie + zwei Drop-Shadows */
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.08) inset,
+    0 -1px 0 rgba(0, 0, 0, 0.18) inset,
+    0 10px 28px -10px rgba(0, 0, 0, 0.5),
+    0 3px 8px -2px rgba(0, 0, 0, 0.3);
+  /* Hauchdünner Top-Lit-Gradient für „schwebende Platte"-Optik. */
+  background:
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--foreground) 4%, var(--surface)),
+      var(--surface) 35%,
+      var(--surface)
+    );
+  transform: perspective(1200px)
+    rotateX(var(--3d-tilt-x, 0deg))
+    rotateY(var(--3d-tilt-y, 0deg))
+    translateZ(0);
+  /* Wichtig: KEIN preserve-3d. Sonst werden absolut-positionierte Kinder
+     (Dropdowns, Tooltips, Popover) im 3D-Raum gestackt — und können hinter
+     andere Cards rutschen. transform-style: flat (Default) hält die Card
+     selbst gekippt, lässt aber Children im normalen 2D-Stacking. */
+  transform-style: flat;
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+  will-change: transform;
+}
+[data-3d="on"] .card:hover {
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.10) inset,
+    0 -1px 0 rgba(0, 0, 0, 0.18) inset,
+    0 18px 44px -12px rgba(59, 130, 246, 0.40),
+    0 6px 16px -4px rgba(0, 0, 0, 0.45);
+}
+
+/* Buttons bekommen einen subtilen Press-Effekt: Lichteinfall oben, leichtes
+   „Anheben" beim Hovern, leichtes „Eindrücken" beim Klick. */
+[data-3d="on"] .btn {
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.10) inset,
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out, background 0.15s, border-color 0.15s;
+}
+[data-3d="on"] .btn:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.12) inset,
+    0 4px 8px -2px rgba(0, 0, 0, 0.4);
+}
+[data-3d="on"] .btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+}
+[data-3d="on"] .btn-primary {
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.20) inset,
+    0 4px 12px -2px rgba(59, 130, 246, 0.45);
+}
+[data-3d="on"] .btn-primary:hover {
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.25) inset,
+    0 6px 16px -2px rgba(59, 130, 246, 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-3d="on"] .card,
+  [data-3d="on"] .btn {
+    /* Schatten/Look bleiben — nur die Bewegung entfernen. */
+    transform: none;
+    transition: none;
+  }
+}
+
+.card-hover {
+  transition: border-color 0.15s, background 0.15s;
+}
+.card-hover:hover {
+  border-color: #3a3f4d;
+  background: var(--surface-2);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.875rem;
+  min-height: 2.25rem; /* ≥ 24px CSS-Pixel, WCAG 2.5.8 Target Size Minimum */
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  /* Akzent-Border, damit Sekundärbuttons nicht im UI-Rauschen verschwinden.
+     Primary füllt zusätzlich mit Akzent-Hintergrund — der Unterschied bleibt
+     klar erkennbar, beide werden aber als „Buttons" sichtbar. */
+  border: 1px solid var(--accent);
+  background: var(--surface);
+  color: var(--foreground);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn:hover {
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+  border-color: var(--accent);
+}
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+.btn-primary:hover { background: #2563eb; border-color: #2563eb; }
+
+.btn-danger {
+  color: var(--red);
+  border-color: var(--red);
+}
+.btn-danger:hover { background: #2a1a1e; border-color: var(--red); }
+
+.input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  min-height: 2.25rem; /* ≥ 24px CSS-Pixel, WCAG 2.5.8 */
+  border-radius: 8px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--foreground);
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.input:focus { border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 30%, transparent); }
+.input[aria-invalid="true"] { border-color: var(--red); }
+.input[aria-invalid="true"]:focus { box-shadow: 0 0 0 2px color-mix(in srgb, var(--red) 30%, transparent); }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.badge-buy { background: rgba(34, 197, 94, 0.15); color: var(--green); }
+.badge-sell { background: rgba(239, 68, 68, 0.15); color: var(--red); }
+.badge-hold { background: rgba(148, 163, 184, 0.15); color: #94a3b8; }
+.badge-accumulate { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+.badge-reduce { background: rgba(250, 204, 21, 0.15); color: #facc15; }
+
+.spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Skeleton-Loader ──────────────────────────────────────────────────── */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--surface-2) 0%,
+    color-mix(in srgb, var(--surface-2) 50%, var(--border) 50%) 50%,
+    var(--surface-2) 100%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+  border-radius: 6px;
+  display: block;
+}
+@keyframes skeleton-shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton { animation: none; opacity: 0.6; }
+}
+
+/* ── Marquee / Liveticker ─────────────────────────────────────────────── */
+.ticker-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 32px,
+    #000 calc(100% - 32px),
+    transparent 100%
+  );
+}
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 60s linear infinite;
+  will-change: transform;
+}
+.ticker-copy {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.ticker-viewport:hover .ticker-track {
+  animation-play-state: paused;
+}
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track { animation: none; }
+}

@@ -1,0 +1,90 @@
+{
+  "metaTitle": "Datenschutzerklärung — AI Stock Analyzer",
+  "back": "Zurück",
+  "title": "Datenschutzerklärung",
+  "asOf": "Stand: {date}",
+  "sections": {
+    "controller": {
+      "heading": "1. Verantwortlicher",
+      "intro": "Verantwortlich im Sinne der DSGVO und des BDSG ist:",
+      "addressLines": "[Vor- und Nachname / Firma]\n[Straße Hausnummer]\n[PLZ Ort]",
+      "emailLabel": "E-Mail",
+      "email": "[email@domain.tld]"
+    },
+    "overview": {
+      "heading": "2. Kurzübersicht: Was wir verarbeiten",
+      "items": {
+        "auth": "Registrierungs- und Logindaten (E-Mail, Passwort-Hash, Name, 2FA)",
+        "portfolio": "Portfolio-, Transaktions-, Watchlist- und Alert-Daten",
+        "ai": "Deine Fragen an die KI (Analyse-Prompts) und deren Antworten",
+        "usage": "Nutzungs-Logs für Abrechnung/Kostenlimit (Tokens, geschätzte USD-Kosten pro Aufruf)",
+        "tech": "Technische Daten (Session-Cookie, IP zur Rate-Limitierung)"
+      },
+      "footer": "Wir verkaufen keine Daten und setzen keine Tracking-Pixel ein."
+    },
+    "registration": {
+      "heading": "3. Registrierung und Nutzerkonto",
+      "body": "Zur Anlage eines Nutzerkontos speichern wir E-Mail-Adresse, Passwort (als bcrypt-Hash), optional den Namen und deine Einstellungen. Die Verarbeitung erfolgt zur Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO). Die Daten werden gelöscht, sobald du dein Konto löscht — siehe unten „Account-Löschung\"."
+    },
+    "cookie": {
+      "heading": "4. Session-Cookie",
+      "body": "Wir setzen ein einziges technisch notwendiges Cookie namens <code>sa_session</code> (HttpOnly, SameSite=Lax, in Produktion Secure). Es enthält ein signiertes JSON-Web-Token zur Identifikation deiner Session und ist 30 Tage gültig. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO + § 25 Abs. 2 Nr. 2 TDDDG (unbedingt erforderlich, keine Einwilligung nötig)."
+    },
+    "portfolioData": {
+      "heading": "5. Portfolio- und Analyse-Daten",
+      "body": "Die Ticker, Stückzahlen, Transaktionen, Notizen, Watchlist-Einträge und Alerts, die du anlegst, werden in unserer MongoDB-Datenbank gespeichert. Sie sind pro Nutzer-ID abgeschottet; andere Nutzer sehen sie nicht (Ausnahme: von dir explizit zum Teilen freigegebene Watchlists oder Zeitschriften-Analysen). Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO."
+    },
+    "ai": {
+      "heading": "6. KI-Anbieter (Drittlandübermittlung)",
+      "intro": "Für KI-gestützte Analysen übermitteln wir den Text deiner Anfrage und die dafür erforderlichen Portfolio-/Kursdaten an den von dir oder vom Administrator konfigurierten KI-Anbieter:",
+      "providers": {
+        "anthropic": "<strong>Anthropic PBC</strong> (Claude) — Empfänger in den USA. Anthropic bietet Standardvertragsklauseln an. Es werden keine Trainingsdaten aus API-Aufrufen verwendet (Anthropic Commercial Terms).",
+        "google": "<strong>Google LLC</strong> (Gemini) — Empfänger EU oder USA. Google bietet Standardvertragsklauseln an.",
+        "openai": "<strong>OpenAI und kompatible Anbieter</strong> — je nach vom User gewählter Base-URL; bei OpenAI direkt: Empfänger USA, Standardvertragsklauseln."
+      },
+      "footer": "Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) in Verbindung mit Art. 49 Abs. 1 lit. b DSGVO für die Drittlandübermittlung. Vermeide es, personenbezogene Dritt-Daten in deine KI-Prompts einzugeben."
+    },
+    "marketData": {
+      "heading": "7. Externe Kursdaten",
+      "body": "Zur Anzeige von Kursen, News und Fundamentaldaten rufen wir (serverseitig, ohne dass deine IP-Adresse an den Drittanbieter gelangt) Daten von <strong>Yahoo Finance</strong> (Yahoo Inc., USA) und als Fallback von <strong>Stooq</strong> (Polen) ab. Übermittelt werden ausschließlich die Ticker-Symbole; keine personenbezogenen Daten."
+    },
+    "email": {
+      "heading": "8. Transaktionale E-Mails",
+      "body": "Zur Bestätigung der E-Mail-Adresse, für Password-Resets, Digest-Mails und Alert-Benachrichtigungen versenden wir E-Mails über einen SMTP-Dienst. Der Anbieter ist: [SMTP-Hoster eintragen, z. B. Strato, Postmark, Resend]. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO."
+    },
+    "rateLimit": {
+      "heading": "9. Rate-Limiting und Protokollierung",
+      "body": "Zur Abwehr von Missbrauch speichern wir IP-Adressen für Registrierungs- und Login-Versuche kurzzeitig im Arbeitsspeicher (Rate-Limiting). KI-Aufrufe werden für Abrechnung, Kostenlimits und Admin-Statistik im <code>UsageLog</code> protokolliert (ohne IP, nur Nutzer-ID, Operation, Token-Zahl, geschätzte Kosten). Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an stabilem Betrieb und Missbrauchsverhinderung)."
+    },
+    "hosting": {
+      "heading": "10. Hosting und Datenstandort",
+      "body": "Die Anwendung und die MongoDB-Datenbank werden auf [Hoster eintragen, Standort Deutschland/EU] betrieben."
+    },
+    "rights": {
+      "heading": "11. Deine Rechte",
+      "intro": "Du hast jederzeit das Recht auf:",
+      "items": {
+        "access": "Auskunft (Art. 15 DSGVO)",
+        "rectification": "Berichtigung (Art. 16 DSGVO)",
+        "erasure": "Löschung / „Recht auf Vergessenwerden\" (Art. 17 DSGVO)",
+        "restriction": "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+        "portability": "Datenübertragbarkeit (Art. 20 DSGVO)",
+        "objection": "Widerspruch (Art. 21 DSGVO)"
+      },
+      "complaintBefore": "Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO). Zuständig ist die Behörde deines Bundeslandes; eine Liste findet sich unter ",
+      "complaintLink": "bfdi.bund.de",
+      "complaintAfter": ".",
+      "selfServiceBefore": "Auskunft, Export und Löschung kannst du direkt in den ",
+      "selfServiceLink": "Einstellungen",
+      "selfServiceAfter": " über die Funktionen „Meine Daten exportieren\" und „Account löschen\" ausführen — oder per E-Mail an den oben genannten Verantwortlichen."
+    },
+    "retention": {
+      "heading": "12. Speicherdauer",
+      "body": "Wir speichern deine Daten, solange dein Nutzerkonto aktiv ist, und löschen sie spätestens unverzüglich nach einer Account-Löschung. Gesetzliche Aufbewahrungspflichten (z. B. aus § 147 AO bei Rechnungen nach Einführung von Zahlungspflichten) bleiben unberührt."
+    },
+    "changes": {
+      "heading": "13. Änderungen dieser Erklärung",
+      "body": "Bei wesentlichen Änderungen dieser Erklärung informieren wir dich per E-Mail an die bei uns hinterlegte Adresse."
+    }
+  }
+}

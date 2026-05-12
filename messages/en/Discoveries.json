@@ -1,0 +1,68 @@
+{
+  "title": "Discoveries",
+  "description": "Smaller stocks and fresh IPOs — more speculative than large caps, but with potentially higher returns.",
+  "tabs": {
+    "smallcaps": "Small / micro caps",
+    "ipos": "Recent IPOs"
+  },
+  "presets": {
+    "label": "Yahoo preset",
+    "aggressiveSmallCaps": {
+      "label": "Small caps",
+      "description": "Yahoo's aggressive small caps"
+    },
+    "smallCapGainers": {
+      "label": "Today's gainers",
+      "description": "Small caps with daily momentum"
+    },
+    "undervaluedGrowth": {
+      "label": "Undervalued growth",
+      "description": "Growth + low valuation"
+    },
+    "growthTech": {
+      "label": "Growth tech",
+      "description": "Technology growth stocks"
+    }
+  },
+  "maxMarketCap": "Max market cap",
+  "maxCapOptions": {
+    "all": "All",
+    "micro": "≤ 300 M (micro)",
+    "small": "≤ 1 B (small)",
+    "smallMid": "≤ 5 B (small-mid)"
+  },
+  "ipoAge": "Time since IPO",
+  "ipoAgeOptions": {
+    "m6": "Last 6 months",
+    "y1": "Last 12 months",
+    "y2": "Last 2 years",
+    "y3": "Last 3 years"
+  },
+  "loading": "Loading...",
+  "loadSmallCaps": "Load small caps",
+  "loadIpos": "Load recent IPOs",
+  "ipoNote": "Curated list of well-known IPOs from recent years. IPO date is fetched live from Yahoo.",
+  "errorGeneric": "Error",
+  "stocksCount": "{count} stocks",
+  "discardSaved": "Discard saved results",
+  "discard": "discard",
+  "clearSelection": "Clear selection",
+  "aiAnalyzing": "AI analyzing...",
+  "analyzeSelection": "Analyze selection ({count})",
+  "analyzeTop5": "Analyze top 5 with AI",
+  "aiHeading": "AI analysis",
+  "confidence": "Confidence: {pct}%",
+  "table": {
+    "ticker": "Ticker",
+    "price": "Price",
+    "today": "Today",
+    "threeMonths": "3M",
+    "marketCap": "Market cap",
+    "ipo": "IPO",
+    "pos52w": "52W pos",
+    "volume": "Vol."
+  },
+  "ipoAgo": "{days}d ago",
+  "analysis": "Analysis",
+  "riskFooter": "⚠️ Smaller stocks and IPOs are significantly more volatile than large caps. Higher chances, but also higher losses possible. Choose position sizing accordingly conservative."
+}

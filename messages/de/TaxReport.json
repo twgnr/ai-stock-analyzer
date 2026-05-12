@@ -1,0 +1,50 @@
+{
+  "title": "Steuerbericht",
+  "allYears": "Alle Jahre",
+  "csv": "CSV",
+  "description": "Auswertung der realisierten Gewinne/Verluste auf Basis der FIFO-Zuordnung deiner Transaktionen. Alle Beträge sind in {currency} (Umrechnung mit dem FX-Kurs zum Verkaufstag). Die Steuer-Schätzung verwendet 25% Abgeltungsteuer, 5,5% Soli und den Single-Sparer-Pauschbetrag ({pauschbetrag}).",
+  "noAdvice": "Keine Steuerberatung",
+  "noAdviceSuffix": " — für das Finanzamt die tatsächliche Jahressteuerbescheinigung deines Brokers verwenden.",
+  "loadError": "Ladefehler",
+  "loading": "Lade...",
+  "netPL": "Netto G/V",
+  "gains": "Gewinne",
+  "losses": "Verluste",
+  "trades": "Trades",
+  "tradesCount": "{count} Trades",
+  "sinceStart": "seit Beginn",
+  "inYear": "im Jahr {year}",
+  "taxEstimate": "Steuer-Schätzung",
+  "kv": {
+    "gross": "Brutto-Gewinn",
+    "pauschbetrag": "Sparer-Pauschbetrag",
+    "taxable": "Steuerpflichtig",
+    "abgeltung": "Abgeltungsteuer (25%)",
+    "soli": "Soli (5,5%)",
+    "estTotal": "Schätzung gesamt"
+  },
+  "taxNotice": "Kirchensteuer nicht berücksichtigt. Verlustverrechnungstopf (Aktien vs. sonstige Kapitalerträge) nicht modelliert.",
+  "yearlyHistory": "Historie nach Jahr",
+  "yearlyHeaders": {
+    "year": "Jahr",
+    "trades": "Trades",
+    "netPL": "Netto G/V ({currency})"
+  },
+  "byTicker": "Aufschlüsselung nach Ticker",
+  "tickerHeaders": {
+    "ticker": "Ticker",
+    "trades": "Trades",
+    "pnl": "G/V"
+  },
+  "singleTransactions": "Einzelne Transaktionen",
+  "singleHeaders": {
+    "date": "Datum",
+    "ticker": "Ticker",
+    "shares": "Stück",
+    "buy": "Kauf",
+    "sell": "Verkauf",
+    "currency": "Whrg",
+    "pnlIn": "G/V ({currency})"
+  },
+  "noGains": "Keine realisierten Gewinne/Verluste im gewählten Zeitraum."
+}

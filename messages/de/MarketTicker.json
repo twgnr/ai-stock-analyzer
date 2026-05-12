@@ -1,0 +1,5 @@
+{
+  "ariaLabel": "Live-Marktticker",
+  "itemAriaWithData": "{label} Analyse: Kurs {price}, Veränderung {change}",
+  "itemAriaFallback": "{label} ({symbol}) — Analyse öffnen"
+}

@@ -1,0 +1,91 @@
+{
+  "metaTitle": "Privacy policy — AI Stock Analyzer",
+  "back": "Back",
+  "title": "Privacy policy",
+  "translationNotice": "This is an English translation provided for convenience; the German version is legally binding.",
+  "asOf": "Last updated: {date}",
+  "sections": {
+    "controller": {
+      "heading": "1. Controller",
+      "intro": "The controller within the meaning of the GDPR and the German Federal Data Protection Act (BDSG) is:",
+      "addressLines": "[First name and surname / Company]\n[Street and house number]\n[Postal code, City]",
+      "emailLabel": "Email",
+      "email": "[email@domain.tld]"
+    },
+    "overview": {
+      "heading": "2. Quick overview: what we process",
+      "items": {
+        "auth": "Registration and login data (email, password hash, name, 2FA)",
+        "portfolio": "Portfolio, transaction, watchlist and alert data",
+        "ai": "Your questions to the AI (analysis prompts) and the corresponding responses",
+        "usage": "Usage logs for billing and cost-cap (tokens, estimated USD cost per call)",
+        "tech": "Technical data (session cookie, IP address used for rate limiting)"
+      },
+      "footer": "We do not sell any data and do not use tracking pixels."
+    },
+    "registration": {
+      "heading": "3. Registration and user account",
+      "body": "To create a user account we store your email address, password (as a bcrypt hash), optionally your name, and your settings. Processing is based on the performance of a contract (Art. 6 (1) (b) GDPR). The data is erased as soon as you delete your account — see “Account deletion” below."
+    },
+    "cookie": {
+      "heading": "4. Session cookie",
+      "body": "We set a single strictly-necessary cookie named <code>sa_session</code> (HttpOnly, SameSite=Lax, Secure in production). It contains a signed JSON Web Token used to identify your session and is valid for 30 days. Legal basis: Art. 6 (1) (b) GDPR in conjunction with § 25 (2) (2) TDDDG (strictly necessary, no consent required)."
+    },
+    "portfolioData": {
+      "heading": "5. Portfolio and analysis data",
+      "body": "The tickers, quantities, transactions, notes, watchlist entries and alerts you create are stored in our MongoDB database. They are isolated per user ID; other users cannot see them (exception: watchlists or magazine analyses that you explicitly share). Legal basis: Art. 6 (1) (b) GDPR."
+    },
+    "ai": {
+      "heading": "6. AI providers (third-country transfer)",
+      "intro": "For AI-assisted analyses we transfer the text of your request and the portfolio/price data required for the task to the AI provider configured by you or by the administrator:",
+      "providers": {
+        "anthropic": "<strong>Anthropic PBC</strong> (Claude) — recipient located in the United States. Anthropic provides Standard Contractual Clauses. No training data is derived from API calls (Anthropic Commercial Terms).",
+        "google": "<strong>Google LLC</strong> (Gemini) — recipient located in the EU or the United States. Google provides Standard Contractual Clauses.",
+        "openai": "<strong>OpenAI and OpenAI-compatible providers</strong> — depending on the base URL chosen by the user; for OpenAI directly: recipient in the United States, Standard Contractual Clauses."
+      },
+      "footer": "Legal basis: Art. 6 (1) (b) GDPR (performance of contract) in conjunction with Art. 49 (1) (b) GDPR for the third-country transfer. Avoid entering personal data of third parties into your AI prompts."
+    },
+    "marketData": {
+      "heading": "7. External market data",
+      "body": "To display quotes, news and fundamentals we fetch (server-side, so that your IP address does not reach the third party) data from <strong>Yahoo Finance</strong> (Yahoo Inc., USA) and, as a fallback, <strong>Stooq</strong> (Poland). Only ticker symbols are transmitted; no personal data."
+    },
+    "email": {
+      "heading": "8. Transactional email",
+      "body": "To confirm email addresses, send password resets, digest mails and alert notifications, we send email via an SMTP service. The provider is: [enter SMTP host, e.g. Strato, Postmark, Resend]. Legal basis: Art. 6 (1) (b) GDPR."
+    },
+    "rateLimit": {
+      "heading": "9. Rate limiting and logging",
+      "body": "To prevent abuse, we keep IP addresses of registration and login attempts in memory for a short time (rate limiting). AI calls are logged in <code>UsageLog</code> for billing, cost caps and admin statistics (no IP, only user ID, operation, token count, estimated cost). Legal basis: Art. 6 (1) (f) GDPR (legitimate interest in stable operation and abuse prevention)."
+    },
+    "hosting": {
+      "heading": "10. Hosting and data location",
+      "body": "The application and the MongoDB database are operated on [enter host, location Germany/EU]."
+    },
+    "rights": {
+      "heading": "11. Your rights",
+      "intro": "You have the right, at any time, to:",
+      "items": {
+        "access": "Access (Art. 15 GDPR)",
+        "rectification": "Rectification (Art. 16 GDPR)",
+        "erasure": "Erasure / “right to be forgotten” (Art. 17 GDPR)",
+        "restriction": "Restriction of processing (Art. 18 GDPR)",
+        "portability": "Data portability (Art. 20 GDPR)",
+        "objection": "Objection (Art. 21 GDPR)"
+      },
+      "complaintBefore": "Lodge a complaint with a supervisory authority (Art. 77 GDPR). The authority of your federal state is competent; a list is available at ",
+      "complaintLink": "bfdi.bund.de",
+      "complaintAfter": ".",
+      "selfServiceBefore": "Access, export and deletion can be performed directly in the ",
+      "selfServiceLink": "settings",
+      "selfServiceAfter": " via the “Export my data” and “Delete account” features — or by emailing the controller named above."
+    },
+    "retention": {
+      "heading": "12. Retention period",
+      "body": "We retain your data for as long as your user account is active and erase it without undue delay after account deletion. Statutory retention obligations (e.g. under § 147 AO for invoices once paid services are introduced) remain unaffected."
+    },
+    "changes": {
+      "heading": "13. Changes to this policy",
+      "body": "We will inform you by email at the address on file about any material changes to this policy."
+    }
+  }
+}

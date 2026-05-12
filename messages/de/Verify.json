@@ -1,0 +1,6 @@
+{
+  "banner": "Bitte bestätige deine E-Mail-Adresse <strong>{email}</strong>.",
+  "resend": "Neuen Link senden",
+  "sending": "Sende …",
+  "resent": "Neuer Bestätigungslink gesendet (oder in Server-Console bei fehlender SMTP)"
+}

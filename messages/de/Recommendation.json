@@ -1,0 +1,20 @@
+{
+  "labels": {
+    "BUY": "Kaufen",
+    "SELL": "Verkaufen",
+    "HOLD": "Halten",
+    "ACCUMULATE": "Nachkaufen",
+    "REDUCE": "Reduzieren"
+  },
+  "conviction": {
+    "title": "Conviction-Score {score}/100 — {label}",
+    "ariaLabel": "Conviction-Score {score} von 100, {label}",
+    "breakdown": {
+      "analyst": "Analysten-Konsens",
+      "valuation": "Bewertung (KGV)",
+      "position52W": "52W-Position",
+      "aiRecommendation": "KI-Empfehlung",
+      "momentum": "Momentum"
+    }
+  }
+}

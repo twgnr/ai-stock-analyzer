@@ -1,0 +1,90 @@
+{
+  "common": {
+    "error": "Fehler"
+  },
+  "page": {
+    "title": "Insights",
+    "description": "KI-gestützte Portfolio-Analysen: Diversifikations-Lücken finden und zeitliche Entwicklung verstehen.",
+    "tabs": {
+      "gaps": "Was fehlt?",
+      "delta": "Was hat sich verändert?"
+    },
+    "gaps": {
+      "intro": "Analysiert dein Portfolio auf <strong>Diversifikations-Lücken</strong>: fehlende Sektoren, Regionen, Themen, Unternehmensgrößen. Liefert konkrete Vorschläge.",
+      "start": "Lücken-Analyse starten",
+      "analyzing": "KI analysiert...",
+      "overall": "Gesamteinschätzung",
+      "diversificationScore": "Diversifikations-Score:",
+      "identifiedGaps": "Identifizierte Lücken ({count})",
+      "concreteSuggestions": "Konkrete Vorschläge",
+      "severity": {
+        "critical": "Kritisch",
+        "notable": "Bemerkenswert",
+        "minor": "Geringfügig"
+      }
+    },
+    "delta": {
+      "intro": "Vergleicht dein Portfolio heute mit dem Stand vor <strong>{days} Tagen</strong>. Identifiziert Gewinner, Verlierer, neue Positionen, Dividenden. KI liefert narrative Zusammenfassung und konkrete Handlungsempfehlungen.",
+      "periodLabel": "Zeitraum:",
+      "period7d": "7T",
+      "period30d": "30T",
+      "period3m": "3M",
+      "period6m": "6M",
+      "start": "Delta-Analyse starten",
+      "analyzing": "KI analysiert...",
+      "headline": "Headline",
+      "stats": {
+        "valueChange": "Wert-Änderung",
+        "current": "Aktuell",
+        "realizedPnL": "Realisierte G/V",
+        "transactions": "Transaktionen"
+      },
+      "snapshotMissing": "⚠️ Keine Snapshot-Historie verfügbar für exakten Vergleich. Zahlen basieren auf aktuellem Wert vs. Cost-Basis. Snapshots werden täglich 23:55 erstellt.",
+      "overview": "Überblick",
+      "narrative": "Was ist passiert",
+      "concerns": "Rote Flaggen",
+      "opportunities": "Chancen",
+      "actions": "Nächste Schritte"
+    }
+  },
+  "trackRecord": {
+    "title": "KI-Track-Record",
+    "description": "Wie gut waren die KI-Empfehlungen, gemessen an der tatsächlichen Kursentwicklung seit Empfehlungs-Datum?",
+    "loading": "Werte historische Empfehlungen aus…",
+    "empty": "Noch keine auswertbaren KI-Empfehlungen.",
+    "emptyHint": "Führe Aktien-Analysen durch und komm in mind. 7 Tagen wieder hierher.",
+    "stats": {
+      "totalHitRate": "Gesamt-Hit-Rate",
+      "avgReturn": "Ø Return",
+      "avgReturnSub": "{count} Empfehlungen",
+      "evaluatable": "Auswertbar",
+      "evaluatableSub": "von {count} Analysen",
+      "oldestEntry": "Ältester Eintrag",
+      "oldestEntrySub": "Beobachtungsfenster",
+      "days": "{count}T"
+    },
+    "byRecommendation": "Hit-Rate nach Empfehlung",
+    "avgReturnPrefix": "Ø",
+    "byModel": "Hit-Rate nach Modell",
+    "table": {
+      "model": "Modell",
+      "count": "Anzahl",
+      "hitRate": "Hit-Rate",
+      "avgReturn": "Ø Return"
+    },
+    "outcomes": {
+      "title": "Einzelne Empfehlungen",
+      "ticker": "Ticker",
+      "recommendation": "Empfehlung",
+      "date": "Datum",
+      "days": "Tage",
+      "originPrice": "Empf.-Kurs",
+      "current": "Aktuell",
+      "return": "Return",
+      "result": "Ergebnis",
+      "hit": "Hit",
+      "miss": "Miss"
+    },
+    "note": "Hit-Logik: BUY/ACCUMULATE → Hit wenn Return > 0 %; SELL/REDUCE → Hit wenn Return < 0 %; HOLD → Hit wenn Return innerhalb ±5 %. Mindestens 7 Tage alt."
+  }
+}

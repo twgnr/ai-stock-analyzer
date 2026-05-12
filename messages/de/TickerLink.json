@@ -1,0 +1,8 @@
+{
+  "loading": "Lade {ticker}…",
+  "previewUnavailable": "Vorschau für {ticker} nicht verfügbar.",
+  "latestNews": "Letzte News",
+  "dividendYield": "Div-Rendite",
+  "sector": "Sektor",
+  "range52W": "52W-Range"
+}

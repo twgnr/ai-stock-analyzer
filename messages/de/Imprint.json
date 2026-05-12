@@ -1,0 +1,23 @@
+{
+  "metaTitle": "Impressum — AI Stock Analyzer",
+  "back": "Zurück",
+  "title": "Impressum",
+  "providerHeading": "Angaben gemäß § 5 DDG",
+  "providerLines": "[Vor- und Nachname / Firma]\n[Straße Hausnummer]\n[PLZ Ort]\n[Land]",
+  "contactHeading": "Kontakt",
+  "contactPhoneLabel": "Telefon",
+  "contactPhoneValue": "[optional]",
+  "contactEmailLabel": "E-Mail",
+  "contactEmail": "[email@domain.tld]",
+  "vatHeading": "Umsatzsteuer-ID",
+  "vatBody": "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:\n[DE...] — oder: Kleinunternehmer gemäß § 19 UStG, daher wird keine Umsatzsteuer ausgewiesen.",
+  "editorialHeading": "Redaktionell verantwortlich gemäß § 18 Abs. 2 MStV",
+  "editorialLines": "[Vor- und Nachname]\n[Straße Hausnummer]\n[PLZ Ort]",
+  "odrHeading": "EU-Streitschlichtung",
+  "odrBefore": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: ",
+  "odrAfter": ". Unsere E-Mail-Adresse findest du oben im Impressum.",
+  "consumerHeading": "Verbraucherstreitbeilegung / Universalschlichtungsstelle",
+  "consumerBody": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+  "disclaimerHeading": "Haftungsausschluss",
+  "disclaimerBody": "Die Inhalte auf dieser Seite (insbesondere Kursdaten, Fundamentaldaten, KI-Analysen, Empfehlungen aus Börsenzeitschriften) dienen ausschließlich der allgemeinen Information und der eigenverantwortlichen Recherche-Unterstützung. Sie stellen <strong>keine Anlageberatung</strong>, <strong>keine Finanzanalyse</strong> im Sinne des WpHG und keine Aufforderung zum Kauf oder Verkauf von Wertpapieren dar. Jede Anlageentscheidung trifft der Nutzer eigenverantwortlich. Wir übernehmen keine Haftung für die Richtigkeit, Aktualität oder Vollständigkeit der dargestellten Daten, die aus Drittquellen (z. B. Yahoo Finance, Stooq) abgerufen oder mit Hilfe von KI-Diensten generiert werden."
+}

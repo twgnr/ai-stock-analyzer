@@ -1,0 +1,52 @@
+{
+  "metaTitle": "Accessibility statement — AI Stock Analyzer",
+  "back": "Back",
+  "title": "Accessibility statement",
+  "translationNotice": "This is an English translation provided for convenience; the German version is legally binding.",
+  "asOf": "Last updated: {date}",
+  "intro": "This statement applies to the web application “AI Stock Analyzer” accessible at [domain.tld]. As provider, we are obliged under the German Accessibility Strengthening Act (BFSG) to offer online services to consumers in an accessible way and to transparently report on the current state of accessibility.",
+  "conformanceHeading": "Conformance status",
+  "conformanceBody": "Our technical reference is the Web Content Accessibility Guidelines (WCAG) 2.2 at conformance level AA. The application is <strong>largely compliant</strong> with these requirements. The content listed below is not yet fully accessible; we are working on improvements.",
+  "nonConformingHeading": "Content that is not fully accessible",
+  "nonConforming": {
+    "charts": {
+      "title": "Interactive charts",
+      "body": " (lightweight-charts): the price charts, candlestick views and indicator panes are currently not described by screen readers. The underlying numbers are available in tabular form as an alternative (e.g. on the analysis page under “Fundamentals” and “Pro Scores”)."
+    },
+    "heatmaps": {
+      "title": "Heatmaps",
+      "body": " (correlation matrix, monthly returns): the numeric value of every cell is exposed as an <code>aria-label</code>, but the colour gradient remains the dominant cue."
+    },
+    "palette": {
+      "title": "Command palette (Cmd+K / Ctrl+K)",
+      "body": ": fully keyboard-operable with labels, but the live ticker search has not yet been fully annotated according to the WAI-ARIA combobox pattern."
+    },
+    "pdf": {
+      "title": "Third-party PDF content",
+      "body": " (financial magazine uploads, printed portfolio reports): not available in a screen-reader-optimised format; the AI-extracted recommendations, however, are rendered in structured, accessible HTML."
+    }
+  },
+  "measuresHeading": "Measures already implemented",
+  "measures": {
+    "skipLink": "<strong>Skip link</strong> “Skip to main content” at the top of every page (WCAG 2.4.1).",
+    "focus": "<strong>Visible keyboard focus</strong> via <code>:focus-visible</code> on all interactive elements (WCAG 2.4.7). Focused elements are not hidden behind the fixed navigation (<code>scroll-padding-top</code>, WCAG 2.4.11).",
+    "targetSize": "<strong>Target size</strong>: every icon button has at least 24 × 24 CSS pixels of click area (WCAG 2.5.8).",
+    "forms": "<strong>Forms</strong>: every field has a programmatically associated <code>label</code>; errors are marked with <code>aria-invalid</code> and <code>aria-describedby</code> and announced via <code>role=\"alert\"</code> (WCAG 3.3.1, 3.3.3, 4.1.3).",
+    "status": "<strong>Status messages</strong>: success and error messages are reported to screen readers via <code>role=\"status\"</code> or <code>role=\"alert\"</code> respectively (WCAG 4.1.3).",
+    "tickerLinks": "<strong>Standalone ticker links</strong> (in the market ticker and gainers/losers tables) carry a speakable <code>aria-label</code> with name, price and change instead of just the symbol (WCAG 2.4.4).",
+    "color": "<strong>Colour is never the only cue</strong>: gains/losses and signal states are also indicated by symbols (↑/↓/−) and signs (+/−) (WCAG 1.4.1).",
+    "pageTitle": "<strong>Page title</strong>: every route sets a unique <code>document.title</code> (WCAG 2.4.2).",
+    "contrast": "<strong>Contrast</strong>: body text ≥ 4.5:1, UI borders ≥ 3:1 (WCAG 1.4.3, 1.4.11).",
+    "responsive": "Responsive layout, legible from phone to desktop, zoom up to 200 % without loss of functionality (WCAG 1.4.4, 1.4.10).",
+    "motion": "<strong>Reduced motion</strong>: market ticker and other animations honour <code>prefers-reduced-motion</code> (WCAG 2.3.3).",
+    "lang": "The page language is declared in <code>{tag}</code> (WCAG 3.1.1)."
+  },
+  "feedbackHeading": "Feedback and contact",
+  "feedbackBody": "Have you encountered barriers or do you need content in an alternative form? We welcome your feedback and aim to reply promptly:",
+  "feedbackEmailLabel": "Email",
+  "feedbackEmail": "[email@domain.tld]",
+  "enforcementHeading": "Enforcement procedure",
+  "enforcementBefore": "If our response to your feedback is not satisfactory, you can contact the market surveillance authority of your federal state or the competent body pursuant to § 18 BFSG. More information is provided by the ",
+  "enforcementLink": "Federal Accessibility Authority (Bundesfachstelle Barrierefreiheit)",
+  "enforcementAfter": ", among others."
+}

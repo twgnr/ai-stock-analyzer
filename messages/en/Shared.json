@@ -1,0 +1,52 @@
+{
+  "tickerSearch": {
+    "placeholder": "Search: e.g. SAP, Apple, Nvidia..."
+  },
+  "watchlist": {
+    "titleAdd": "Add to watchlist",
+    "titleRemove": "Remove from watchlist",
+    "added": "Added",
+    "onList": "On watchlist",
+    "add": "Watchlist"
+  },
+  "confirm": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "closeAria": "Close dialog"
+  },
+  "skeleton": {
+    "tableLoading": "Loading table…",
+    "contentLoading": "Loading content…",
+    "statsLoading": "Loading stats…"
+  },
+  "theme": {
+    "label": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "auto": "System"
+  },
+  "threeD": {
+    "label": "3D effect",
+    "off": "Off",
+    "on": "On"
+  },
+  "accent": {
+    "pickAria": "Pick accent color",
+    "resetTitle": "Reset to the default blue",
+    "reset": "Reset to default",
+    "customActive": "Custom color active",
+    "defaultActive": "Default blue active",
+    "presetsLabel": "Color suggestions",
+    "presets": {
+      "blue": "Blue (default)",
+      "sky": "Sky blue",
+      "green": "Green",
+      "teal": "Teal",
+      "violet": "Violet",
+      "pink": "Pink",
+      "orange": "Orange",
+      "yellow": "Yellow",
+      "red": "Red"
+    }
+  }
+}

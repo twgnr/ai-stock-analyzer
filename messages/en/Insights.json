@@ -1,0 +1,90 @@
+{
+  "common": {
+    "error": "Error"
+  },
+  "page": {
+    "title": "Insights",
+    "description": "AI-powered portfolio analyses: find diversification gaps and understand how things changed over time.",
+    "tabs": {
+      "gaps": "What's missing?",
+      "delta": "What changed?"
+    },
+    "gaps": {
+      "intro": "Analyzes your portfolio for <strong>diversification gaps</strong>: missing sectors, regions, themes, company sizes. Returns concrete suggestions.",
+      "start": "Start gap analysis",
+      "analyzing": "AI is analyzing...",
+      "overall": "Overall assessment",
+      "diversificationScore": "Diversification score:",
+      "identifiedGaps": "Identified gaps ({count})",
+      "concreteSuggestions": "Concrete suggestions",
+      "severity": {
+        "critical": "Critical",
+        "notable": "Notable",
+        "minor": "Minor"
+      }
+    },
+    "delta": {
+      "intro": "Compares your portfolio today with the snapshot from <strong>{days} days ago</strong>. Identifies winners, losers, new positions, dividends. The AI delivers a narrative summary and concrete action recommendations.",
+      "periodLabel": "Period:",
+      "period7d": "7D",
+      "period30d": "30D",
+      "period3m": "3M",
+      "period6m": "6M",
+      "start": "Start delta analysis",
+      "analyzing": "AI is analyzing...",
+      "headline": "Headline",
+      "stats": {
+        "valueChange": "Value change",
+        "current": "Current",
+        "realizedPnL": "Realized P/L",
+        "transactions": "Transactions"
+      },
+      "snapshotMissing": "⚠️ No snapshot history available for an exact comparison. Numbers are based on current value vs. cost basis. Snapshots are taken daily at 23:55.",
+      "overview": "Overview",
+      "narrative": "What happened",
+      "concerns": "Red flags",
+      "opportunities": "Opportunities",
+      "actions": "Next steps"
+    }
+  },
+  "trackRecord": {
+    "title": "AI track record",
+    "description": "How good were the AI recommendations, measured against actual price performance since the recommendation date?",
+    "loading": "Evaluating historical recommendations…",
+    "empty": "No evaluable AI recommendations yet.",
+    "emptyHint": "Run stock analyses and come back in at least 7 days.",
+    "stats": {
+      "totalHitRate": "Overall hit rate",
+      "avgReturn": "Avg return",
+      "avgReturnSub": "{count} recommendations",
+      "evaluatable": "Evaluable",
+      "evaluatableSub": "of {count} analyses",
+      "oldestEntry": "Oldest entry",
+      "oldestEntrySub": "Observation window",
+      "days": "{count}D"
+    },
+    "byRecommendation": "Hit rate by recommendation",
+    "avgReturnPrefix": "Avg",
+    "byModel": "Hit rate by model",
+    "table": {
+      "model": "Model",
+      "count": "Count",
+      "hitRate": "Hit rate",
+      "avgReturn": "Avg return"
+    },
+    "outcomes": {
+      "title": "Individual recommendations",
+      "ticker": "Ticker",
+      "recommendation": "Recommendation",
+      "date": "Date",
+      "days": "Days",
+      "originPrice": "Rec. price",
+      "current": "Current",
+      "return": "Return",
+      "result": "Result",
+      "hit": "Hit",
+      "miss": "Miss"
+    },
+    "note": "Hit logic: BUY/ACCUMULATE → hit when return > 0%; SELL/REDUCE → hit when return < 0%; HOLD → hit when return within ±5%. Minimum 7 days old."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "form": {
+    "stockSearchLabel": "Aktie suchen",
+    "tickerPlaceholder": "Ticker oder Firmenname eingeben...",
+    "tradingIn": "handelt in {currency}",
+    "sharesLabel": "Anzahl",
+    "avgPriceLabel": "Ø Kaufpreis",
+    "purchaseCurrencyLabel": "Kaufwährung",
+    "purchaseCurrencyInfoBold": "Die Kaufwährung ist das, was deinem Konto belastet wurde.",
+    "purchaseCurrencyInfo": "Deutscher Broker → meist EUR, auch wenn die Aktie in {currency} handelt.",
+    "fxNote": "Die Anzeige rechnet den aktuellen Kurs via FX-Umrechnung in EUR auf dein Kaufwährung-Niveau um. So stimmt dein Gewinn/Verlust in der Währung, die du tatsächlich gezahlt hast.",
+    "noteLabel": "Notiz (optional)",
+    "notePlaceholder": "z.B. Langfrist, Dividendentitel...",
+    "submit": "Position hinzufügen",
+    "tip": "Tipp: Wenn der Ticker schon existiert und in derselben Kaufwährung vorliegt, wird die neue Position per Mischkurs zusammengeführt.",
+    "errors": {
+      "tickerRequired": "Bitte eine Aktie suchen und auswählen.",
+      "valuesPositive": "Anzahl und Kaufpreis müssen größer 0 sein.",
+      "saveFailed": "Fehler beim Speichern",
+      "generic": "Fehler"
+    },
+    "successAdded": "Position {ticker} hinzugefügt"
+  },
+  "edit": {
+    "title": "Position bearbeiten",
+    "closeTitle": "Schließen (Esc)",
+    "closeAria": "Dialog schließen",
+    "sharesLabel": "Anzahl",
+    "avgPriceLabel": "Ø Kaufpreis",
+    "currencyLabel": "Kaufwährung",
+    "noteLabel": "Notiz",
+    "notePlaceholder": "z.B. Langfrist, Dividendentitel...",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "successUpdated": "Position {ticker} aktualisiert",
+    "errors": {
+      "valuesPositive": "Anzahl und Kaufpreis müssen größer 0 sein.",
+      "saveFailed": "Fehler beim Speichern",
+      "generic": "Fehler"
+    }
+  }
+}

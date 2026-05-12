@@ -1,0 +1,62 @@
+{
+  "back": "Back to dashboard",
+  "loading": "Loading {ticker}...",
+  "errorLoad": "Load error",
+  "errorNoQuote": "No quote found for {ticker}",
+  "header": {
+    "dayHigh": "Day high:",
+    "dayLow": "Day low:",
+    "weekHigh52": "52W high:",
+    "weekLow52": "52W low:",
+    "createAlert": "Create alert",
+    "createAlertTitle": "Create a price alert for this stock"
+  },
+  "chart": {
+    "title": "Chart",
+    "noteFx": "Prices in EUR (converted with current spot FX, historical values approximate)",
+    "noteEur": "Prices in EUR",
+    "empty": "No chart data"
+  },
+  "ai": {
+    "title": "AI analysis",
+    "analyzing": "Analyzing...",
+    "rerun": "Re-analyze",
+    "run": "Analyze now",
+    "errorFailed": "Analysis failed",
+    "confidence": "Confidence: {pct}%",
+    "model": "Model: {model}",
+    "reasoning": "Reasoning",
+    "priceTargets": "Price targets",
+    "low": "Low",
+    "base": "Base",
+    "high": "High",
+    "opportunities": "Opportunities",
+    "risks": "Risks",
+    "positionSize": "Position size",
+    "disclaimer": "⚠️ Not investment advice. Own due diligence required.",
+    "followUp": {
+      "recommendation": "Recommendation",
+      "summary": "Summary",
+      "reasoning": "Reasoning",
+      "risks": "Risks",
+      "opportunities": "Opportunities"
+    }
+  },
+  "fundamentals": {
+    "title": "Fundamentals",
+    "sector": "Sector",
+    "industry": "Industry",
+    "country": "Country",
+    "marketCap": "Market cap",
+    "peTtm": "P/E (TTM)",
+    "peFwd": "P/E (fwd)",
+    "dividendYield": "Div. yield",
+    "beta": "Beta",
+    "profitMargin": "Profit margin",
+    "analystTarget": "Analyst target",
+    "analystRec": "Analyst rec"
+  },
+  "news": {
+    "title": "News"
+  }
+}
